@@ -13,58 +13,19 @@ public class jogador : MonoBehaviour
     private Vector2 teclasApertadas;
     public GameObject laser;
     public Transform localDoDisparoUnico; 
-    public bool estarVivo { get; private set; }
+    
     
     // Start is called before the first frame update
     void Start()
     {
         temLaserDuplo = false;
-        estarVivo = true;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (estarVivo)
-        {
             MovimentoPlay();
             AtirarLaser();  
-        }
-        
-    }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        Debug.Log("colidiu com: " + collision.gameObject.name);
-        if (collision.gameObject.CompareTag("Buraco negro"))
-        {
-            CairNoBuracoNegro();
-        }
-    }
-    
-    private void CairNoBuracoNegro()
-    {
-        if (estarVivo)
-        {
-            Morrer();
-        }
-    }
-
-    private void Morrer()
-    {
-        estarVivo = false;
-        Debug.Log("o jogador caiu no buraco negro e morreu");
-        
-        // destroi o gameobject do jogador
-        Destroy(gameObject);
-        
-        //
-        Invoke("ReiniciarNivel", 1f);
-    }
-
-    private void ReiniciarNivel()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     private void MovimentoPlay()

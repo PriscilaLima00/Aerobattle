@@ -2,24 +2,15 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BuracoNegro : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private void OnTriggerEnter2D(Collider2D collider)
     {
-        if (!gameObject.CompareTag("Buraco negro"))
+        if (collider.CompareTag("Jogador"))
         {
-            Debug.LogWarning("Tag 'Buraco negro' não encontrada. Definindo tag.");
-            gameObject.tag = "Buraco negro";
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
-       
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-    
 }

@@ -220,6 +220,7 @@ GameObject:
   - component: {fileID: 486396928}
   - component: {fileID: 486396927}
   - component: {fileID: 486396926}
+  - component: {fileID: 486396931}
   m_Layer: 0
   m_Name: Jogador
   m_TagString: Jogador
@@ -374,6 +375,19 @@ Transform:
   - {fileID: 2013682446}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &486396931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 486396925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9aa86f54b352d84dac60973bfcd0b5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fallThreshold: -10
 --- !u!1 &1276943468
 GameObject:
   m_ObjectHideFlags: 0
@@ -547,6 +561,7 @@ GameObject:
   - component: {fileID: 1890377538}
   - component: {fileID: 1890377537}
   - component: {fileID: 1890377541}
+  - component: {fileID: 1890377542}
   m_Layer: 0
   m_Name: Buraco negro
   m_TagString: Buraco negro
@@ -566,7 +581,7 @@ PointEffector2D:
   m_ColliderMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_ForceMagnitude: -1000
+  m_ForceMagnitude: -50000
   m_ForceVariation: 0
   m_DistanceScale: 1
   m_ForceSource: 0
@@ -606,9 +621,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 1
   m_UsedByComposite: 0
-  m_Offset: {x: -0.033285882, y: -0.17928936}
+  m_Offset: {x: 0.0055310037, y: -0.005075095}
   serializedVersion: 2
-  m_Radius: 1.1320204
+  m_Radius: 0.43331596
 --- !u!212 &1890377539
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -688,6 +703,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4851fedd4e72d9f41a0d807b6175992c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1890377542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1890377536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6649114f8e0c644489b8a443f96be84d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pullStrength: 10
+  detectionRadius: 10
 --- !u!1 &1962079787
 GameObject:
   m_ObjectHideFlags: 0
