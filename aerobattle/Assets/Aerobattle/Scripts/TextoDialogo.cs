@@ -6,6 +6,7 @@ using UnityEngine;
 public class TextoDialogo
 {
     [SerializeField]
+    [TextArea(1,4)]
     private string _frase;
 
     [SerializeField] private string _btContinuar;
