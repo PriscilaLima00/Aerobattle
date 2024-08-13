@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,6 +6,8 @@ using UnityEngine;
 public class Laser : MonoBehaviour
 {
     public float velocidadeDoLaser;
+
+    public int danoParaDar;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,5 +23,14 @@ public class Laser : MonoBehaviour
     private void MovimentarLaser()
     {
         transform.Translate(Vector3.up * velocidadeDoLaser * Time.deltaTime);
+    }
+
+    private void OnTriggerEnter2D(Collider2D colision)
+    {
+        if (colision.gameObject.CompareTag("Inimigo"))
+        {
+            colision.gameObject.GetComponent<Inimigo>().MachucarInimigo(danoParaDar);
+            Destroy(this.gameObject);
+        }
     }
 }
