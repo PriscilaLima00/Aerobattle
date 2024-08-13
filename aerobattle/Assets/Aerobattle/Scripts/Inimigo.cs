@@ -44,7 +44,7 @@ public class Inimigo : MonoBehaviour
         if (tempoAtualDosLasers <= 0)
         {
             Instantiate(laserDoInimigo, localDoDisparo.position, Quaternion.Euler(0f, 0f, 90f));
-            tempoAtualDosLasers = tempoAtualDosLasers;
+            tempoAtualDosLasers = tempoMaximoEntreOsLasers;
         }
     }
 }
