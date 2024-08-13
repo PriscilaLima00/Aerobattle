@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Buraco negro
   - Jogador
+  - Inimigo
   layers:
   - Default
   - TransparentFX
