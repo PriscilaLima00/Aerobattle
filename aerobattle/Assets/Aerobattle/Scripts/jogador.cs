@@ -12,7 +12,9 @@ public class jogador : MonoBehaviour
 
     private Vector2 teclasApertadas;
     public GameObject laser;
-    public Transform localDoDisparoUnico; 
+    public Transform localDoDisparoUnico;
+    
+    
     
     
     // Start is called before the first frame update
@@ -44,5 +46,7 @@ public class jogador : MonoBehaviour
             } 
         }
     }
+    
+    
     
 }

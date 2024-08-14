@@ -60,4 +60,20 @@ public class Inimigo : MonoBehaviour
             Destroy(this.gameObject);
         }
     }
+    
+    public void AplicaDano(int dano)
+    {
+        vidaAtualDoInimigo -= dano;
+
+        // Verifica se o inimigo morreu
+        if (vidaAtualDoInimigo <= 0)
+        {
+            Morrer();
+        }
+    }
+
+    void Morrer()
+    {
+        Destroy(gameObject); // Exclui o GameObject do inimigo
+    }
 }
