@@ -36,4 +36,22 @@ public class Meteoro : MonoBehaviour
             Destroy(this.gameObject);
         }
     }
+    
+    
+    public void AplicaDano(int dano)
+    {
+        vidaAtualDoMeteoro -= dano;
+
+        // Verifica se o inimigo morreu
+        if (vidaAtualDoMeteoro <= 0)
+        {
+            Morrer();
+        }
+    }
+
+    void Morrer()
+    {
+        Destroy(gameObject); // Exclui o GameObject do inimigo
+    }
 }
+

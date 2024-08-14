@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class jogador : MonoBehaviour
 {
@@ -14,20 +15,33 @@ public class jogador : MonoBehaviour
     public GameObject laser;
     public Transform localDoDisparoUnico;
     
+    public Text scoreText;
+    public int score;
     
-    
-    
-    // Start is called before the first frame update
     void Start()
     {
         temLaserDuplo = false;
+
+        score = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
             MovimentoPlay();
-            AtirarLaser();  
+            AtirarLaser();
+
+            scoreText.text = score.ToString();
+            
+    }
+
+    private void OnTriggerEnter2D(Collider2D col)
+    {
+        if (col.CompareTag("Moeda") == true)
+        {
+            score = score + 1;
+            Destroy(col.gameObject);
+        }
     }
 
     private void MovimentoPlay()
@@ -46,7 +60,5 @@ public class jogador : MonoBehaviour
             } 
         }
     }
-    
-    
     
 }

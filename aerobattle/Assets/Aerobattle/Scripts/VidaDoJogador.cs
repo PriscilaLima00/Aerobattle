@@ -11,6 +11,8 @@ public class VidaDoJogador : MonoBehaviour
     public bool temEscudo;
     
     public int danoParaInimigos = 5; // Dano que o jogador aplica aos inimigos
+
+    public int  danoParaMeteoro = 3;
     // Start is called before the first frame update
     void Start()
     {
@@ -35,34 +37,50 @@ public class VidaDoJogador : MonoBehaviour
             }
         }
     }
-    
+    // Quando o jogador colide com outro objeto
     void OnCollisionEnter2D(Collision2D colisao)
     {
+        // Verifica se o objeto colidido é um inimigo
         if (colisao.gameObject.CompareTag("Inimigo"))
         {
-            // Reduz a vida do jogador
             vidaAtualDoJogador -= danoParaInimigos;
-
-            // Verifica se o jogador morreu
+            
             if (vidaAtualDoJogador <= 0)
             {
                 Morrer();
             }
-
-            // Aplica dano ao inimigo
+            
             Inimigo inimigo = colisao.gameObject.GetComponent<Inimigo>();
             if (inimigo != null)
             {
                 inimigo.AplicaDano(danoParaInimigos);
             }
         }
+        // Verifica se o objeto colidido é um meteoro
+        else if (colisao.gameObject.CompareTag("Meteoro"))
+        {
+            vidaAtualDoJogador -= danoParaMeteoro;
+
+            if (vidaAtualDoJogador <= 0)
+            {
+                Morrer();
+            }
+
+            // Aplica dano ao meteoro, se necessário
+            Meteoro meteoro = colisao.gameObject.GetComponent<Meteoro>();
+            if (meteoro != null)
+            {
+                meteoro.MachucarMeteoro(danoParaMeteoro); // Ajuste conforme necessário
+            }
+        }
     }
-    
+
     void Morrer()
     {
-        // Lógica para a morte do jogador
         Debug.Log("Jogador morreu!");
-        // Você pode adicionar aqui a lógica para mostrar a tela de Game Over ou reiniciar o nível
+        // Adicione a lógica para mostrar a tela de Game Over ou reiniciar o nível
         Destroy(gameObject); // Exclui o GameObject do jogador
     }
 }
+   
+
