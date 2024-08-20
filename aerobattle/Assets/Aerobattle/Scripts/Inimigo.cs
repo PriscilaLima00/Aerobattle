@@ -39,7 +39,7 @@ public class Inimigo : MonoBehaviour
 
     private void MovimentarInimigo()
     {
-        transform.Translate(Vector3.down * velocidadeDoInimigo *Time.deltaTime);
+        transform.Translate(Vector3.left * velocidadeDoInimigo * Time.deltaTime);
     }
 
     private void AtirarLaser()
