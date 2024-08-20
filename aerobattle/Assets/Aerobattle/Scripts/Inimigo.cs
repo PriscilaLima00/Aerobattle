@@ -2,11 +2,13 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class Inimigo : MonoBehaviour
 {
     public GameObject laserDoInimigo;
-    public Transform localDoDisparo;
+    public Transform[] localDoDisparo;
+  
     
     public float velocidadeDoInimigo;
 
@@ -46,7 +48,8 @@ public class Inimigo : MonoBehaviour
 
         if (tempoAtualDosLasers <= 0)
         {
-            Instantiate(laserDoInimigo, localDoDisparo.position, Quaternion.Euler(0f, 0f, 90f));
+            int indice = Random.Range(0, localDoDisparo.Length);
+            Instantiate(laserDoInimigo, localDoDisparo[indice].position, Quaternion.Euler(0f, 0f, 90f));
             tempoAtualDosLasers = tempoMaximoEntreOsLasers;
         }
     }
