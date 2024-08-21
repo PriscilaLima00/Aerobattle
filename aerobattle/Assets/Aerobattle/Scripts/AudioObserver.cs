@@ -5,23 +5,23 @@ using UnityEngine;
 
 public static class AudioObserver
 {
-    public static event Action<string> PlaySfxEvente;
+    public static event Action<string> PlaySfxEvent;
     public static event Action PlayMusicEvent;
     public static event Action StopMusicEvent;
 
-   
-    public static void OnPlayMusicEvent()
+
+    public static void OnPlaySfxEvent(string obj)
+    {
+        PlaySfxEvent?.Invoke(obj);
+    }
+
+    private static void OnPlayMusicEvent()
     {
         PlayMusicEvent?.Invoke();
     }
 
-    public static void OnStopMusicEvent()
+    private static void OnStopMusicEvent()
     {
         StopMusicEvent?.Invoke();
-    }
-
-    private static void OnPlaySfxEvente(string obj)
-    {
-        PlaySfxEvente?.Invoke(obj);
     }
 }
