@@ -9,6 +9,7 @@ TagManager:
   - Inimigo
   - Meteoro
   - Moeda
+  - Nebuloso
   layers:
   - Default
   - TransparentFX

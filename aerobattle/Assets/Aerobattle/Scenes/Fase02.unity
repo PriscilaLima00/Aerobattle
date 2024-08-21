@@ -147,13 +147,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 92418445}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -1, w: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
   m_LocalPosition: {x: -0.036, y: 0.111, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 814679900}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -180}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!1 &108785267
 GameObject:
   m_ObjectHideFlags: 0
@@ -495,6 +495,7 @@ MonoBehaviour:
   vidaAtualDoJogador: 3
   temEscudo: 0
   danoParaInimigos: 5
+  danoParaNebuloso: 10
   danoParaMeteoro: 3
 --- !u!1 &699097701
 GameObject:
@@ -591,7 +592,7 @@ GameObject:
   - component: {fileID: 814679905}
   m_Layer: 0
   m_Name: Nebuloso
-  m_TagString: Untagged
+  m_TagString: Nebuloso
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -719,7 +720,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: -0.008448391, y: 0.11344994}
   serializedVersion: 2
-  m_Radius: 0.19771312
+  m_Radius: 0.19
 --- !u!50 &814679904
 Rigidbody2D:
   serializedVersion: 4
@@ -734,7 +735,7 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0.02
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -746,7 +747,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &814679905
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -759,16 +760,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33758b3096b6a294990451e7e7ca8f82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  laserDoNebuloso: {fileID: 0}
-  locaDoDisparo: {fileID: 92418446}
-  velocidadeDoNebuloso: 5
+  laserDoInimigo: {fileID: 2489940251796190028, guid: 2ec161cf83c19674c9b2e488b53a330d, type: 3}
+  localDoDisparo: {fileID: 92418446}
+  velocidadeDoNebuloso: 8
   velocidadeFrontal: 1
-  tempoMaximoEntreOsLasers: 0.5
+  tempoMaximoEntreOsLasers: 1
   tempoAtualDosLasers: 0
-  inimigoAtirador: 0
-  vidaMaximaDoInimigo: 10
-  vidaAtualDoInimigo: 10
+  inimigoAtirador: 1
+  vidaMaximaDoNebuloso: 10
+  vidaAtualDoNebuloso: 0
   limiteVertical: 4
+  limiteHorizontal: 4
+  raioDeDeteccao: 10
+  jogador: {fileID: 486396930}
 --- !u!1 &819424567
 GameObject:
   m_ObjectHideFlags: 0

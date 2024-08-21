@@ -4,28 +4,34 @@ using UnityEngine;
 
 public class Nebuloso : MonoBehaviour
 {
-    public GameObject laserDoNebuloso;
-
-    public Transform locaDoDisparo;
+    public GameObject laserDoInimigo;
+    public Transform localDoDisparo;
 
     public float velocidadeDoNebuloso;
     public float velocidadeFrontal;
-    public float tempoMaximoEntreOsLasers;
+    private float inicioVertical;
     
+    public float tempoMaximoEntreOsLasers;
     public float tempoAtualDosLasers;
 
     public bool inimigoAtirador = true;
 
-    public int vidaMaximaDoInimigo;
-    public int vidaAtualDoInimigo;
+    public int vidaMaximaDoNebuloso;
+    public int vidaAtualDoNebuloso;
     
     public float limiteVertical;  // Limite vertical de movimentação do inimigo
+    public float limiteHorizontal; // Limite horizontal de movimentação do inimigo
     private bool jogadorDentroRaio = false;   // Flag para verificar se o jogador está dentro do raio
-    private float inicioVertical;
+    public float raioDeDeteccao;//raio que detecção do jogador
+    public Transform jogador;
+    
+    private Vector3 posicaoInicial;  // Posição inicial do inimigo
+    private bool indoParaDireita = true; // Flag para verificar a direção da patrulha
+    
     // Start is called before the first frame update
     void Start()
     {
-        vidaAtualDoInimigo = vidaMaximaDoInimigo;
+        vidaAtualDoNebuloso = vidaMaximaDoNebuloso;
         tempoAtualDosLasers = tempoMaximoEntreOsLasers;
         inicioVertical = transform.position.y;// Armazena a posição inicial vertical do inimigo
     }
@@ -34,7 +40,67 @@ public class Nebuloso : MonoBehaviour
     void Update()
     {
         MovimentarNebuloso();
-        // Atualiza o tempo para o próximo tiro
+        VerificarJogador();
+        AtirarSeNecessario();
+    }
+
+    private void MovimentarNebuloso()
+    {
+        // Se o jogador está dentro do raio de detecção, move-se em direção ao jogador
+        if (jogadorDentroRaio)
+        {
+            MoverParaJogador();
+        }
+        else
+        {
+            // Movimenta o inimigo verticalmente
+            float novaPosicaoY = Mathf.PingPong(Time.time * velocidadeDoNebuloso, limiteVertical * 2) - limiteVertical;
+            transform.position = new Vector3(transform.position.x, novaPosicaoY, transform.position.z);
+            
+            // Movimenta o inimigo horizontalmente dentro dos limites
+            float novaPosicaoX = transform.position.x + (indoParaDireita ? velocidadeFrontal : -velocidadeFrontal) * Time.deltaTime;
+            
+            // Verifica se o inimigo atingiu o limite horizontal e inverte a direção
+            if (novaPosicaoX > posicaoInicial.x + limiteHorizontal)
+            {
+                indoParaDireita = false;
+            }
+            else if (novaPosicaoX < posicaoInicial.x - limiteHorizontal)
+            {
+                indoParaDireita = true;
+            }
+            
+            transform.position = new Vector3(novaPosicaoX, transform.position.y, transform.position.z);
+        }
+    }
+    
+    private void MoverParaJogador()
+    {
+        // Move o inimigo em direção ao jogador
+        Vector3 direcaoParaJogador = (jogador.position - transform.position).normalized;
+        transform.position += direcaoParaJogador * velocidadeFrontal * Time.deltaTime;
+        
+        // Mantém a posição vertical dentro dos limites definidos
+        float novaPosicaoY = Mathf.Clamp(transform.position.y, posicaoInicial.y - limiteVertical, posicaoInicial.y + limiteVertical);
+        transform.position = new Vector3(transform.position.x, novaPosicaoY, transform.position.z);
+    }
+
+    private void VerificarJogador()
+    {
+        // Verifica se o jogador está dentro do raio de detecção
+        if (jogador != null)
+        {
+            float distanciaParaJogador = Vector3.Distance(transform.position, jogador.position);
+            jogadorDentroRaio = distanciaParaJogador < raioDeDeteccao;
+        }
+        else
+        {
+            jogadorDentroRaio = false;
+        }
+    }
+
+    private void AtirarSeNecessario()
+    {
         if (inimigoAtirador && jogadorDentroRaio)
         {
             tempoAtualDosLasers -= Time.deltaTime;
@@ -42,50 +108,36 @@ public class Nebuloso : MonoBehaviour
             if (tempoAtualDosLasers <= 0)
             {
                 AtirarLaser();
-                tempoAtualDosLasers = tempoMaximoEntreOsLasers; // Reinicia o tempo dos lasers
+                tempoAtualDosLasers = tempoMaximoEntreOsLasers;
             }
         }
     }
 
-    private void MovimentarNebuloso()
-    {
-        // Movimenta o inimigo para cima e para baixo
-        float novaPosicaoY = Mathf.PingPong(Time.time * velocidadeDoNebuloso, limiteVertical * 2) - limiteVertical;
-        transform.position = new Vector3(transform.position.x, novaPosicaoY, transform.position.z);
-        
-        // Movimento contínuo para frente
-        transform.Translate(Vector3.left * velocidadeFrontal * Time.deltaTime);
-    }
-
     private void AtirarLaser()
     {
-        if (locaDoDisparo != null)
+        if (laserDoInimigo != null && localDoDisparo != null)
         {
-            Instantiate(laserDoNebuloso, locaDoDisparo.position, Quaternion.identity);
+            Instantiate(laserDoInimigo, localDoDisparo.position, localDoDisparo.rotation);
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    public void MachucarNebuloso(int danoparareceber)
     {
-        if (other.CompareTag("Jogador"))
+        vidaAtualDoNebuloso -= danoparareceber;
+
+        if (vidaAtualDoNebuloso <= 0)
         {
-            jogadorDentroRaio = true;   // O jogador está dentro do raio de colisão
+            Destroy(this.gameObject);
         }
+    
     }
-
-    private void OnTriggerExit2D(Collider2D other)
+    
+    public void AplicaDano(int dano)
     {
-        if (other.CompareTag("Jogador"))
-        {
-            jogadorDentroRaio = false;  // O jogador saiu do raio de colisão
-        }
-    }
+        vidaAtualDoNebuloso-= dano;
 
-    public void MachucarNebuloso(int danoParaReceber)
-    {
-        vidaAtualDoInimigo -= danoParaReceber;
-
-        if (vidaAtualDoInimigo <= 0)
+        // Verifica se o inimigo morreu
+        if (vidaAtualDoNebuloso <= 0)
         {
             Morrer();
         }

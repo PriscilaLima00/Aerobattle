@@ -10,8 +10,8 @@ public class VidaDoJogador : MonoBehaviour
 
     public bool temEscudo;
     
-    public int danoParaInimigos = 5; // Dano que o jogador aplica aos inimigos
-
+    public int danoParaInimigos = 5; // Dano que o jogador aplica aos inimigos da fase 1
+    public int danoParaNebuloso = 10;
     public int  danoParaMeteoro = 3;
     // Start is called before the first frame update
     void Start()
