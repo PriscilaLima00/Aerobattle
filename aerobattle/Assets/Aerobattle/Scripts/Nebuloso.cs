@@ -117,7 +117,13 @@ public class Nebuloso : MonoBehaviour
     {
         if (laserDoInimigo != null && localDoDisparo != null)
         {
-            Instantiate(laserDoInimigo, localDoDisparo.position, localDoDisparo.rotation);
+            GameObject tiro =  Instantiate(laserDoInimigo, localDoDisparo.position, localDoDisparo.rotation);
+
+            Vector2 direcao = (jogador.position - transform.position).normalized;
+            float angulo = Mathf.Rad2Deg * Mathf.Atan2(direcao.y, direcao.x) ;
+           
+            tiro.transform.eulerAngles = new Vector3(0, 0, angulo);
+
         }
     }
 

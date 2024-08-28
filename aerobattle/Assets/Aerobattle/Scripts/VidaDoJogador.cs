@@ -9,10 +9,12 @@ public class VidaDoJogador : MonoBehaviour
     public int vidaAtualDoJogador;
 
     public bool temEscudo;
-    
+
     public int danoParaInimigos = 5; // Dano que o jogador aplica aos inimigos da fase 1
-    public int danoParaNebuloso = 10;
-    public int  danoParaMeteoro = 3;
+    public static int danoParaNebuloso = 10;
+
+    public int danoParaMeteoro = 3;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,12 +24,12 @@ public class VidaDoJogador : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void MachucarJogador(int danoParaReceber)
     {
-        if(temEscudo == false)
+        if (temEscudo == false)
         {
             vidaAtualDoJogador -= danoParaReceber;
 
@@ -37,6 +39,7 @@ public class VidaDoJogador : MonoBehaviour
             }
         }
     }
+
     // Quando o jogador colide com outro objeto
     void OnCollisionEnter2D(Collision2D colisao)
     {
@@ -44,12 +47,12 @@ public class VidaDoJogador : MonoBehaviour
         if (colisao.gameObject.CompareTag("Inimigo"))
         {
             vidaAtualDoJogador -= danoParaInimigos;
-            
+
             if (vidaAtualDoJogador <= 0)
             {
                 Morrer();
             }
-            
+
             Inimigo inimigo = colisao.gameObject.GetComponent<Inimigo>();
             if (inimigo != null)
             {
@@ -73,13 +76,31 @@ public class VidaDoJogador : MonoBehaviour
                 meteoro.MachucarMeteoro(danoParaMeteoro); // Ajuste conforme necessário
             }
         }
-    }
 
-    void Morrer()
-    {
-        Debug.Log("Jogador morreu!");
-        // Adicione a lógica para mostrar a tela de Game Over ou reiniciar o nível
-        Destroy(gameObject); // Exclui o GameObject do jogador
+        // Verifica se o objeto colidido é o Nebuloso
+        if (colisao.gameObject.CompareTag("Nebuloso"))
+        {
+            vidaAtualDoJogador -= danoParaNebuloso;
+
+            if (vidaAtualDoJogador <= 0)
+            {
+                Morrer();
+            }
+
+            Nebuloso nebuloso = colisao.gameObject.GetComponent<Nebuloso>();
+            if (nebuloso != null)
+            {
+                nebuloso.AplicaDano(danoParaNebuloso);
+            }
+
+        }
+
+        void Morrer()
+        {
+            Debug.Log("Jogador morreu!");
+            // Adicione a lógica para mostrar a tela de Game Over ou reiniciar o nível
+            Destroy(gameObject); // Exclui o GameObject do jogador
+        }
     }
 }
    

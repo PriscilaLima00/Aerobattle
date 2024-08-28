@@ -147,13 +147,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 92418445}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -0.036, y: 0.111, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: 0.7068333, w: 0.70738024}
+  m_LocalPosition: {x: -0.04299999, y: 0.091, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 814679900}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 89.956}
 --- !u!1 &108785267
 GameObject:
   m_ObjectHideFlags: 0
@@ -213,7 +213,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.3254902, g: 0.46274513, b: 0.77647066, a: 1}
+  m_Color: {r: 0.12589, g: 0.20529503, b: 0.38679248, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -495,7 +495,6 @@ MonoBehaviour:
   vidaAtualDoJogador: 3
   temEscudo: 0
   danoParaInimigos: 5
-  danoParaNebuloso: 10
   danoParaMeteoro: 3
 --- !u!1 &699097701
 GameObject:
@@ -764,14 +763,14 @@ MonoBehaviour:
   localDoDisparo: {fileID: 92418446}
   velocidadeDoNebuloso: 8
   velocidadeFrontal: 1
-  tempoMaximoEntreOsLasers: 1
+  tempoMaximoEntreOsLasers: 0.5
   tempoAtualDosLasers: 0
   inimigoAtirador: 1
   vidaMaximaDoNebuloso: 10
   vidaAtualDoNebuloso: 0
   limiteVertical: 4
-  limiteHorizontal: 4
-  raioDeDeteccao: 10
+  limiteHorizontal: 2
+  raioDeDeteccao: 5
   jogador: {fileID: 486396930}
 --- !u!1 &819424567
 GameObject:
@@ -1060,8 +1059,8 @@ Camera:
   m_GameObject: {fileID: 1511356638}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0.5566928, g: 0.67038983, b: 0.8490566, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0

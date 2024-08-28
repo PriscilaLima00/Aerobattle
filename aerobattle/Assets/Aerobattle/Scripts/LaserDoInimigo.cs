@@ -22,7 +22,7 @@ public class LaserDoInimigo : MonoBehaviour
 
     private void MovimentarLaser()
     {
-        transform.Translate(Vector3.up * velocidadeDoLaser * Time.deltaTime);
+        transform.Translate(Vector3.right * velocidadeDoLaser * Time.deltaTime);
     }
 
     private void OnTriggerEnter2D(Collider2D colision)
