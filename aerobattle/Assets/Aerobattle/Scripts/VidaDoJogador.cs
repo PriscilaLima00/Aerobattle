@@ -11,9 +11,10 @@ public class VidaDoJogador : MonoBehaviour
     public bool temEscudo;
 
     public int danoParaInimigos = 5; // Dano que o jogador aplica aos inimigos da fase 1
-    public static int danoParaNebuloso = 10;
+    public static int danoParaNebuloso = 10; // Dano que o jogador aplica aos inimigos da fase 2
 
-    public int danoParaMeteoro = 3;
+    public int danoParaMeteoro = 3; // dano que o jogador leva por ser atinguido pelo meteoro
+    public int danoParaOAsteroide = 3; // dano que o jogador leva por ser atinguido pelo meteoro
 
     // Start is called before the first frame update
     void Start()
@@ -95,6 +96,24 @@ public class VidaDoJogador : MonoBehaviour
 
         }
 
+        // Verifica se o objeto colidiu com o asteroide PEQUENO
+        if (colisao.gameObject.CompareTag("Asteroide P."))
+        {
+            vidaAtualDoJogador -= danoParaOAsteroide;
+
+
+            if (vidaAtualDoJogador <= 0)
+            {
+                Morrer();
+            }
+
+            AsteroideP asteroide = colisao.gameObject.GetComponent<AsteroideP>();
+            if (asteroide != null)
+            {
+                asteroide.MachucarAsteroide(danoParaOAsteroide);
+            }
+        }
+
         void Morrer()
         {
             Debug.Log("Jogador morreu!");
@@ -103,5 +122,7 @@ public class VidaDoJogador : MonoBehaviour
         }
     }
 }
+    
+    
    
 
