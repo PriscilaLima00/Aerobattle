@@ -126,10 +126,10 @@ TextureImporter:
       name: Buraco negro 01_0
       rect:
         serializedVersion: 2
-        x: 53
-        y: 253
-        width: 90
-        height: 102
+        x: 0
+        y: 200
+        width: 200
+        height: 200
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -147,10 +147,10 @@ TextureImporter:
       name: Buraco negro 01_1
       rect:
         serializedVersion: 2
-        x: 93
-        y: 343
-        width: 5
-        height: 4
+        x: 200
+        y: 200
+        width: 200
+        height: 200
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -168,10 +168,10 @@ TextureImporter:
       name: Buraco negro 01_2
       rect:
         serializedVersion: 2
-        x: 256
-        y: 253
-        width: 81
-        height: 99
+        x: 0
+        y: 0
+        width: 200
+        height: 200
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -189,10 +189,10 @@ TextureImporter:
       name: Buraco negro 01_3
       rect:
         serializedVersion: 2
-        x: 133
-        y: 324
-        width: 6
-        height: 5
+        x: 200
+        y: 0
+        width: 200
+        height: 200
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -202,69 +202,6 @@ TextureImporter:
       bones: []
       spriteID: 0ac14c887e2836845a50fdbdfec50c9f
       internalID: -425867319
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Buraco negro 01_4
-      rect:
-        serializedVersion: 2
-        x: 54
-        y: 54
-        width: 87
-        height: 92
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7b37bf51e8e15444a81f0144f93cf45b
-      internalID: 122893840
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Buraco negro 01_5
-      rect:
-        serializedVersion: 2
-        x: 253
-        y: 95
-        width: 6
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b77a298689e59be46bdf8399dcbb7680
-      internalID: -291077084
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Buraco negro 01_6
-      rect:
-        serializedVersion: 2
-        x: 259
-        y: 53
-        width: 89
-        height: 101
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f59eb668dfb0c724a9bad6a49b3a0a7c
-      internalID: 939527013
       vertices: []
       indices: 
       edges: []
@@ -284,9 +221,6 @@ TextureImporter:
       Buraco negro 01_1: 1489717081
       Buraco negro 01_2: 992575241
       Buraco negro 01_3: -425867319
-      Buraco negro 01_4: 122893840
-      Buraco negro 01_5: -291077084
-      Buraco negro 01_6: 939527013
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
