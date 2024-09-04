@@ -14,6 +14,11 @@ public class jogador : MonoBehaviour
     private Vector2 teclasApertadas;
     public GameObject laser;
     public Transform localDoDisparoUnico;
+    public Transform localDoDisparoDaEsquerda;
+    public Transform localDoDisparoDaDireita;
+
+    public float tempoMaximoDosLasersDuplos;
+    public float tempoAtualDosLasersDuplos;
     
     public Text scoreText;
     public int score;
@@ -21,6 +26,8 @@ public class jogador : MonoBehaviour
     void Start()
     {
         temLaserDuplo = false;
+
+        tempoAtualDosLasersDuplos = tempoMaximoDosLasersDuplos;
 
         score = 0;
     }
@@ -30,6 +37,16 @@ public class jogador : MonoBehaviour
     {
             MovimentoPlay();
             AtirarLaser();
+
+            if (temLaserDuplo == true)
+            {
+                tempoAtualDosLasersDuplos -= Time.deltaTime;
+
+                if (tempoAtualDosLasersDuplos <= 0)
+                {
+                    DesativarLaserDuplo();
+                }
+            }
 
             scoreText.text = score.ToString();
             
@@ -59,8 +76,20 @@ public class jogador : MonoBehaviour
             if (temLaserDuplo == false)
             {
                 Instantiate(laser,localDoDisparoUnico.position,localDoDisparoUnico.rotation);
-            } 
+            }
+            else
+            {
+                Instantiate(laser,localDoDisparoDaEsquerda.position,localDoDisparoDaEsquerda.rotation);
+                Instantiate(laser,localDoDisparoDaDireita.position,localDoDisparoDaDireita.rotation);
+            }
         }
+    }
+
+    private void DesativarLaserDuplo()
+    {
+        temLaserDuplo = false;
+
+        tempoAtualDosLasersDuplos = tempoMaximoDosLasersDuplos;
     }
     
 }

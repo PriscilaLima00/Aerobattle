@@ -4,9 +4,12 @@ using UnityEngine;
 
 public class VidaDoJogador : MonoBehaviour
 {
+    public GameObject escudoDoJogador;
+    
     public int vidaMaximaDoJogador;
-
     public int vidaAtualDoJogador;
+    public int vidaMaximaDoEscudo;
+    public int vidaAtualDoEscudo;
 
     public bool temEscudo;
 
@@ -20,14 +23,38 @@ public class VidaDoJogador : MonoBehaviour
     void Start()
     {
         vidaAtualDoJogador = vidaMaximaDoJogador;
+        
+        escudoDoJogador.SetActive(false);
+        temEscudo = false;
     }
 
     // Update is called once per frame
     void Update()
     {
 
+        
     }
 
+    public void GanharVida(int vidaParaReceber)
+    {
+        if (vidaAtualDoJogador + vidaParaReceber <= vidaMaximaDoJogador)
+        {
+            vidaAtualDoJogador += vidaParaReceber;
+        }
+        else
+        {
+            vidaAtualDoJogador = vidaMaximaDoJogador;
+        }
+
+        //barraDeVidaDoJogador.valeu = vidaAtualDoJogador;
+    }
+
+    public void AtivarEscudo()
+    {
+        vidaAtualDoEscudo = vidaMaximaDoEscudo;
+        escudoDoJogador.SetActive(true);
+        temEscudo = true;
+    }
     public void MachucarJogador(int danoParaReceber)
     {
         if (temEscudo == false)
@@ -37,6 +64,15 @@ public class VidaDoJogador : MonoBehaviour
             if (vidaAtualDoJogador <= 0)
             {
                 Debug.Log("Game Over");
+            }
+        }
+        else
+        {
+            vidaAtualDoEscudo -= danoParaReceber;
+            if (vidaAtualDoEscudo <= 0)
+            {
+                escudoDoJogador.SetActive(false);
+                temEscudo = false;
             }
         }
     }
