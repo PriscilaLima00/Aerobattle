@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f3f6eccb71d81d744ba83f5bfca30d97
+guid: 906251e5cb8947b488397157379ae212
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 800
+  spritePixelsToUnits: 700
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -70,7 +70,7 @@ TextureImporter:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
-    resizeAlgorithm: 0
+    resizeAlgorithm: 1
     textureFormat: -1
     textureCompression: 0
     compressionQuality: 50
@@ -123,55 +123,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: buraco rosa animado_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 400
-        width: 400
-        height: 400
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a544fe2e195a45649babcef1706cd900
-      internalID: 1836756097
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: buraco rosa animado_1
-      rect:
-        serializedVersion: 2
-        x: 400
-        y: 400
-        width: 400
-        height: 400
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c1d75b7cc0ab49d46a1c5a279f3adf1c
-      internalID: -572716937
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: buraco rosa animado_2
+      name: nave principal_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 400
-        height: 400
+        width: 700
+        height: 700
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -179,20 +137,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d6c722c5edda1b34a849417b0aa87c9c
-      internalID: -1717734579
+      spriteID: 6e65c05e07744224eabb08f1e1479405
+      internalID: -823765546
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: buraco rosa animado_3
+      name: nave principal_1
       rect:
         serializedVersion: 2
-        x: 400
+        x: 700
         y: 0
-        width: 400
-        height: 400
+        width: 700
+        height: 700
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,8 +158,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6dc8496606db0bd4db3b1fabe088a6db
-      internalID: 1759850705
+      spriteID: e23f0d450aefe334f81d4cf97d991228
+      internalID: -1984264086
       vertices: []
       indices: 
       edges: []
@@ -217,10 +175,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      buraco rosa animado_0: 1836756097
-      buraco rosa animado_1: -572716937
-      buraco rosa animado_2: -1717734579
-      buraco rosa animado_3: 1759850705
+      nave principal_0: -823765546
+      nave principal_1: -1984264086
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
