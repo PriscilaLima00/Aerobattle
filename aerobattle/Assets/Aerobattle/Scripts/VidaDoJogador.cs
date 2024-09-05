@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
 
 public class VidaDoJogador : MonoBehaviour
 {
     public GameObject escudoDoJogador;
-    
+    public Slider barraDeVidaDoJogador;
     public int vidaMaximaDoJogador;
     public int vidaAtualDoJogador;
     public int vidaMaximaDoEscudo;
@@ -23,9 +25,13 @@ public class VidaDoJogador : MonoBehaviour
     void Start()
     {
         vidaAtualDoJogador = vidaMaximaDoJogador;
+        barraDeVidaDoJogador.maxValue = vidaMaximaDoJogador;
+        barraDeVidaDoJogador.value = vidaAtualDoJogador;
         
         escudoDoJogador.SetActive(false);
         temEscudo = false;
+
+        
     }
 
     // Update is called once per frame
@@ -46,7 +52,7 @@ public class VidaDoJogador : MonoBehaviour
             vidaAtualDoJogador = vidaMaximaDoJogador;
         }
 
-        //barraDeVidaDoJogador.valeu = vidaAtualDoJogador;
+        
     }
 
     public void AtivarEscudo()
@@ -60,6 +66,7 @@ public class VidaDoJogador : MonoBehaviour
         if (temEscudo == false)
         {
             vidaAtualDoJogador -= danoParaReceber;
+            barraDeVidaDoJogador.value = vidaAtualDoJogador;
 
             if (vidaAtualDoJogador <= 0)
             {
