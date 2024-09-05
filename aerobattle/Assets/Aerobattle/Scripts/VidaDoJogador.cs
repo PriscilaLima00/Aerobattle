@@ -24,7 +24,9 @@ public class VidaDoJogador : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        vidaAtualDoEscudo = vidaMaximaDoEscudo;
         vidaAtualDoJogador = vidaMaximaDoJogador;
+        
         barraDeVidaDoJogador.maxValue = vidaMaximaDoJogador;
         barraDeVidaDoJogador.value = vidaAtualDoJogador;
         
@@ -52,7 +54,8 @@ public class VidaDoJogador : MonoBehaviour
             vidaAtualDoJogador = vidaMaximaDoJogador;
         }
 
-        
+        barraDeVidaDoJogador.value = vidaAtualDoJogador;
+
     }
 
     public void AtivarEscudo()
