@@ -54,7 +54,7 @@ public class jogador : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D col)
     {
-        
+
         if (col.CompareTag("Moeda") == true)
         {
             AudioObserver.OnPlaySfxEvent("coletavel");
@@ -62,6 +62,7 @@ public class jogador : MonoBehaviour
             Destroy(col.gameObject);
         }
     }
+    
 
     private void MovimentoPlay()
     {

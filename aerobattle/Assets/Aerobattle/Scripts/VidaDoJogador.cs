@@ -159,7 +159,23 @@ public class VidaDoJogador : MonoBehaviour
                 asteroide.MachucarAsteroide(danoParaOAsteroide);
             }
         }
+        // Verifica se o objeto colidiu com o asteroide PEQUENO
+            else if (colisao.gameObject.CompareTag("Asteroide G."))
+            {
+                vidaAtualDoJogador -= danoParaOAsteroide;
 
+
+                if (vidaAtualDoJogador <= 0)
+                {
+                    Morrer();
+                }
+
+                AsteroideG asteroide = colisao.gameObject.GetComponent<AsteroideG>();
+                if (asteroide != null)
+                {
+                    asteroide.MachucarAsteroideG(danoParaOAsteroide);
+                }
+            }
         void Morrer()
         {
             Debug.Log("Jogador morreu!");
@@ -168,6 +184,8 @@ public class VidaDoJogador : MonoBehaviour
         }
     }
 }
+
+
     
     
    

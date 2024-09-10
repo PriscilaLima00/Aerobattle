@@ -47,6 +47,16 @@ public class Laser : MonoBehaviour
             colision.gameObject.GetComponent<AsteroideP>().MachucarAsteroide(danoParaDar);
             Destroy(this.gameObject);
         }
+        else if (colision.gameObject.CompareTag("Vex.09"))
+        {
+            colision.gameObject.GetComponent<Vex_09>().ReceberDanoVex(danoParaDar);
+            Destroy(this.gameObject);
+        }
+        else if (colision.gameObject.CompareTag("ASteroide G."))
+        {
+            colision.gameObject.GetComponent<AsteroideG>().MachucarAsteroideG(danoParaDar);
+            Destroy(this.gameObject);
+        }
     }
     
  
