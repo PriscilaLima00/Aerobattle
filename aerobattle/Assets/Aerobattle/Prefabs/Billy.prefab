@@ -200,7 +200,7 @@ MonoBehaviour:
   - {fileID: 5610696388042961953}
   - {fileID: 8329121701640515937}
   - {fileID: 4050326568035800147}
-  velocidadeDoInimigo: 6
+  velocidadeDoInimigo: 5
   tempoMaximoEntreOsLasers: 0.5
   tempoAtualDosLasers: 0
   inimigoAtirador: 1

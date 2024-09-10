@@ -55,7 +55,8 @@ public class Nebuloso : MonoBehaviour
         {
             // Movimenta o inimigo verticalmente
             float novaPosicaoY = Mathf.PingPong(Time.time * velocidadeDoNebuloso, limiteVertical * 2) - limiteVertical;
-            transform.position = new Vector3(transform.position.x, novaPosicaoY, transform.position.z);
+            Vector3 pp =  new Vector3(transform.position.x, novaPosicaoY, transform.position.z);
+             transform.position = Vector3.Lerp(transform.position, pp, 5 * Time.deltaTime);
             
             // Movimenta o inimigo horizontalmente dentro dos limites
             float novaPosicaoX = transform.position.x + (indoParaDireita ? velocidadeFrontal : -velocidadeFrontal) * Time.deltaTime;
@@ -69,8 +70,8 @@ public class Nebuloso : MonoBehaviour
             {
                 indoParaDireita = true;
             }
-            
-            transform.position = new Vector3(novaPosicaoX, transform.position.y, transform.position.z);
+            Vector3 posFinal = new Vector3(novaPosicaoX, transform.position.y, transform.position.z);
+            transform.position = posFinal; //Vector3.Lerp(transform.position, posFinal, 5 * Time.deltaTime);
         }
     }
     
