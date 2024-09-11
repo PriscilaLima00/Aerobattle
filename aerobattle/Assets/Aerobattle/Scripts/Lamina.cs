@@ -14,7 +14,7 @@ public class Lamina : MonoBehaviour
         animator = GetComponent<Animator>();
     }
 
-    // Método chamado pelo script DeactivateBox para parar a animação
+    // Método para parar a animação
     private void StopAnimation()
     {
         if (animator != null)
@@ -27,19 +27,16 @@ public class Lamina : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Jogador"))
         {
-            jogadorNoCollider = true;
-            jogador = collision.gameObject;
-        }
-    }
-
-    private void OnCollisionStay2D(Collision2D collision)
-    {
-        if (jogadorNoCollider && collision.gameObject.CompareTag("Jogador"))
-        {
-            VidaDoJogador playerHealth = jogador.GetComponent<VidaDoJogador>();
-            if (playerHealth != null)
+            if (!jogadorNoCollider)
             {
-                playerHealth.MachucarJogador(danoParaDar);
+                jogadorNoCollider = true;
+                jogador = collision.gameObject;
+                // Aplica o dano ao jogador
+                VidaDoJogador playerHealth = jogador.GetComponent<VidaDoJogador>();
+                if (playerHealth != null)
+                {
+                    playerHealth.MachucarJogador(danoParaDar);
+                }
             }
         }
     }
