@@ -15,6 +15,7 @@ TagManager:
   - Trofeu
   - Vex.09
   - Asteroide G.
+  - Laser do Jogador
   layers:
   - Default
   - TransparentFX

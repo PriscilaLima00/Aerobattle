@@ -128,30 +128,5 @@ public class Vex_09 : MonoBehaviour
         Destroy(gameObject);
     }
     
-    private void VirarParaJogador()
-    {
-        if (jogador != null)
-        {
-            // Calcula a direção para o jogador
-            Vector3 direcaoParaJogador = jogador.position - transform.position;
-            
-            // Determina se o jogador está à direita ou à esquerda do inimigo
-            bool jogadorEstaAEsquerda = direcaoParaJogador.x < 0;
-            
-            // Verifica se a direção atual do inimigo está alinhada com a posição do jogador
-            if (jogadorEstaAEsquerda && !indoParaDireita)
-            {
-                // Inverte o inimigo para a esquerda
-                transform.localScale = new Vector3(-Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
-                indoParaDireita = false;
-            }
-            else if (!jogadorEstaAEsquerda && indoParaDireita)
-            {
-                // Inverte o inimigo para a direita
-                transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
-                indoParaDireita = true;
-            }
-        }
-    }
     
 }

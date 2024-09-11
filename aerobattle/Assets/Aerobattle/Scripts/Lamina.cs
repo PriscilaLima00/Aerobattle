@@ -4,25 +4,52 @@ using UnityEngine;
 
 public class Lamina : MonoBehaviour
 {
-    public float rotationSpeed = 100f; // Velocidade de rotação
-    private bool isActive = false; // Estado da lâmina
+    private Animator animator;
+    public int danoParaDar = 2;
+    private bool jogadorNoCollider = false;
+    private GameObject jogador;
 
-    private void Update()
+    private void Start()
     {
-        if (isActive)
+        animator = GetComponent<Animator>();
+    }
+
+    // Método chamado pelo script DeactivateBox para parar a animação
+    private void StopAnimation()
+    {
+        if (animator != null)
         {
-            // Rotaciona a lâmina
-            transform.Rotate(Vector3.up, rotationSpeed * Time.deltaTime);
+            animator.enabled = false; // Desativa o Animator para parar a animação
         }
     }
 
-    public void Activate()
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        isActive = true;
+        if (collision.gameObject.CompareTag("Jogador"))
+        {
+            jogadorNoCollider = true;
+            jogador = collision.gameObject;
+        }
     }
 
-    public void Deactivate()
+    private void OnCollisionStay2D(Collision2D collision)
     {
-        isActive = false;
+        if (jogadorNoCollider && collision.gameObject.CompareTag("Jogador"))
+        {
+            VidaDoJogador playerHealth = jogador.GetComponent<VidaDoJogador>();
+            if (playerHealth != null)
+            {
+                playerHealth.MachucarJogador(danoParaDar);
+            }
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Jogador"))
+        {
+            jogadorNoCollider = false;
+            jogador = null;
+        }
     }
 }
