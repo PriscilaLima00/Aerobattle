@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class Trofeu : MonoBehaviour
 {
     // Este método será chamado quando o jogador colidir com o troféu
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         // Verifique se o objeto que colidiu é o jogador
         if (other.CompareTag("Jogador"))
