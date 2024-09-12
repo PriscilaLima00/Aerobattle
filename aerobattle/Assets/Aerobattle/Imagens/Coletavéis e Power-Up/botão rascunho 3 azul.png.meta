@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 51b474393946720448d60e57790b81ed
+guid: 8e1951c9cef460044932f10b5dd83a23
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 128
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -123,13 +123,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: explosivo animado (2)_0
+      name: "bot\xE3o rascunho 3 azul_0"
       rect:
         serializedVersion: 2
-        x: 0
-        y: 124
-        width: 124
-        height: 124
+        x: 10
+        y: 74
+        width: 44
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,20 +137,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7298179eb5c16dd4fb00b0ed2105a418
-      internalID: 858993153
+      spriteID: 46e5e4b54b9f3e84e9b80dee988e6e4b
+      internalID: -1114813137
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: explosivo animado (2)_1
+      name: "bot\xE3o rascunho 3 azul_1"
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 124
-        height: 124
+        x: 74
+        y: 74
+        width: 44
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,8 +158,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8c309a014e71f514f82f53569c5551f5
-      internalID: 1065694974
+      spriteID: 01968bbdab08577489d5f98c3eb2a2b4
+      internalID: -2140759983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xE3o rascunho 3 azul_2"
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 10
+        width: 44
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 798c739cb51e4d94f9ae59fbe08195d6
+      internalID: -681720083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xE3o rascunho 3 azul_3"
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 10
+        width: 44
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd64bf0012b68da498d460aac2eea3db
+      internalID: -1754350383
       vertices: []
       indices: 
       edges: []
@@ -175,8 +217,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      explosivo animado (2)_0: 858993153
-      explosivo animado (2)_1: 1065694974
+      "bot\xE3o rascunho 3 azul_0": -1114813137
+      "bot\xE3o rascunho 3 azul_1": -2140759983
+      "bot\xE3o rascunho 3 azul_2": -681720083
+      "bot\xE3o rascunho 3 azul_3": -1754350383
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

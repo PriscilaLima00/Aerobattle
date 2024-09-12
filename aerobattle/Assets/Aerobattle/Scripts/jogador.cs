@@ -25,6 +25,7 @@ public class jogador : MonoBehaviour
     
     void Start()
     {
+        
         temLaserDuplo = false;
 
         tempoAtualDosLasersDuplos = tempoMaximoDosLasersDuplos;

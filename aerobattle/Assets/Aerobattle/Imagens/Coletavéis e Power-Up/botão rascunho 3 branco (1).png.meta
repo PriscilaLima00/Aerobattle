@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5d2729772151d5b418f7633274e683bc
+guid: f134a9403f114b647bae153d742042e8
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -121,7 +121,91 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: "bot\xE3o rascunho 3 branco (1)_0"
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 74
+        width: 44
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e62a196679dd1b7409f59e16fd4a36c8
+      internalID: -567331546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xE3o rascunho 3 branco (1)_1"
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 74
+        width: 44
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daca5f603e7089a4cbfa0b1bb53497f3
+      internalID: -1848161059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xE3o rascunho 3 branco (1)_2"
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 10
+        width: 44
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a682d623ebb950244ab5ceb532df4f50
+      internalID: 768011467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xE3o rascunho 3 branco (1)_3"
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 10
+        width: 44
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db98fc09ec0b4b44b8973acf7b7bcaf1
+      internalID: 2125516503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -132,7 +216,11 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      "bot\xE3o rascunho 3 branco (1)_0": -567331546
+      "bot\xE3o rascunho 3 branco (1)_1": -1848161059
+      "bot\xE3o rascunho 3 branco (1)_2": 768011467
+      "bot\xE3o rascunho 3 branco (1)_3": 2125516503
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

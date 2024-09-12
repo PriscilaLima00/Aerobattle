@@ -11,7 +11,7 @@ public class Trofeu : MonoBehaviour
         // Verifique se o objeto que colidiu é o jogador
         if (other.CompareTag("Jogador"))
         {
-            Debug.Log("jogador colidiu com o trofeu");
+            Debug.Log("Jogador colidiu com o troféu");
             // Passa para a próxima fase
             AdvanceToNextLevel();
         }
@@ -27,6 +27,9 @@ public class Trofeu : MonoBehaviour
         // Verifica se a próxima cena existe antes de tentar carregar
         if (currentSceneIndex + 1 < SceneManager.sceneCountInBuildSettings)
         {
+            // Antes de carregar a nova cena, você pode resetar o estado do jogador aqui
+            // Por exemplo, você pode ajustar a posição do jogador ou resetar o estado
+            // Esse código vai apenas carregar a próxima cena
             SceneManager.LoadScene(currentSceneIndex + 1);
         }
         else
