@@ -30,34 +30,37 @@ public class Laser : MonoBehaviour
         if (colision.gameObject.CompareTag("Inimigo"))
         {
             colision.gameObject.GetComponent<Inimigo>().MachucarInimigo(danoParaDar);
-            Destroy(this.gameObject);
+            Destroy(gameObject); // Corrigido para Destroy(gameObject)
         }
         else if (colision.gameObject.CompareTag("Meteoro"))
         {
             colision.gameObject.GetComponent<Meteoro>().MachucarMeteoro(danoParaDar);
-            Destroy(this.gameObject);
+            Destroy(gameObject); // Corrigido para Destroy(gameObject)
         }
         else if (colision.gameObject.CompareTag("Nebuloso"))
         {
             colision.gameObject.GetComponent<Nebuloso>().MachucarNebuloso(danoParaDar);
-            Destroy(this.gameObject);
+            Destroy(gameObject); // Corrigido para Destroy(gameObject)
         }
         else if (colision.gameObject.CompareTag("Asteroide P."))
         {
             colision.gameObject.GetComponent<AsteroideP>().MachucarAsteroide(danoParaDar);
-            Destroy(this.gameObject);
+            Destroy(gameObject); // Corrigido para Destroy(gameObject)
         }
         else if (colision.gameObject.CompareTag("Vex.09"))
         {
             colision.gameObject.GetComponent<Vex_09>().ReceberDanoVex(danoParaDar);
-            Destroy(this.gameObject);
+            Destroy(gameObject); // Corrigido para Destroy(gameObject)
         }
         else if (colision.gameObject.CompareTag("Asteroide G."))
         {
             colision.gameObject.GetComponent<AsteroideG>().MachucarAsteroideG(danoParaDar);
-            Destroy(this.gameObject);
+            Destroy(gameObject); // Corrigido para Destroy(gameObject)
+        }
+        else if (colision.gameObject.CompareTag("Missel"))
+        {
+            Destroy(gameObject); // Corrigido para Destroy(gameObject)
         }
     }
     
- 
 }

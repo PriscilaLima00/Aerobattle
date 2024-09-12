@@ -4,51 +4,50 @@ using UnityEngine;
 
 public class Missel : MonoBehaviour
 {
-    public float velocidadeMissel = 10f; // Velocidade do míssil
-    public int danoMissel = 10; // Dano que o míssil causa ao jogador
+    public Transform jogador; // Referência ao Transform do jogador
+    public float velocidade;
+    public float detectionRadius = 200f;
+    public float destroyRadius = 20f;
 
-    private Transform jogador; // Referência ao jogador
+    private bool isTracking = false; // Para verificar se o míssil deve começar a seguir o jogador
 
-    void Start()
+    private void Update()
     {
-        // Encontra o jogador na cena
-        jogador = GameObject.FindGameObjectWithTag("Jogador")?.transform;
+        if (jogador == null) return;
 
-        // Se não encontrar o jogador, destrói o míssil
-        if (jogador == null)
+        float distance = Vector2.Distance(transform.position, jogador.position);
+
+        if (distance < detectionRadius)
         {
-            Destroy(gameObject);
+            isTracking = true;
         }
-    }
 
-    void Update()
-    {
-        if (jogador != null)
+        if (isTracking)
         {
-            // Move o míssil em direção ao jogador
-            Vector2 direcaoParaJogador = (jogador.position - transform.position).normalized;
-            transform.Translate(direcaoParaJogador * velocidadeMissel * Time.deltaTime, Space.World);
-        }
-    }
+            Vector2 direction = (jogador.position - transform.position).normalized;
+            transform.position = Vector2.MoveTowards(transform.position, jogador.position, velocidade * Time.deltaTime);
 
-    private void OnTriggerEnter2D(Collider2D col)
-    {
-        // Verifica se o míssil colidiu com o jogador
-        if (col.CompareTag("Jogador"))
-        {
-            // Envia dano ao jogador
-            VidaDoJogador jogadorScript = col.GetComponent<VidaDoJogador>();
-            if (jogadorScript != null)
-            {
-                jogadorScript.MachucarJogador(danoMissel);
-            }
+            // Atualizar a rotação do míssil para apontar para o jogador
+            float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+            transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle -180));
             
-            // Destrói o míssil após colidir
-            Destroy(gameObject);
+            
+            if (distance < destroyRadius)
+            {
+                // Destrói ambos os GameObjects
+                Destroy(jogador.gameObject);
+                Destroy(gameObject);
+            }
         }
-        else if (col.CompareTag("Ambiente")) // Por exemplo, se o míssil colidir com o ambiente
+    }
+
+    // Detecta colisões com outros colliders
+    private void OnTriggerEnter2D(Collider2D collider)
+    {
+        // Verifica se o objeto com o qual o míssil colidiu tem a tag "Laser do Jogador"
+        if (collider.gameObject.CompareTag("Laser do Jogador"))
         {
-            // Destrói o míssil ao colidir com o ambiente
+            // Destrói o míssil
             Destroy(gameObject);
         }
     }

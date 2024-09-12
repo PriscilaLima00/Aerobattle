@@ -16,6 +16,7 @@ TagManager:
   - Vex.09
   - Asteroide G.
   - Laser do Jogador
+  - Missel
   layers:
   - Default
   - TransparentFX

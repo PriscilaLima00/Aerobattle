@@ -1407,7 +1407,7 @@ GameObject:
   - component: {fileID: 1194834680}
   m_Layer: 0
   m_Name: Missel
-  m_TagString: Untagged
+  m_TagString: Missel
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1584,8 +1584,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 559063073f44a1344841075b765e75a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidadeMissel: 10
-  danoMissel: 10
+  jogador: {fileID: 1553540727}
+  velocidade: 4
+  detectionRadius: 10
+  destroyRadius: 2.5
 --- !u!1 &1240254931
 GameObject:
   m_ObjectHideFlags: 0
@@ -2017,6 +2019,11 @@ MonoBehaviour:
     mipBias: 0
     varianceClampScale: 0.9
     contrastAdaptiveSharpening: 0
+--- !u!4 &1553540727 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1442361106749811283, guid: d1192a6cdf1ba6d48ae19e8adf2005b2, type: 3}
+  m_PrefabInstance: {fileID: 383734428}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1636107637
 GameObject:
   m_ObjectHideFlags: 0
