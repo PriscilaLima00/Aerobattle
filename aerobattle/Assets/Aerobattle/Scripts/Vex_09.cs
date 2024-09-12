@@ -10,7 +10,6 @@ public class Vex_09 : MonoBehaviour
 
     private float posicaoInicialY;
     private bool indoParaCima = true;
-    private bool indoParaDireita = true;
 
     public Transform localDoDisparoDaDireita;
     public Transform localDoDisparoDaEsquerda;
@@ -25,6 +24,8 @@ public class Vex_09 : MonoBehaviour
     public int vidaAtualDoVex;
     public int vidaMaximaDoVex;
 
+    private SpriteRenderer spriteRenderer;
+
     void Start()
     {
         // Guarda a posição inicial do inimigo
@@ -35,6 +36,13 @@ public class Vex_09 : MonoBehaviour
         // Encontra o jogador na cena
         jogador = GameObject.FindGameObjectWithTag("Jogador")?.transform;
         vidaAtualDoVex = vidaMaximaDoVex;
+
+        // Obtém o SpriteRenderer
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        if (spriteRenderer == null)
+        {
+            Debug.LogError("SpriteRenderer não encontrado no Vex_09.");
+        }
     }
 
     void Update()
@@ -49,8 +57,8 @@ public class Vex_09 : MonoBehaviour
             {
                 jogadorDetectado = true;
                 PerseguirJogador();
-                Atirar();
-                
+                AtirarSeNecessario();
+                AjusteParaJogador();
             }
             else
             {
@@ -89,13 +97,12 @@ public class Vex_09 : MonoBehaviour
         }
     }
 
-    private void Atirar()
+    private void AtirarSeNecessario()
     {
         if (tempoParaOProximoTiro <= 0)
         {
-            // Instancia o tiro na posição dos locais de disparo
-            Instantiate(laserDoInimigo, localDoDisparoDaDireita.position, localDoDisparoDaDireita.rotation);
-            Instantiate(laserDoInimigo, localDoDisparoDaEsquerda.position, localDoDisparoDaEsquerda.rotation);
+            AtirarLaser(localDoDisparoDaDireita);
+            AtirarLaser(localDoDisparoDaEsquerda);
             tempoParaOProximoTiro = tempoEntreOsTiros;
         }
         else
@@ -103,17 +110,59 @@ public class Vex_09 : MonoBehaviour
             tempoParaOProximoTiro -= Time.deltaTime;
         }
     }
-    private void OnTriggerEnter2D(Collider2D col)
+
+    private void AtirarLaser(Transform localDoDisparo)
+    {
+        if (laserDoInimigo != null && localDoDisparo != null)
         {
-            if (col.CompareTag("LaserSimples"))
-            {
-                ReceberDanoVex(1); // O laser simples tira 1 vida
-            }
-            else if (col.CompareTag("LaserDuplo"))
-            {
-                ReceberDanoVex(2); // O laser duplo tira 2 vidas
-            }
+            GameObject tiro = Instantiate(laserDoInimigo, localDoDisparo.position, localDoDisparo.rotation);
+
+            // Calcula a direção do tiro
+            Vector2 direcao = (jogador.position - transform.position).normalized;
+            float angulo = Mathf.Rad2Deg * Mathf.Atan2(direcao.y, direcao.x);
+
+            // Ajusta a rotação do tiro
+            tiro.transform.eulerAngles = new Vector3(0, 0, angulo);
+
+            // Ajusta a orientação do tiro com base na orientação do Vex
+            AjusteParaLaser(tiro);
         }
+    }
+
+    private void AjusteParaJogador()
+    {
+        if (jogador != null)
+        {
+            // Calcula a direção para o jogador
+            Vector2 direcaoParaJogador = jogador.position - transform.position;
+
+            // Verifica se o jogador está à direita ou à esquerda
+            spriteRenderer.flipX = direcaoParaJogador.x > 0;
+        }
+    }
+
+    private void AjusteParaLaser(GameObject tiro)
+    {
+        // Ajusta a orientação do laser com base na orientação do Vex
+        SpriteRenderer tiroSpriteRenderer = tiro.GetComponent<SpriteRenderer>();
+        if (tiroSpriteRenderer != null)
+        {
+            tiroSpriteRenderer.flipX = spriteRenderer.flipX;
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D col)
+    {
+        if (col.CompareTag("LaserSimples"))
+        {
+            ReceberDanoVex(1); // O laser simples tira 1 vida
+        }
+        else if (col.CompareTag("LaserDuplo"))
+        {
+            ReceberDanoVex(2); // O laser duplo tira 2 vidas
+        }
+    }
+
     public void ReceberDanoVex(int dano)
     {
         vidaAtualDoVex -= dano;
@@ -122,12 +171,9 @@ public class Vex_09 : MonoBehaviour
             Morrer();
         }
     }
+
     private void Morrer()
     {
-        // Código para destruir o inimigo
         Destroy(gameObject);
     }
-    
-   
-    
 }

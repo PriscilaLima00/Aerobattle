@@ -17,6 +17,7 @@ TagManager:
   - Asteroide G.
   - Laser do Jogador
   - Missel
+  - Laser Duplo
   layers:
   - Default
   - TransparentFX

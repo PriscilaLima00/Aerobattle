@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-
 public class VidaDoJogador : MonoBehaviour
 {
+    public static VidaDoJogador Instance { get; private set; }
+
     public GameObject escudoDoJogador;
     public Slider barraDeVidaDoJogador;
     public int vidaMaximaDoJogador;
@@ -17,11 +18,23 @@ public class VidaDoJogador : MonoBehaviour
 
     public int danoParaInimigos = 5; 
     public static int danoParaNebuloso = 10; 
-
     public int danoParaMeteoro = 3; 
     public int danoParaOAsteroide = 3; 
 
-    // Start is called before the first frame update
+    private void Awake()
+    {
+        // Implementa o padrão Singleton
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject); // Mantém o objeto entre as cenas
+        }
+        else
+        {
+            Destroy(gameObject); // Garante que haja apenas uma instância
+        }
+    }
+
     void Start()
     {
         vidaAtualDoEscudo = vidaMaximaDoEscudo;
@@ -32,15 +45,11 @@ public class VidaDoJogador : MonoBehaviour
         
         escudoDoJogador.SetActive(false);
         temEscudo = false;
-
-        
     }
 
-    // Update is called once per frame
     void Update()
     {
-
-        
+        // Atualizações do jogador podem ser feitas aqui, se necessário
     }
 
     public void GanharVida(int vidaParaReceber)
@@ -55,7 +64,6 @@ public class VidaDoJogador : MonoBehaviour
         }
 
         barraDeVidaDoJogador.value = vidaAtualDoJogador;
-
     }
 
     public void AtivarEscudo()
@@ -64,6 +72,7 @@ public class VidaDoJogador : MonoBehaviour
         escudoDoJogador.SetActive(true);
         temEscudo = true;
     }
+
     public void MachucarJogador(int danoParaReceber)
     {
         if (temEscudo == false)
@@ -73,7 +82,7 @@ public class VidaDoJogador : MonoBehaviour
 
             if (vidaAtualDoJogador <= 0)
             {
-                Debug.Log("Game Over");
+                Morrer();
             }
         }
         else
@@ -87,10 +96,8 @@ public class VidaDoJogador : MonoBehaviour
         }
     }
 
-    // Quando o jogador colide com outro objeto
     void OnCollisionEnter2D(Collision2D colisao)
     {
-        // Verifica se o objeto colidido é um inimigo
         if (colisao.gameObject.CompareTag("Inimigo"))
         {
             vidaAtualDoJogador -= danoParaInimigos;
@@ -106,7 +113,6 @@ public class VidaDoJogador : MonoBehaviour
                 inimigo.AplicaDano(danoParaInimigos);
             }
         }
-        // Verifica se o objeto colidido é um meteoro
         else if (colisao.gameObject.CompareTag("Meteoro"))
         {
             vidaAtualDoJogador -= danoParaMeteoro;
@@ -116,16 +122,13 @@ public class VidaDoJogador : MonoBehaviour
                 Morrer();
             }
 
-            // Aplica dano ao meteoro, se necessário
             Meteoro meteoro = colisao.gameObject.GetComponent<Meteoro>();
             if (meteoro != null)
             {
-                meteoro.MachucarMeteoro(danoParaMeteoro); // Ajuste conforme necessário
+                meteoro.MachucarMeteoro(danoParaMeteoro);
             }
         }
-
-        // Verifica se o objeto colidido é o Nebuloso
-        if (colisao.gameObject.CompareTag("Nebuloso"))
+        else if (colisao.gameObject.CompareTag("Nebuloso"))
         {
             vidaAtualDoJogador -= danoParaNebuloso;
 
@@ -139,14 +142,10 @@ public class VidaDoJogador : MonoBehaviour
             {
                 nebuloso.AplicaDano(danoParaNebuloso);
             }
-
         }
-
-        // Verifica se o objeto colidiu com o asteroide PEQUENO
-        if (colisao.gameObject.CompareTag("Asteroide P."))
+        else if (colisao.gameObject.CompareTag("Asteroide P."))
         {
             vidaAtualDoJogador -= danoParaOAsteroide;
-
 
             if (vidaAtualDoJogador <= 0)
             {
@@ -159,29 +158,28 @@ public class VidaDoJogador : MonoBehaviour
                 asteroide.MachucarAsteroide(danoParaOAsteroide);
             }
         }
-        // Verifica se o objeto colidiu com o asteroide PEQUENO
-            else if (colisao.gameObject.CompareTag("Asteroide G."))
-            {
-                vidaAtualDoJogador -= danoParaOAsteroide;
-
-
-                if (vidaAtualDoJogador <= 0)
-                {
-                    Morrer();
-                }
-
-                AsteroideG asteroide = colisao.gameObject.GetComponent<AsteroideG>();
-                if (asteroide != null)
-                {
-                    asteroide.MachucarAsteroideG(danoParaOAsteroide);
-                }
-            }
-        void Morrer()
+        else if (colisao.gameObject.CompareTag("Asteroide G."))
         {
-            Debug.Log("Jogador morreu!");
-            // Adicione a lógica para mostrar a tela de Game Over ou reiniciar o nível
-            Destroy(gameObject); // Exclui o GameObject do jogador
+            vidaAtualDoJogador -= danoParaOAsteroide;
+
+            if (vidaAtualDoJogador <= 0)
+            {
+                Morrer();
+            }
+
+            AsteroideG asteroide = colisao.gameObject.GetComponent<AsteroideG>();
+            if (asteroide != null)
+            {
+                asteroide.MachucarAsteroideG(danoParaOAsteroide);
+            }
         }
+    }
+
+    void Morrer()
+    {
+        Debug.Log("Jogador morreu!");
+        // Adicione a lógica para mostrar a tela de Game Over ou reiniciar o nível
+        Destroy(gameObject); // Exclui o GameObject do jogador
     }
 }
 
