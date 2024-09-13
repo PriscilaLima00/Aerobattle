@@ -6,8 +6,8 @@ public class Missel : MonoBehaviour
 {
     public Transform jogador; // Referência ao Transform do jogador
     public float velocidade;
-    public float detectionRadius = 200f;
-    public float destroyRadius = 20f;
+    public float detectionRadius;
+    public float destroyRadius;
 
     private bool isTracking = false; // Para verificar se o míssil deve começar a seguir o jogador
 

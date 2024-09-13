@@ -8,13 +8,17 @@ public class VidaDoJogador : MonoBehaviour
     public static VidaDoJogador Instance { get; private set; }
 
     public GameObject escudoDoJogador;
+    public GameObject lanternaDoJogador;
     public Slider barraDeVidaDoJogador;
     public int vidaMaximaDoJogador;
     public int vidaAtualDoJogador;
+    public int vidaAtualDaLanterna;
+    public int vidaMaximaDaLanterna;
     public int vidaMaximaDoEscudo;
     public int vidaAtualDoEscudo;
 
     public bool temEscudo;
+    public bool temLanterna;
 
     public int danoParaInimigos = 5; 
     public static int danoParaNebuloso = 10; 
@@ -45,11 +49,15 @@ public class VidaDoJogador : MonoBehaviour
         
         escudoDoJogador.SetActive(false);
         temEscudo = false;
+
+        vidaAtualDaLanterna = vidaMaximaDaLanterna;
+        lanternaDoJogador.SetActive(false);
+        temLanterna = false;
     }
 
     void Update()
     {
-        // Atualizações do jogador podem ser feitas aqui, se necessário
+      
     }
 
     public void GanharVida(int vidaParaReceber)
@@ -71,6 +79,13 @@ public class VidaDoJogador : MonoBehaviour
         vidaAtualDoEscudo = vidaMaximaDoEscudo;
         escudoDoJogador.SetActive(true);
         temEscudo = true;
+    }
+    
+    public void AtivarLanterna()
+    {
+        vidaAtualDaLanterna = vidaMaximaDaLanterna;
+        lanternaDoJogador.SetActive(true);
+        temLanterna = true;
     }
 
     public void MachucarJogador(int danoParaReceber)
