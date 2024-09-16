@@ -12,18 +12,20 @@ public class VidaDoJogador : MonoBehaviour
     public Slider barraDeVidaDoJogador;
     public int vidaMaximaDoJogador;
     public int vidaAtualDoJogador;
-    public int vidaAtualDaLanterna;
+    //public int vidaAtualDaLanterna;
     public int vidaMaximaDaLanterna;
     public int vidaMaximaDoEscudo;
     public int vidaAtualDoEscudo;
 
     public bool temEscudo;
-    public bool temLanterna;
+    //public bool temLanterna;
 
     public int danoParaInimigos = 5; 
     public static int danoParaNebuloso = 10; 
     public int danoParaMeteoro = 3; 
-    public int danoParaOAsteroide = 3; 
+    public int danoParaOAsteroide = 3;
+
+    public GameManager gameOver;
 
     private void Awake()
     {
@@ -50,14 +52,17 @@ public class VidaDoJogador : MonoBehaviour
         escudoDoJogador.SetActive(false);
         temEscudo = false;
 
-        vidaAtualDaLanterna = vidaMaximaDaLanterna;
+        //vidaAtualDaLanterna = vidaMaximaDaLanterna;
         lanternaDoJogador.SetActive(false);
-        temLanterna = false;
+        //temLanterna = false;
     }
 
     void Update()
     {
-      
+        if (vidaAtualDoJogador <= 0)
+        {
+            Morrer();
+        }
     }
 
     public void GanharVida(int vidaParaReceber)
@@ -83,9 +88,9 @@ public class VidaDoJogador : MonoBehaviour
     
     public void AtivarLanterna()
     {
-        vidaAtualDaLanterna = vidaMaximaDaLanterna;
+        //vidaAtualDaLanterna = vidaMaximaDaLanterna;
         lanternaDoJogador.SetActive(true);
-        temLanterna = true;
+        //temLanterna = true;
     }
 
     public void MachucarJogador(int danoParaReceber)
@@ -192,8 +197,11 @@ public class VidaDoJogador : MonoBehaviour
 
     void Morrer()
     {
-        Debug.Log("Jogador morreu!");
         // Adicione a lógica para mostrar a tela de Game Over ou reiniciar o nível
+        if (gameOver != null)
+        {
+            gameOver.ShowGameOver();
+        }
         Destroy(gameObject); // Exclui o GameObject do jogador
     }
 }

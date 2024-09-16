@@ -1,37 +1,36 @@
+using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Collections;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
-    public GameObject cutsceneDeVitoria; // O GameObject ou prefab da cutscene de vitória
-    public string proximaCena = "CutsceneDaVitoria"; // Nome da cena para a qual você deseja ir após a cutscene
-
-    private void Start()
+    public GameObject gameOverPanel; 
+    public Button restartButton;      
+    
+    void Start()
     {
-        if (cutsceneDeVitoria != null)
-        {
-            cutsceneDeVitoria.SetActive(false); // Inicialmente desativa a cutscene
-        }
+       
+        gameOverPanel.SetActive(false);
+
+        
+        if (restartButton != null)
+            restartButton.onClick.AddListener(RestartGame);
     }
 
-    public void IniciarCutsceneDeVitoria()
+    
+    public void ShowGameOver()
     {
-        if (cutsceneDeVitoria != null)
-        {
-            cutsceneDeVitoria.SetActive(true); // Ativa a cutscene
-        }
-
-        // Se você deseja carregar a cena de vitória após um tempo, use o método abaixo:
-        StartCoroutine(CarregarCenaDeVitoria());
+        gameOverPanel.SetActive(true);
     }
 
-    private IEnumerator CarregarCenaDeVitoria()
+    
+    private void RestartGame()
     {
-        // Aguarda o tempo necessário para a cutscene ser exibida (exemplo: 5 segundos)
-        yield return new WaitForSeconds(5f);
-
-        // Carrega a cena de vitória
-        SceneManager.LoadScene(proximaCena);
+        Scene currentScene = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(currentScene.name);
     }
+
+    
 }

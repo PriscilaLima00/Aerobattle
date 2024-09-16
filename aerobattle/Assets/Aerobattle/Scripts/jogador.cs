@@ -103,4 +103,5 @@ public class jogador : MonoBehaviour
         tempoAtualDosLasersDuplos = tempoMaximoDosLasersDuplos;
     }
     
+    
 }
