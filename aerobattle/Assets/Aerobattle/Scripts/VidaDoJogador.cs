@@ -8,18 +8,20 @@ public class VidaDoJogador : MonoBehaviour
     public static VidaDoJogador Instance { get; private set; }
 
     public GameObject escudoDoJogador;
-    public GameObject lanternaDoJogador;
+    //public GameObject lanternaDoJogador;
     public Slider barraDeVidaDoJogador;
     public int vidaMaximaDoJogador;
     public int vidaAtualDoJogador;
     //public int vidaAtualDaLanterna;
-    public int vidaMaximaDaLanterna;
+   // public int vidaMaximaDaLanterna;
     public int vidaMaximaDoEscudo;
     public int vidaAtualDoEscudo;
 
     public bool temEscudo;
-    //public bool temLanterna;
 
+    public bool dano;
+    //public bool temLanterna;
+    private Animator an;
     public int danoParaInimigos = 5; 
     public static int danoParaNebuloso = 10; 
     public int danoParaMeteoro = 3; 
@@ -43,6 +45,7 @@ public class VidaDoJogador : MonoBehaviour
 
     void Start()
     {
+        an = GetComponent<Animator>();
         vidaAtualDoEscudo = vidaMaximaDoEscudo;
         vidaAtualDoJogador = vidaMaximaDoJogador;
         
@@ -53,12 +56,14 @@ public class VidaDoJogador : MonoBehaviour
         temEscudo = false;
 
         //vidaAtualDaLanterna = vidaMaximaDaLanterna;
-        lanternaDoJogador.SetActive(false);
+        //lanternaDoJogador.SetActive(false);
         //temLanterna = false;
     }
 
     void Update()
     {
+        
+        
         if (vidaAtualDoJogador <= 0)
         {
             Morrer();
@@ -89,7 +94,7 @@ public class VidaDoJogador : MonoBehaviour
     public void AtivarLanterna()
     {
         //vidaAtualDaLanterna = vidaMaximaDaLanterna;
-        lanternaDoJogador.SetActive(true);
+        //lanternaDoJogador.SetActive(true);
         //temLanterna = true;
     }
 
@@ -100,6 +105,13 @@ public class VidaDoJogador : MonoBehaviour
             vidaAtualDoJogador -= danoParaReceber;
             barraDeVidaDoJogador.value = vidaAtualDoJogador;
 
+            if (an != null)
+            {
+                an.SetBool("dano", true);
+            }
+            StartCoroutine(DesativarAnimacaoDeDano());
+            //an.SetBool("dano", true);
+            //dano = true;
             if (vidaAtualDoJogador <= 0)
             {
                 Morrer();
@@ -108,6 +120,7 @@ public class VidaDoJogador : MonoBehaviour
         else
         {
             vidaAtualDoEscudo -= danoParaReceber;
+            
             if (vidaAtualDoEscudo <= 0)
             {
                 escudoDoJogador.SetActive(false);
@@ -116,6 +129,15 @@ public class VidaDoJogador : MonoBehaviour
         }
     }
 
+    private IEnumerator DesativarAnimacaoDeDano()
+    {
+        // Espera o tempo que a animação de dano deve durar
+        yield return new WaitForSeconds(0.2f); // Ajuste o tempo conforme necessário
+        if (an != null)
+        {
+            an.SetBool("dano", false);
+        }
+    }
     void OnCollisionEnter2D(Collision2D colisao)
     {
         if (colisao.gameObject.CompareTag("Inimigo"))
