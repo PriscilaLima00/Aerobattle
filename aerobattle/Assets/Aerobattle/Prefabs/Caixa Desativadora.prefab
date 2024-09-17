@@ -168,11 +168,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   laminas:
   - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!50 &425821890867503569
 Rigidbody2D:
   serializedVersion: 4
