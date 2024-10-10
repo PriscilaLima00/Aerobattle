@@ -157,7 +157,7 @@ public class Vex_09 : MonoBehaviour
         {
             ReceberDanoVex(1); // O laser simples tira 1 vida
         }
-        else if (col.CompareTag("LaserDuplo"))
+        else if (col.CompareTag("Laser Duplo"))
         {
             ReceberDanoVex(2); // O laser duplo tira 2 vidas
         }
