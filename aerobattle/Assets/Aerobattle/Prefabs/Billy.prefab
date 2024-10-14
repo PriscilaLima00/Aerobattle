@@ -206,6 +206,8 @@ MonoBehaviour:
   inimigoAtirador: 1
   vidaMaximaDoInimigo: 5
   vidaAtualDoInimigo: 0
+  itemParaDropar: {fileID: 3525905135518307588, guid: e31ec134bc4e86b46be8d18e068c1faa, type: 3}
+  chanceDeDropar: 50
 --- !u!1 &1199720852719572088
 GameObject:
   m_ObjectHideFlags: 0

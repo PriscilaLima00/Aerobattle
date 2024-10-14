@@ -26,6 +26,9 @@ public class Vex_09 : MonoBehaviour
 
     private SpriteRenderer spriteRenderer;
 
+    public GameObject itemParaDropar;
+    public int chanceDeDropar;
+
     void Start()
     {
         // Guarda a posição inicial do inimigo
@@ -168,12 +171,18 @@ public class Vex_09 : MonoBehaviour
         vidaAtualDoVex -= dano;
         if (vidaAtualDoVex <= 0)
         {
-            Morrer();
+            int numeroAleatorio = Random.Range(0, 100);
+            if (numeroAleatorio <= chanceDeDropar)
+            {
+                Instantiate(itemParaDropar, transform.position, Quaternion.Euler(0f, 0f, 0f));
+            }
+            Destroy(this.gameObject);
+            //Morrer();
         }
     }
 
-    private void Morrer()
-    {
-        Destroy(gameObject);
-    }
+    //private void Morrer()
+    //{
+        //Destroy(gameObject);
+    //
 }

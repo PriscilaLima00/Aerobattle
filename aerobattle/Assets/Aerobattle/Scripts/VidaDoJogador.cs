@@ -8,22 +8,21 @@ public class VidaDoJogador : MonoBehaviour
     public static VidaDoJogador Instance { get; private set; }
 
     public GameObject escudoDoJogador;
-    //public GameObject lanternaDoJogador;
+    
     public Slider barraDeVidaDoJogador;
     public int vidaMaximaDoJogador;
     public int vidaAtualDoJogador;
-    //public int vidaAtualDaLanterna;
-   // public int vidaMaximaDaLanterna;
+    
     public int vidaMaximaDoEscudo;
     public int vidaAtualDoEscudo;
 
     public bool temEscudo;
 
-    public bool dano;
-    //public bool temLanterna;
+    //public bool dano;
+    
     private Animator an;
-    public int danoParaInimigos = 5; 
-    public static int danoParaNebuloso = 10; 
+    //public int danoParaInimigos = 5; 
+    //public static int danoParaNebuloso = 10; 
     public int danoParaMeteoro = 3; 
     public int danoParaOAsteroide = 3;
 
@@ -55,9 +54,7 @@ public class VidaDoJogador : MonoBehaviour
         escudoDoJogador.SetActive(false);
         temEscudo = false;
 
-        //vidaAtualDaLanterna = vidaMaximaDaLanterna;
-        //lanternaDoJogador.SetActive(false);
-        //temLanterna = false;
+      
     }
 
     void Update()
@@ -90,13 +87,6 @@ public class VidaDoJogador : MonoBehaviour
         escudoDoJogador.SetActive(true);
         temEscudo = true;
     }
-    
-    public void AtivarLanterna()
-    {
-        //vidaAtualDaLanterna = vidaMaximaDaLanterna;
-        //lanternaDoJogador.SetActive(true);
-        //temLanterna = true;
-    }
 
     public void MachucarJogador(int danoParaReceber)
     {
@@ -110,8 +100,7 @@ public class VidaDoJogador : MonoBehaviour
                 an.SetBool("dano", true);
             }
             StartCoroutine(DesativarAnimacaoDeDano());
-            //an.SetBool("dano", true);
-            //dano = true;
+            
             if (vidaAtualDoJogador <= 0)
             {
                 Morrer();
@@ -132,30 +121,15 @@ public class VidaDoJogador : MonoBehaviour
     private IEnumerator DesativarAnimacaoDeDano()
     {
         // Espera o tempo que a animação de dano deve durar
-        yield return new WaitForSeconds(0.2f); // Ajuste o tempo conforme necessário
+        yield return new WaitForSeconds(0.2f); 
         if (an != null)
         {
             an.SetBool("dano", false);
         }
     }
     void OnCollisionEnter2D(Collision2D colisao)
-    {
-        if (colisao.gameObject.CompareTag("Inimigo"))
-        {
-            vidaAtualDoJogador -= danoParaInimigos;
-
-            if (vidaAtualDoJogador <= 0)
-            {
-                Morrer();
-            }
-
-            Inimigo inimigo = colisao.gameObject.GetComponent<Inimigo>();
-            if (inimigo != null)
-            {
-                inimigo.AplicaDano(danoParaInimigos);
-            }
-        }
-        else if (colisao.gameObject.CompareTag("Meteoro"))
+    { 
+        if (colisao.gameObject.CompareTag("Meteoro"))
         {
             vidaAtualDoJogador -= danoParaMeteoro;
 
@@ -168,21 +142,6 @@ public class VidaDoJogador : MonoBehaviour
             if (meteoro != null)
             {
                 meteoro.MachucarMeteoro(danoParaMeteoro);
-            }
-        }
-        else if (colisao.gameObject.CompareTag("Nebuloso"))
-        {
-            vidaAtualDoJogador -= danoParaNebuloso;
-
-            if (vidaAtualDoJogador <= 0)
-            {
-                Morrer();
-            }
-
-            Nebuloso nebuloso = colisao.gameObject.GetComponent<Nebuloso>();
-            if (nebuloso != null)
-            {
-                nebuloso.AplicaDano(danoParaNebuloso);
             }
         }
         else if (colisao.gameObject.CompareTag("Asteroide P."))

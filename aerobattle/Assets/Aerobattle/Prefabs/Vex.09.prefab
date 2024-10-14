@@ -171,8 +171,10 @@ MonoBehaviour:
   laserDoInimigo: {fileID: 2489940251796190028, guid: fdfdb875d7bac7a45884b591ed3b18c6, type: 3}
   raioDeDeteccao: 10
   tempoEntreOsTiros: 0.5
-  vidaAtualDoVex: 15
-  vidaMaximaDoVex: 15
+  vidaAtualDoVex: 10
+  vidaMaximaDoVex: 10
+  itemParaDropar: {fileID: 1609768874358113285, guid: 850f9fc62a485ab4d92331a58b29d9a3, type: 3}
+  chanceDeDropar: 100
 --- !u!1 &1955267038413153071
 GameObject:
   m_ObjectHideFlags: 0

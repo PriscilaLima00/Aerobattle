@@ -8,7 +8,6 @@ public class ItensColetavéis : MonoBehaviour
     public bool itemDeEscudo;
     public bool itemDeLaserDuplo;
     public bool itemDeVida;
-    public bool itemDeLanterna;
 
     public int vidaParaDar;
 
@@ -19,11 +18,6 @@ public class ItensColetavéis : MonoBehaviour
             if (itemDeEscudo == true)
             {
                 other.gameObject.GetComponent<VidaDoJogador>().AtivarEscudo();
-            }
-            
-            if (itemDeLanterna == true)
-            {
-                other.gameObject.GetComponent<VidaDoJogador>().AtivarLanterna();
             }
 
             if (itemDeLaserDuplo == true)
