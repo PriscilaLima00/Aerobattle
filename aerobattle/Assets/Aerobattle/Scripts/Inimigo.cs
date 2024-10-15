@@ -8,7 +8,6 @@ public class Inimigo : MonoBehaviour
 {
     public GameObject laserDoInimigo;
     public Transform[] localDoDisparo;
-  
     
     public float velocidadeDoInimigo;
 
@@ -19,10 +18,11 @@ public class Inimigo : MonoBehaviour
 
     public int vidaMaximaDoInimigo;
     public int vidaAtualDoInimigo;
-    
+    public int danoAoJogador = 1;
+
     public GameObject itemParaDropar;
     public int chanceDeDropar;
-    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -37,7 +37,7 @@ public class Inimigo : MonoBehaviour
         {
             AtirarLaser();
         }
-        
+
     }
 
     private void MovimentarInimigo()
@@ -64,14 +64,23 @@ public class Inimigo : MonoBehaviour
         if (vidaAtualDoInimigo <= 0)
         {
             int numeroAleatorio = Random.Range(0, 100);
-            
+
             if (numeroAleatorio <= chanceDeDropar)
             {
                 Instantiate(itemParaDropar, transform.position, Quaternion.Euler(0f, 0f, 0f));
             }
+
             Destroy(this.gameObject);
         }
     }
     
+    void OnCollisionEnter2D(Collision2D colisao)
+    {
+        if (colisao.gameObject.CompareTag("Jogador"))
+        {
+            VidaDoJogador.Instance.MachucarJogador(danoAoJogador); 
+            
+        }
+    }
     
 }
