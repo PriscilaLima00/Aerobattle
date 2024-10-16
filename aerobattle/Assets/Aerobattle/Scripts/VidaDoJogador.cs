@@ -18,11 +18,8 @@ public class VidaDoJogador : MonoBehaviour
 
     public bool temEscudo;
 
-    //public bool dano;
     
     private Animator an;
-    //public int danoParaInimigos = 5; 
-    //public static int danoParaNebuloso = 10; 
     public int danoParaMeteoro = 3; 
     public int danoParaOAsteroide = 3;
 

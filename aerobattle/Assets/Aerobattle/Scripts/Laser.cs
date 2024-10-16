@@ -61,6 +61,11 @@ public class Laser : MonoBehaviour
         {
             Destroy(gameObject); 
         }
+        else if (colision.gameObject.CompareTag("Frota Vex"))
+        {
+            colision.gameObject.GetComponent<FrotaVex>().MachucarFrota(danoParaDar);
+            Destroy(gameObject);
+        }
     }
     
 }
