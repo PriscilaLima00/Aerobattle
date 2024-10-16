@@ -52,7 +52,7 @@ public class Inimigo : MonoBehaviour
         if (tempoAtualDosLasers <= 0)
         {
             int indice = Random.Range(0, localDoDisparo.Length);
-            Instantiate(laserDoInimigo, localDoDisparo[indice].position, Quaternion.Euler(0f, 0f, 180f));
+            Instantiate(laserDoInimigo, localDoDisparo[indice].position, Quaternion.Euler(0f, 0f, -180f));
             tempoAtualDosLasers = tempoMaximoEntreOsLasers;
         }
     }
