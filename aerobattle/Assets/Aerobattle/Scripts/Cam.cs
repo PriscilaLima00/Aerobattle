@@ -4,23 +4,21 @@ using UnityEngine;
 
 public class Cam : MonoBehaviour
 {
-    private Transform player;
+    public Transform cenario; // Referência ao objeto do cenário
+    public Vector3 offset; // Distância entre a câmera e o cenário
 
-    public float smooth;
-    // Start is called before the first frame update
     void Start()
     {
-        player= GameObject.FindGameObjectWithTag("Jogador").transform;
+        // Define um offset padrão se não for definido no Inspector
+        if (offset == Vector3.zero)
+        {
+            offset = new Vector3(0, 0, -10); // Ajuste conforme necessário
+        }
     }
 
-    // Update is called once per frame
     void LateUpdate()
     {
-        if (player.position.x >= 0)
-        {
-            Vector3 following = new Vector3(player.position.x, transform.position.y, transform.position.z);
-            transform.position = Vector3.Lerp(transform.position, following, smooth * Time.deltaTime);
-        }
-        
+        // Move a câmera para seguir o cenário
+        transform.position = cenario.position + offset;
     }
 }
