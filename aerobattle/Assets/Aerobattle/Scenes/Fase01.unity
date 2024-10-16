@@ -358,67 +358,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!1001 &69759589
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 964817638622828405, guid: 04cf93097b09bc74fab4c9367d242fa4, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 16.27
-      objectReference: {fileID: 0}
-    - target: {fileID: 964817638622828405, guid: 04cf93097b09bc74fab4c9367d242fa4, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.22
-      objectReference: {fileID: 0}
-    - target: {fileID: 964817638622828405, guid: 04cf93097b09bc74fab4c9367d242fa4, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 964817638622828405, guid: 04cf93097b09bc74fab4c9367d242fa4, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 964817638622828405, guid: 04cf93097b09bc74fab4c9367d242fa4, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 964817638622828405, guid: 04cf93097b09bc74fab4c9367d242fa4, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 964817638622828405, guid: 04cf93097b09bc74fab4c9367d242fa4, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 964817638622828405, guid: 04cf93097b09bc74fab4c9367d242fa4, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 964817638622828405, guid: 04cf93097b09bc74fab4c9367d242fa4, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 964817638622828405, guid: 04cf93097b09bc74fab4c9367d242fa4, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2798192587647259736, guid: 04cf93097b09bc74fab4c9367d242fa4, type: 3}
-      propertyPath: m_Name
-      value: Asteroide Pequeno (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2798192587647259736, guid: 04cf93097b09bc74fab4c9367d242fa4, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 04cf93097b09bc74fab4c9367d242fa4, type: 3}
 --- !u!1 &85967989
 GameObject:
   m_ObjectHideFlags: 0
@@ -885,67 +824,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &172530592
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1538176531513255291, guid: 04ffb6d49bc13e64fa495f9c19c71ed4, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 18.13
-      objectReference: {fileID: 0}
-    - target: {fileID: 1538176531513255291, guid: 04ffb6d49bc13e64fa495f9c19c71ed4, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -3.17
-      objectReference: {fileID: 0}
-    - target: {fileID: 1538176531513255291, guid: 04ffb6d49bc13e64fa495f9c19c71ed4, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1538176531513255291, guid: 04ffb6d49bc13e64fa495f9c19c71ed4, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1538176531513255291, guid: 04ffb6d49bc13e64fa495f9c19c71ed4, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1538176531513255291, guid: 04ffb6d49bc13e64fa495f9c19c71ed4, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1538176531513255291, guid: 04ffb6d49bc13e64fa495f9c19c71ed4, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1538176531513255291, guid: 04ffb6d49bc13e64fa495f9c19c71ed4, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1538176531513255291, guid: 04ffb6d49bc13e64fa495f9c19c71ed4, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1538176531513255291, guid: 04ffb6d49bc13e64fa495f9c19c71ed4, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2397580226792229244, guid: 04ffb6d49bc13e64fa495f9c19c71ed4, type: 3}
-      propertyPath: m_Name
-      value: Asteroide Pequeno inverso (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2397580226792229244, guid: 04ffb6d49bc13e64fa495f9c19c71ed4, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 04ffb6d49bc13e64fa495f9c19c71ed4, type: 3}
 --- !u!1 &260842392
 GameObject:
   m_ObjectHideFlags: 0
@@ -1023,67 +901,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 260842392}
   m_CullTransparentMesh: 1
---- !u!1001 &283020500
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1538176531513255291, guid: 04ffb6d49bc13e64fa495f9c19c71ed4, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 14.545455
-      objectReference: {fileID: 0}
-    - target: {fileID: 1538176531513255291, guid: 04ffb6d49bc13e64fa495f9c19c71ed4, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -3.2186732
-      objectReference: {fileID: 0}
-    - target: {fileID: 1538176531513255291, guid: 04ffb6d49bc13e64fa495f9c19c71ed4, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1538176531513255291, guid: 04ffb6d49bc13e64fa495f9c19c71ed4, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1538176531513255291, guid: 04ffb6d49bc13e64fa495f9c19c71ed4, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1538176531513255291, guid: 04ffb6d49bc13e64fa495f9c19c71ed4, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1538176531513255291, guid: 04ffb6d49bc13e64fa495f9c19c71ed4, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1538176531513255291, guid: 04ffb6d49bc13e64fa495f9c19c71ed4, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1538176531513255291, guid: 04ffb6d49bc13e64fa495f9c19c71ed4, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1538176531513255291, guid: 04ffb6d49bc13e64fa495f9c19c71ed4, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2397580226792229244, guid: 04ffb6d49bc13e64fa495f9c19c71ed4, type: 3}
-      propertyPath: m_Name
-      value: Asteroide Pequeno inverso
-      objectReference: {fileID: 0}
-    - target: {fileID: 2397580226792229244, guid: 04ffb6d49bc13e64fa495f9c19c71ed4, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 04ffb6d49bc13e64fa495f9c19c71ed4, type: 3}
 --- !u!1 &284484687
 GameObject:
   m_ObjectHideFlags: 0
@@ -1270,7 +1087,7 @@ MonoBehaviour:
   vidaMaximaDoInimigo: 2
   vidaAtualDoInimigo: 2
   danoAoJogador: 1
-  itemParaDropar: {fileID: 0}
+  itemParaDropar: {fileID: 3525905135518307588, guid: e31ec134bc4e86b46be8d18e068c1faa, type: 3}
   chanceDeDropar: 40
 --- !u!212 &365214780
 SpriteRenderer:
@@ -2020,7 +1837,7 @@ MonoBehaviour:
   vidaMaximaDoInimigo: 2
   vidaAtualDoInimigo: 2
   danoAoJogador: 1
-  itemParaDropar: {fileID: 0}
+  itemParaDropar: {fileID: 7618214839703894807, guid: b7c2a27e2b9a50a4c9f41f1e41526a54, type: 3}
   chanceDeDropar: 40
 --- !u!212 &897404924
 SpriteRenderer:
@@ -2641,7 +2458,7 @@ MonoBehaviour:
   vidaMaximaDoInimigo: 2
   vidaAtualDoInimigo: 2
   danoAoJogador: 1
-  itemParaDropar: {fileID: 0}
+  itemParaDropar: {fileID: 7618214839703894807, guid: b7c2a27e2b9a50a4c9f41f1e41526a54, type: 3}
   chanceDeDropar: 40
 --- !u!212 &1231748630
 SpriteRenderer:
@@ -2980,67 +2797,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 365214781}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1387141980
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 964817638622828405, guid: 04cf93097b09bc74fab4c9367d242fa4, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 12.776413
-      objectReference: {fileID: 0}
-    - target: {fileID: 964817638622828405, guid: 04cf93097b09bc74fab4c9367d242fa4, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.3194103
-      objectReference: {fileID: 0}
-    - target: {fileID: 964817638622828405, guid: 04cf93097b09bc74fab4c9367d242fa4, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 964817638622828405, guid: 04cf93097b09bc74fab4c9367d242fa4, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 964817638622828405, guid: 04cf93097b09bc74fab4c9367d242fa4, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 964817638622828405, guid: 04cf93097b09bc74fab4c9367d242fa4, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 964817638622828405, guid: 04cf93097b09bc74fab4c9367d242fa4, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 964817638622828405, guid: 04cf93097b09bc74fab4c9367d242fa4, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 964817638622828405, guid: 04cf93097b09bc74fab4c9367d242fa4, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 964817638622828405, guid: 04cf93097b09bc74fab4c9367d242fa4, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2798192587647259736, guid: 04cf93097b09bc74fab4c9367d242fa4, type: 3}
-      propertyPath: m_Name
-      value: Asteroide Pequeno
-      objectReference: {fileID: 0}
-    - target: {fileID: 2798192587647259736, guid: 04cf93097b09bc74fab4c9367d242fa4, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 04cf93097b09bc74fab4c9367d242fa4, type: 3}
 --- !u!1 &1409248390
 GameObject:
   m_ObjectHideFlags: 0
@@ -3641,7 +3397,7 @@ MonoBehaviour:
   vidaMaximaDoInimigo: 2
   vidaAtualDoInimigo: 2
   danoAoJogador: 1
-  itemParaDropar: {fileID: 0}
+  itemParaDropar: {fileID: 1155319595704185419, guid: 8561b74ad057e4d42a3f0575b14fd184, type: 3}
   chanceDeDropar: 40
 --- !u!212 &1617533445
 SpriteRenderer:
@@ -5042,10 +4798,6 @@ SceneRoots:
   - {fileID: 848343927}
   - {fileID: 7688511655603694045}
   - {fileID: 85967992}
-  - {fileID: 1387141980}
-  - {fileID: 69759589}
-  - {fileID: 283020500}
-  - {fileID: 172530592}
   - {fileID: 1112667291}
   - {fileID: 1231748631}
   - {fileID: 1617533446}
