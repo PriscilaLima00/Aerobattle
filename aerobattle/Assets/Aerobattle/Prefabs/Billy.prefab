@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 371920612646248176}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.70603526, w: 0.7081768}
-  m_LocalPosition: {x: -0.239, y: -0.007, z: 0}
+  m_LocalPosition: {x: -0.25, y: -0.028, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -43,10 +43,10 @@ GameObject:
   - component: {fileID: 2640700351651199862}
   - component: {fileID: 6897030306086445608}
   - component: {fileID: 9113324427180911738}
-  - component: {fileID: 5996539999156450999}
+  - component: {fileID: 7077931820396014345}
   m_Layer: 0
   m_Name: Billy
-  m_TagString: Inimigo
+  m_TagString: "Chef\xE3o"
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -110,7 +110,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: f3c89cac96fc2fe42934f5ba249e3b78, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 76f90e1b7d5a37b48a212b6fe6abe5e2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
   m_FlipY: 0
@@ -183,7 +183,7 @@ CircleCollider2D:
   m_Offset: {x: -0.02565125, y: 0.019243464}
   serializedVersion: 2
   m_Radius: 0.19113927
---- !u!114 &5996539999156450999
+--- !u!114 &7077931820396014345
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -192,7 +192,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1134435543102470505}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 512bffd834d48d541993169058b97e94, type: 3}
+  m_Script: {fileID: 11500000, guid: 1f138ed65d1c1fe4288cd72b6c69d9d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   laserDoInimigo: {fileID: 2489940251796190028, guid: 2ec161cf83c19674c9b2e488b53a330d, type: 3}
@@ -201,13 +201,14 @@ MonoBehaviour:
   - {fileID: 8329121701640515937}
   - {fileID: 4050326568035800147}
   velocidadeDoInimigo: 5
-  tempoMaximoEntreOsLasers: 0.5
+  tempoMaximoEntreOsLasers: 0.7
   tempoAtualDosLasers: 0
   inimigoAtirador: 1
   vidaMaximaDoInimigo: 5
-  vidaAtualDoInimigo: 0
-  itemParaDropar: {fileID: 3525905135518307588, guid: e31ec134bc4e86b46be8d18e068c1faa, type: 3}
-  chanceDeDropar: 50
+  vidaAtualDoInimigo: 5
+  danoAoJogador: 1
+  itemParaDropar: {fileID: 5554959244664353643, guid: 5616dfaf438fc474191809e496d41b00, type: 3}
+  chanceDeDropar: 100
 --- !u!1 &1199720852719572088
 GameObject:
   m_ObjectHideFlags: 0
@@ -233,7 +234,7 @@ Transform:
   m_GameObject: {fileID: 1199720852719572088}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.70603526, w: 0.7081768}
-  m_LocalPosition: {x: -0.033, y: -0.087, z: 0}
+  m_LocalPosition: {x: 0.01, y: -0.104, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -264,7 +265,7 @@ Transform:
   m_GameObject: {fileID: 9177563466100589471}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.70603526, w: 0.7081768}
-  m_LocalPosition: {x: 0.161, y: 0.002, z: 0}
+  m_LocalPosition: {x: 0.248, y: -0.028, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
