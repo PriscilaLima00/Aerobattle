@@ -5,38 +5,56 @@ using UnityEngine;
 public class CenarioInfinito : MonoBehaviour
 {
     public float velocidadeDoCenario;
-    private bool direcaoParaDireita = true; // Variável para controlar a direção
+    private bool direcaoParaDireita = true;
 
-    // Start is called before the first frame update
+    // Adicione um array de Texturas para as diferentes fases
+    public Texture2D[] texturasFases;
+    private int faseAtual = 0; // Indica a fase atual
+
     void Start()
     {
-        // Iniciar com a direção para a direita
         direcaoParaDireita = true;
+        // Define a textura inicial
+        GetComponent<Renderer>().material.mainTexture = texturasFases[faseAtual];
     }
 
-    // Update is called once per frame
     void Update()
     {
-        // Exemplo de como detectar a virada do jogador
-        // Você pode ajustar isso de acordo com como você determina a direção do jogador
         if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
-            direcaoParaDireita = false; // Jogador virou para a esquerda
+            direcaoParaDireita = false;
         }
         else if (Input.GetKeyDown(KeyCode.RightArrow))
         {
-            direcaoParaDireita = true; // Jogador virou para a direita
+            direcaoParaDireita = true;
         }
 
-        MovimentarCenario();  
+        // Verifica se o jogador está em uma nova fase (isso é um exemplo, você pode adaptar)
+        if (Input.GetKeyDown(KeyCode.Space)) // Por exemplo, pressionar a barra de espaço muda a fase
+        {
+            MudarFase();
+        }
+
+        MovimentarCenario();
     }
 
     private void MovimentarCenario()
     {
-        // Determina a velocidade com base na direção
         float velocidadeAtual = direcaoParaDireita ? velocidadeDoCenario : -velocidadeDoCenario;
-        
+
         Vector2 deslocamento = new Vector2(Time.time * velocidadeAtual, 0);
         GetComponent<Renderer>().material.mainTextureOffset = deslocamento;
+    }
+
+    private void MudarFase()
+    {
+        // Muda para a próxima fase e redefine a textura
+        faseAtual++;
+        if (faseAtual >= texturasFases.Length)
+        {
+            faseAtual = 0; // Volta para a primeira fase se passar do limite
+        }
+
+        GetComponent<Renderer>().material.mainTexture = texturasFases[faseAtual];
     }
 }
