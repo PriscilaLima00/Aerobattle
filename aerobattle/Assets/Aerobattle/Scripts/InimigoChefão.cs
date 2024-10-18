@@ -81,8 +81,12 @@ public class InimigoChefão : MonoBehaviour
     {
         if (colisao.gameObject.CompareTag("Jogador"))
         {
-            VidaDoJogador.Instance.MachucarJogador(danoAoJogador); 
-            
+            // Obtém o componente VidaDoJogador do objeto jogador
+            VidaDoJogador vidaDoJogador = colisao.gameObject.GetComponent<VidaDoJogador>();
+            if (vidaDoJogador != null)
+            {
+                vidaDoJogador.MachucarJogador(danoAoJogador);
+            }
         }
     }
 }

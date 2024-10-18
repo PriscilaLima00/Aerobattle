@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,18 +9,27 @@ public class Lamina : MonoBehaviour
     public int danoParaDar = 2;
     private bool jogadorNoCollider = false;
     private GameObject jogador;
+    public int velocidade = 2;
+    private Rigidbody2D rig;
 
     private void Start()
     {
         animator = GetComponent<Animator>();
+        rig = GetComponent<Rigidbody2D>();
     }
 
-    // Método para parar a animação
+    private void Update()
+    {
+        Mv();
+    }
+    
+    //Método para parar a animação
     private void StopAnimation()
     {
         if (animator != null)
         {
             animator.enabled = false; // Desativa o Animator para parar a animação
+            Destroy(gameObject);
         }
     }
 
@@ -48,5 +58,15 @@ public class Lamina : MonoBehaviour
             jogadorNoCollider = false;
             jogador = null;
         }
+    }
+
+    private void Mv()
+    {
+        // Movimenta a lâmina para trás usando Rigidbody2D
+        Vector2 movimento = Vector2.left * velocidade * Time.deltaTime;
+        rig.MovePosition(rig.position + movimento);
+
+        // Rotaciona a lâmina
+        transform.Rotate(Vector3.forward, 100 * Time.deltaTime);
     }
 }

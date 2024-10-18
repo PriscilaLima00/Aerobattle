@@ -7,6 +7,7 @@ public class MinaEspacial : MonoBehaviour
     private bool jogadorDentroDoRaio = false;
     private Collider2D minaCollider;
     public int danoParaJogador;
+    public int velocidadeDaMina;
 
     void Start()
     {
@@ -26,6 +27,8 @@ public class MinaEspacial : MonoBehaviour
         {
             Detonar();
         }
+        
+        Movimento();
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -43,20 +46,7 @@ public class MinaEspacial : MonoBehaviour
     {
         // Adiciona a lógica para a detonação
         Debug.Log("Mina detonada!");
-
-        // Instancia o efeito de explosão (comentado, mas aqui para referência futura)
-        // if (efeitoDeExplosao != null)
-        // {
-        //     Instantiate(efeitoDeExplosao, transform.position, Quaternion.identity);
-        // }
-
-        // Toca o som da explosão (comentado, mas aqui para referência futura)
-        // if (somDeExplosao != null)
-        // {
-        //     AudioSource.PlayClipAtPoint(somDeExplosao, transform.position);
-        // }
-
-        // Remove a mina após a detonação
+        
         Destroy(gameObject);
         
         AplicarDanoAoJogador();
@@ -82,5 +72,10 @@ public class MinaEspacial : MonoBehaviour
         {
             Debug.LogError("Jogador não encontrado.");
         }
+    }
+    
+    private void Movimento()
+    {
+        transform.Translate(Vector3.left * velocidadeDaMina* Time.deltaTime);
     }
 }

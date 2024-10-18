@@ -37,16 +37,13 @@ public class FrotaVex : MonoBehaviour
 
     private void AtirarLaser()
     {
-            tempoAtualDosLasers -= Time.deltaTime; 
+        tempoAtualDosLasers -= Time.deltaTime; 
 
-            if (tempoAtualDosLasers <= 0)
-            {
-                
-                Instantiate(laserDaFrotaVex, localDoDisparo[0].position, Quaternion.Euler(0f, 0f, -180f) );
-                
-                tempoAtualDosLasers = tempoMaximoEntreOsLasers;
-            }
-        
+        if (tempoAtualDosLasers <= 0)
+        {
+            Instantiate(laserDaFrotaVex, localDoDisparo[0].position, Quaternion.Euler(0f, 0f, -180f));
+            tempoAtualDosLasers = tempoMaximoEntreOsLasers;
+        }
     }
 
     public void MachucarFrota(int danoParaReceber)
@@ -56,12 +53,10 @@ public class FrotaVex : MonoBehaviour
         if (vidaAtualDoFrotaVex <= 0)
         {
             int numeroAleatorio = Random.Range(0, 100);
-
             if (numeroAleatorio <= chanceDeDropar)
             {
                 Instantiate(itemParaDropar, transform.position, Quaternion.identity);
             }
-
             Destroy(gameObject);
         }
     }
@@ -70,7 +65,12 @@ public class FrotaVex : MonoBehaviour
     {
         if (colisao.gameObject.CompareTag("Jogador"))
         {
-            VidaDoJogador.Instance.MachucarJogador(danoAoJogador);
+            // Obtém o componente VidaDoJogador do objeto jogador
+            VidaDoJogador vidaDoJogador = colisao.gameObject.GetComponent<VidaDoJogador>();
+            if (vidaDoJogador != null)
+            {
+                vidaDoJogador.MachucarJogador(danoAoJogador);
+            }
         }
     }
 }

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -6,6 +7,13 @@ using UnityEngine;
 public class CaixaDesativadora : MonoBehaviour
 {
     public GameObject[] laminas; // Array de lâminas que serão desativadas
+    public int velocidade;
+
+
+    private void Update()
+    {
+        Movimento();
+    }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -27,6 +35,11 @@ public class CaixaDesativadora : MonoBehaviour
                 blade.SendMessage("StopAnimation", SendMessageOptions.DontRequireReceiver);
             }
         }
+    }
+
+    private void Movimento()
+    {
+        transform.Translate(Vector3.left * velocidade * Time.deltaTime);
     }
     
 }
