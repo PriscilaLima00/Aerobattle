@@ -19,6 +19,7 @@ public class VidaDoJogador : MonoBehaviour
     private Animator an;
     public int danoParaMeteoro = 3; 
     public int danoParaOAsteroide = 3;
+    public int danoParaInimigo = 2;
 
     public GameManager gameOver;
 
@@ -133,6 +134,16 @@ public class VidaDoJogador : MonoBehaviour
             if (asteroide != null)
             {
                 asteroide.MachucarAsteroideG(danoParaOAsteroide);
+            }
+        }
+        else if (colisao.gameObject.CompareTag("Inimigo"))
+        {
+            MachucarJogador(danoParaInimigo); 
+
+            Inimigo asteroide = colisao.gameObject.GetComponent<Inimigo>();
+            if (asteroide != null)
+            {
+                asteroide.MachucarInimigo(danoParaInimigo);
             }
         }
     }
