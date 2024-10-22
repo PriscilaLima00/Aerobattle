@@ -29,11 +29,7 @@ public class CenarioInfinito : MonoBehaviour
             direcaoParaDireita = true;
         }
 
-        // Verifica se o jogador está em uma nova fase (isso é um exemplo, você pode adaptar)
-        if (Input.GetKeyDown(KeyCode.Space)) // Por exemplo, pressionar a barra de espaço muda a fase
-        {
-            MudarFase();
-        }
+      
 
         MovimentarCenario();
     }

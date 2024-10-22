@@ -4,13 +4,12 @@ using UnityEngine;
 
 public class PausarJogo : MonoBehaviour
 {
-    public bool jogoPausado;
+    public Transform pauseMenu;
     
     // Start is called before the first frame update
     void Start()
     {
-        Time.timeScale = 1f;
-        jogoPausado = false;
+        
     }
 
     // Update is called once per frame
@@ -18,21 +17,23 @@ public class PausarJogo : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            Pausar();
+            if (pauseMenu.gameObject.activeSelf)
+            {
+                pauseMenu.gameObject.SetActive(false);
+                Time.timeScale = 1;
+            }
+            else
+            {
+                pauseMenu.gameObject.SetActive(true);
+                Time.timeScale = 0;
+            }
         }
     }
-    
-    private void Pausar()
+
+    public void ResumeGame()
     {
-        if (jogoPausado == false)
-        {
-            Time.timeScale = 0f;
-            jogoPausado = true;
-        }
-        else
-        {
-            Time.timeScale = 1f;
-            jogoPausado = false;
-        }
+        pauseMenu.gameObject.SetActive(false);
+        Time.timeScale = 1;
     }
+   
 }
