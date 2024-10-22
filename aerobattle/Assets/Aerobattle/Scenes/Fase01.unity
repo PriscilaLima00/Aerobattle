@@ -2339,7 +2339,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 000e9132736344943a312a23ee04af40, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 76cbe8ca4c8d6c943a4d9f2d806833cf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2359,7 +2359,7 @@ Transform:
   m_GameObject: {fileID: 1112667287}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 17.03, y: -0.9, z: 0}
+  m_LocalPosition: {x: 5.512, y: -2.901, z: 0}
   m_LocalScale: {x: 2.6263, y: 2.6263, z: 2.6263}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2669,7 +2669,7 @@ GameObject:
   m_Layer: 0
   m_Name: Local do disparo
   m_TagString: Untagged
-  m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -2682,7 +2682,7 @@ Transform:
   m_GameObject: {fileID: 1196858175}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.71100336, w: 0.70318866}
-  m_LocalPosition: {x: -0.516, y: -0.0039999997, z: 0}
+  m_LocalPosition: {x: -0.315, y: -0.033, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
