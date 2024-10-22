@@ -39,6 +39,8 @@ public class Missel : MonoBehaviour
                 Destroy(gameObject);
             }
         }
+        
+        Movimento();
     }
 
     // Detecta colisões com outros colliders
@@ -50,5 +52,10 @@ public class Missel : MonoBehaviour
             // Destrói o míssil
             Destroy(gameObject);
         }
+    }
+
+    private void Movimento()
+    {
+        transform.Translate(Vector3.left * velocidade * Time.deltaTime);
     }
 }
