@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1818243643652869114}
   - component: {fileID: 5241771862085935336}
   - component: {fileID: 5561249754143490091}
+  - component: {fileID: 7233693283865374436}
   m_Layer: 0
   m_Name: Buraco negreo 02
   m_TagString: Untagged
@@ -164,6 +165,19 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.24999999
+--- !u!114 &7233693283865374436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2645108390315975852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee72dd299a995a04688f21ab1af9d43a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocidade: 3
 --- !u!1 &8821522709043111407
 GameObject:
   m_ObjectHideFlags: 0
@@ -175,6 +189,7 @@ GameObject:
   - component: {fileID: 8915866595357860074}
   - component: {fileID: 4117981016238238268}
   - component: {fileID: 4006477102431944539}
+  - component: {fileID: 104189393511211636}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -244,3 +259,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4851fedd4e72d9f41a0d807b6175992c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  painelGameOver: {fileID: 0}
+--- !u!50 &104189393511211636
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8821522709043111407}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4

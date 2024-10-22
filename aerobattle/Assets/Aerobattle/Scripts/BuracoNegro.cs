@@ -8,18 +8,7 @@ public class BuracoNegro : MonoBehaviour
 {
 
     public GameObject painelGameOver;
-   // public float velocidadeDoBuraco = 2f;
-    //private Rigidbody2D rig;
-
-    private void Start()
-    {
-        //rig = GetComponent<Rigidbody2D>();
-    }
-
-    private void Update()
-    {
-        ///MovimentoDoBuraco();
-    }
+   
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
@@ -33,10 +22,5 @@ public class BuracoNegro : MonoBehaviour
         }
     }
 
-    private void MovimentoDoBuraco()
-    {
-        //Vector2 movimento = Vector2.left * velocidadeDoBuraco * Time.deltaTime;
-        //transform.position += (Vector3)movimento; // Mover diretamente pelo transform
-
-    }
+    
 }
