@@ -8,19 +8,25 @@ public class BuracoNegro : MonoBehaviour
 {
 
     public GameObject painelGameOver;
-   
+
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
         if (collider.CompareTag("Jogador"))
         {
-            // Ativa o painel de Game Over
             painelGameOver.SetActive(true);
+            
+            Time.timeScale = 0; 
 
-            // Opcional: Pause o jogo
-            Time.timeScale = 0; // Para pausar o jogo, se necessário
         }
     }
 
-    
+    private void OnTriggerExit2D(Collider2D collider)
+    {
+        if (collider.CompareTag("Jogador"))
+        {
+            Time.timeScale = 1;
+        }
+    }
+
 }

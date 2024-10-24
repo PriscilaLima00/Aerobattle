@@ -155,7 +155,7 @@ public class VidaDoJogador : MonoBehaviour
             {
                 gameOver.ShowGameOver();
             }
-            Destroy(gameObject); // Exclui o GameObject do jogador
+            Destroy(gameObject); 
         }
     
 }

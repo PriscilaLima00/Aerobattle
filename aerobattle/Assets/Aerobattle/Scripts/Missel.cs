@@ -13,34 +13,39 @@ public class Missel : MonoBehaviour
 
     private void Update()
     {
-        if (jogador == null) return;
+     
+            if (jogador == null) return;
 
-        float distance = Vector2.Distance(transform.position, jogador.position);
+            float distance = Vector2.Distance(transform.position, jogador.position);
 
-        if (distance < detectionRadius)
-        {
-            isTracking = true;
-        }
-
-        if (isTracking)
-        {
-            Vector2 direction = (jogador.position - transform.position).normalized;
-            transform.position = Vector2.MoveTowards(transform.position, jogador.position, velocidade * Time.deltaTime);
-
-            // Atualizar a rotação do míssil para apontar para o jogador
-            float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-            transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle -180));
-            
-            
-            if (distance < destroyRadius)
+            if (distance < detectionRadius)
             {
-                // Destrói ambos os GameObjects
-                Destroy(jogador.gameObject);
-                Destroy(gameObject);
+                isTracking = true;
             }
-        }
-        
-        Movimento();
+
+            if (isTracking)
+            {
+                Vector2 direction = (jogador.position - transform.position).normalized;
+                transform.position = Vector2.MoveTowards(transform.position, jogador.position, velocidade * Time.deltaTime);
+
+                // Atualizar a rotação do míssil para apontar para o jogador
+                float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+                transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle - 180));
+
+                if (distance < destroyRadius)
+                {
+                    // Chama o método de dano no jogador
+                    VidaDoJogador playerHealth = jogador.GetComponent<VidaDoJogador>();
+                    if (playerHealth != null)
+                    {
+                        playerHealth.MachucarJogador(15); // Tira 10 de vida, por exemplo
+                    }
+
+                    // Destrói o míssil
+                    Destroy(gameObject);
+                }
+            } 
+            Movimento();
     }
 
     // Detecta colisões com outros colliders
@@ -53,6 +58,7 @@ public class Missel : MonoBehaviour
             Destroy(gameObject);
         }
     }
+    
 
     private void Movimento()
     {
