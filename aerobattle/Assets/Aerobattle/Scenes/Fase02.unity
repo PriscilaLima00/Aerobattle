@@ -167,6 +167,7 @@ MonoBehaviour:
   temEscudo: 0
   danoParaMeteoro: 3
   danoParaOAsteroide: 3
+  danoParaInimigo: 2
   gameOver: {fileID: 87276702}
 --- !u!114 &27085982
 MonoBehaviour:
@@ -1852,7 +1853,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1521802943
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2418,7 +2419,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d149aaa355579c948b70e7b746579909, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jogoPausado: 0
+  pauseMenu: {fileID: 0}
 --- !u!4 &1962079789
 Transform:
   m_ObjectHideFlags: 0
