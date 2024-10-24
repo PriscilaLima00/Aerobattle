@@ -42,13 +42,14 @@ public class CenarioInfinito : MonoBehaviour
         GetComponent<Renderer>().material.mainTextureOffset = deslocamento;
     }
 
+    
     private void MudarFase()
     {
-        // Muda para a próxima fase e redefine a textura
+        
         faseAtual++;
         if (faseAtual >= texturasFases.Length)
         {
-            faseAtual = 0; // Volta para a primeira fase se passar do limite
+            faseAtual = 0; 
         }
 
         GetComponent<Renderer>().material.mainTexture = texturasFases[faseAtual];
