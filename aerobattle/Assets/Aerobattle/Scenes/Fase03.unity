@@ -426,6 +426,8 @@ MonoBehaviour:
   limiteHorizontal: 2
   raioDeDeteccao: 6
   jogador: {fileID: 27085987}
+  itemParaDropar: {fileID: 0}
+  chanceDeDropar: 0
 --- !u!50 &83837875
 Rigidbody2D:
   serializedVersion: 4
@@ -768,7 +770,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.71100336, w: 0.70318866}
   m_LocalPosition: {x: -0.315, y: -0.033, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2.6263, y: 2.6263, z: 2.6263}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 608051711}
@@ -1060,6 +1062,7 @@ GameObject:
   - component: {fileID: 329272840}
   - component: {fileID: 329272839}
   - component: {fileID: 329272838}
+  - component: {fileID: 329272843}
   m_Layer: 0
   m_Name: Frota Vex (2)
   m_TagString: Frota Vex
@@ -1192,7 +1195,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 76cbe8ca4c8d6c943a4d9f2d806833cf, type: 3}
+  m_Sprite: {fileID: 1793835738, guid: 20df6c506850037408ba47a38cde3a13, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1212,13 +1215,34 @@ Transform:
   m_GameObject: {fileID: 329272837}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 31.4, y: 4.25, z: 0}
-  m_LocalScale: {x: 2.6263, y: 2.6263, z: 2.6263}
+  m_LocalPosition: {x: 36.85, y: 3.72, z: 0}
+  m_LocalScale: {x: 4.7400537, y: 4.7400537, z: 4.7400537}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 891172377}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &329272843
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 329272837}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1010b24041466444b8e0d129c658df24, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &469847960
 GameObject:
   m_ObjectHideFlags: 0
@@ -1307,6 +1331,7 @@ GameObject:
   - component: {fileID: 535822695}
   - component: {fileID: 535822694}
   - component: {fileID: 535822693}
+  - component: {fileID: 535822698}
   m_Layer: 0
   m_Name: Frota Vex (4)
   m_TagString: Frota Vex
@@ -1439,7 +1464,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 76cbe8ca4c8d6c943a4d9f2d806833cf, type: 3}
+  m_Sprite: {fileID: 1793835738, guid: 20df6c506850037408ba47a38cde3a13, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1459,13 +1484,34 @@ Transform:
   m_GameObject: {fileID: 535822692}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 39.3, y: 1.3099998, z: 0}
-  m_LocalScale: {x: 2.6263, y: 2.6263, z: 2.6263}
+  m_LocalPosition: {x: 50.449997, y: 3.39, z: 0}
+  m_LocalScale: {x: 4.7400537, y: 4.7400537, z: 4.7400537}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1129101964}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &535822698
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 535822692}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 19b0893d52c8afb459be6040f1f87086, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &608051706
 GameObject:
   m_ObjectHideFlags: 0
@@ -1479,6 +1525,7 @@ GameObject:
   - component: {fileID: 608051709}
   - component: {fileID: 608051708}
   - component: {fileID: 608051707}
+  - component: {fileID: 608051712}
   m_Layer: 0
   m_Name: Frota Vex (3)
   m_TagString: Frota Vex
@@ -1611,7 +1658,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 76cbe8ca4c8d6c943a4d9f2d806833cf, type: 3}
+  m_Sprite: {fileID: 1793835738, guid: 20df6c506850037408ba47a38cde3a13, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1631,13 +1678,34 @@ Transform:
   m_GameObject: {fileID: 608051706}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 31.8, y: -2.7600002, z: 0}
-  m_LocalScale: {x: 2.6263, y: 2.6263, z: 2.6263}
+  m_LocalPosition: {x: 43.135, y: -3.67, z: 0}
+  m_LocalScale: {x: 4.7400537, y: 4.7400537, z: 4.7400537}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 205821385}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &608051712
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 608051706}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6e5d1437a763eba4692748a205783414, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &618893310
 GameObject:
   m_ObjectHideFlags: 0
@@ -2368,7 +2436,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.71100336, w: 0.70318866}
   m_LocalPosition: {x: -0.315, y: -0.033, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2.6263, y: 2.6263, z: 2.6263}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 329272842}
@@ -2587,6 +2655,7 @@ GameObject:
   - component: {fileID: 1112667289}
   - component: {fileID: 1112667288}
   - component: {fileID: 1112667292}
+  - component: {fileID: 1112667293}
   m_Layer: 0
   m_Name: Frota Vex
   m_TagString: Frota Vex
@@ -2697,7 +2766,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 76cbe8ca4c8d6c943a4d9f2d806833cf, type: 3}
+  m_Sprite: {fileID: 1793835738, guid: 20df6c506850037408ba47a38cde3a13, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2717,8 +2786,8 @@ Transform:
   m_GameObject: {fileID: 1112667287}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 16, y: -2.4, z: 0}
-  m_LocalScale: {x: 2.6263, y: 2.6263, z: 2.6263}
+  m_LocalPosition: {x: 15.58, y: -3.53, z: 0}
+  m_LocalScale: {x: 4.7400537, y: 4.7400537, z: 4.7400537}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1196858176}
@@ -2746,6 +2815,27 @@ MonoBehaviour:
   danoAoJogador: 1
   itemParaDropar: {fileID: 3525905135518307588, guid: e31ec134bc4e86b46be8d18e068c1faa, type: 3}
   chanceDeDropar: 45
+--- !u!95 &1112667293
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1112667287}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: cad1646324d74194892bc060a83201e5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1119368673
 GameObject:
   m_ObjectHideFlags: 0
@@ -2847,7 +2937,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.71100336, w: 0.70318866}
   m_LocalPosition: {x: -0.315, y: -0.033, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2.6263, y: 2.6263, z: 2.6263}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 535822697}
@@ -2878,7 +2968,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.71100336, w: 0.70318866}
   m_LocalPosition: {x: -0.315, y: -0.033, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2.6263, y: 2.6263, z: 2.6263}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1112667291}
@@ -2909,7 +2999,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.71100336, w: 0.70318866}
   m_LocalPosition: {x: -0.315, y: -0.033, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2.6263, y: 2.6263, z: 2.6263}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1627058357}
@@ -3689,6 +3779,7 @@ GameObject:
   - component: {fileID: 1627058355}
   - component: {fileID: 1627058354}
   - component: {fileID: 1627058353}
+  - component: {fileID: 1627058358}
   m_Layer: 0
   m_Name: Frota Vex (1)
   m_TagString: Frota Vex
@@ -3821,7 +3912,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 76cbe8ca4c8d6c943a4d9f2d806833cf, type: 3}
+  m_Sprite: {fileID: 1793835738, guid: 20df6c506850037408ba47a38cde3a13, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3841,13 +3932,34 @@ Transform:
   m_GameObject: {fileID: 1627058352}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 24.6, y: 0.34999985, z: 0}
-  m_LocalScale: {x: 2.6263, y: 2.6263, z: 2.6263}
+  m_LocalPosition: {x: 23.849998, y: 0.77, z: 0}
+  m_LocalScale: {x: 4.7400537, y: 4.7400537, z: 4.7400537}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1211683763}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1627058358
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1627058352}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6ce7730f17956a441bba45ac2de20bc1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1654206647 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1961022984444930974, guid: 36bb1e15e908e164fbdd928fe7490831, type: 3}
@@ -4876,7 +4988,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 476d0371d389f844486c470ac9d13d66, type: 3}
+  m_Sprite: {fileID: -2112929507, guid: 17f49f861022f384a878a3987f15b0da, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 76cbe8ca4c8d6c943a4d9f2d806833cf
+guid: 20df6c506850037408ba47a38cde3a13
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 390
+  spritePixelsToUnits: 780
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -121,7 +121,91 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: frota do vex (tipo1) animado_0
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 395
+        width: 305
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62a6cf6ae5089ce48b3cad9f2706c1c1
+      internalID: 1793835738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frota do vex (tipo1) animado_1
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 395
+        width: 301
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd1023ed1f229e642ae13f29c157c424
+      internalID: -320717666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frota do vex (tipo1) animado_2
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 5
+        width: 301
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53ea67b784ab35340b3d4f427b7b0123
+      internalID: -1471731418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frota do vex (tipo1) animado_3
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 5
+        width: 294
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51abd377da5c62f48af2f78ed8a2ec80
+      internalID: 93295577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -132,7 +216,11 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      frota do vex (tipo1) animado_0: 1793835738
+      frota do vex (tipo1) animado_1: -320717666
+      frota do vex (tipo1) animado_2: -1471731418
+      frota do vex (tipo1) animado_3: 93295577
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
