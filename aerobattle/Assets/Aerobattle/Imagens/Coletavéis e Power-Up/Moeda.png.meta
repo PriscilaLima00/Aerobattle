@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 476d0371d389f844486c470ac9d13d66
+guid: 17f49f861022f384a878a3987f15b0da
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 672
+  spritePixelsToUnits: 1000
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -70,7 +70,7 @@ TextureImporter:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
-    resizeAlgorithm: 1
+    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
     compressionQuality: 50
@@ -121,7 +121,112 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: moeda em formato de estrela animado (1)_0
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 1019
+        width: 462
+        height: 462
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33db0fa733dc63f4da27a1f08bc511f7
+      internalID: -2112929507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moeda em formato de estrela animado (1)_1
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 1019
+        width: 462
+        height: 462
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a39995a2a86df1d4f8d892c40afc793a
+      internalID: -1215020405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moeda em formato de estrela animado (1)_2
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 519
+        width: 462
+        height: 462
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62257483a6401eb488fdead9e71e250f
+      internalID: 87446898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moeda em formato de estrela animado (1)_3
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 519
+        width: 462
+        height: 462
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3ecf84c74e24924ba04e75f23d71716
+      internalID: 1915058086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moeda em formato de estrela animado (1)_4
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 19
+        width: 462
+        height: 462
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c38081c2b574b847b8bc74917bd2f75
+      internalID: 926617221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -132,7 +237,12 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      moeda em formato de estrela animado (1)_0: -2112929507
+      moeda em formato de estrela animado (1)_1: -1215020405
+      moeda em formato de estrela animado (1)_2: 87446898
+      moeda em formato de estrela animado (1)_3: 1915058086
+      moeda em formato de estrela animado (1)_4: 926617221
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

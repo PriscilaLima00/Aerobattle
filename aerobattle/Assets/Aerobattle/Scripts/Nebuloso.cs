@@ -19,21 +19,24 @@ public class Nebuloso : MonoBehaviour
     public int vidaMaximaDoNebuloso;
     public int vidaAtualDoNebuloso;
     
-    public float limiteVertical;  // Limite vertical de movimentação do inimigo
-    public float limiteHorizontal; // Limite horizontal de movimentação do inimigo
-    private bool jogadorDentroRaio = false;   // Flag para verificar se o jogador está dentro do raio
-    public float raioDeDeteccao;//raio que detecção do jogador
+    public float limiteVertical; 
+    public float limiteHorizontal;
+    private bool jogadorDentroRaio = false;  
+    public float raioDeDeteccao;
     public Transform jogador;
     
-    private Vector3 posicaoInicial;  // Posição inicial do inimigo
-    private bool indoParaDireita = true; // Flag para verificar a direção da patrulha
+    private Vector3 posicaoInicial;
+    private bool indoParaDireita = true;
+    
+    public GameObject itemParaDropar;
+    public int chanceDeDropar;
     
     // Start is called before the first frame update
     void Start()
     {
         vidaAtualDoNebuloso = vidaMaximaDoNebuloso;
         tempoAtualDosLasers = tempoMaximoEntreOsLasers;
-        inicioVertical = transform.position.y;// Armazena a posição inicial vertical do inimigo
+        inicioVertical = transform.position.y;
     }
 
     // Update is called once per frame
@@ -46,7 +49,7 @@ public class Nebuloso : MonoBehaviour
 
     private void MovimentarNebuloso()
     {
-        // Se o jogador está dentro do raio de detecção, move-se em direção ao jogador
+        
         if (jogadorDentroRaio)
         {
             MoverParaJogador();
@@ -134,6 +137,13 @@ public class Nebuloso : MonoBehaviour
 
         if (vidaAtualDoNebuloso <= 0)
         {
+            int numeroAleatorio = Random.Range(0, 100);
+
+            if (numeroAleatorio <= chanceDeDropar)
+            {
+                Instantiate(itemParaDropar, transform.position, Quaternion.Euler(0f, 0f, 0f));
+            }
+
             Destroy(this.gameObject);
         }
     
