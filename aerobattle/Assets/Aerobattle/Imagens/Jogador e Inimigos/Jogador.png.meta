@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 906251e5cb8947b488397157379ae212
+guid: 3bbacc40cc7e23e47a64b746d2e04b32
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -70,7 +70,7 @@ TextureImporter:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
-    resizeAlgorithm: 1
+    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
     compressionQuality: 50
@@ -123,7 +123,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: nave principal_0
+      name: nave principal animada_0
       rect:
         serializedVersion: 2
         x: 0
@@ -137,14 +137,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6e65c05e07744224eabb08f1e1479405
-      internalID: -823765546
+      spriteID: c536af896f82e5e45b23e4080eac026f
+      internalID: -824340325
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nave principal_1
+      name: nave principal animada_1
       rect:
         serializedVersion: 2
         x: 700
@@ -158,8 +158,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e23f0d450aefe334f81d4cf97d991228
-      internalID: -1984264086
+      spriteID: 0fad691c91dc8ba4ea4c1e5e1e39a6f2
+      internalID: -948859234
       vertices: []
       indices: 
       edges: []
@@ -175,8 +175,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      nave principal_0: -823765546
-      nave principal_1: -1984264086
+      nave principal animada_0: -824340325
+      nave principal animada_1: -948859234
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
