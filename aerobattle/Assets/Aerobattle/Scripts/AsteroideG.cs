@@ -24,6 +24,7 @@ public class AsteroideG : MonoBehaviour
     private void MovimentoDoAsteroideG()
     {
         transform.Translate(Vector3.left * velocidadeDoAsteroide * Time.deltaTime);
+
     }
     
     public void MachucarAsteroideG(int danoParaReceber)
