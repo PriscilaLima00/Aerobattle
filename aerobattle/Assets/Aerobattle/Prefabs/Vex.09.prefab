@@ -30,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 9.98, y: -1.15, z: 0}
-  m_LocalScale: {x: 6.3782988, y: 6.3782988, z: 6.3782988}
+  m_LocalScale: {x: 5.8088403, y: 5.8088403, z: 5.8088403}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6517637379682872304}
@@ -164,6 +164,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidadeDoInimigo: 6
+  velocidadeHorizontal: 5
   limiteSuperior: 2
   limiteInferior: -2
   localDoDisparoDaDireita: {fileID: 6517637379682872304}
@@ -171,9 +172,9 @@ MonoBehaviour:
   laserDoInimigo: {fileID: 2489940251796190028, guid: fdfdb875d7bac7a45884b591ed3b18c6, type: 3}
   raioDeDeteccao: 10
   tempoEntreOsTiros: 0.5
-  vidaAtualDoVex: 10
-  vidaMaximaDoVex: 10
-  itemParaDropar: {fileID: 1609768874358113285, guid: 850f9fc62a485ab4d92331a58b29d9a3, type: 3}
+  vidaAtualDoVex: 8
+  vidaMaximaDoVex: 8
+  itemParaDropar: {fileID: 0}
   chanceDeDropar: 100
 --- !u!1 &1955267038413153071
 GameObject:
