@@ -7,7 +7,7 @@ public class Vex_09 : MonoBehaviour
     public float velocidadeDoInimigo; // Velocidade do movimento vertical
     public float limiteSuperior; // Limite superior do movimento
     public float limiteInferior; // Limite inferior do movimento
-
+    
     private float posicaoInicialY;
     private bool indoParaCima = true;
 
@@ -156,7 +156,7 @@ public class Vex_09 : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.CompareTag("LaserSimples"))
+        if (col.CompareTag("Laser"))
         {
             ReceberDanoVex(1); // O laser simples tira 1 vida
         }
@@ -177,12 +177,7 @@ public class Vex_09 : MonoBehaviour
                 Instantiate(itemParaDropar, transform.position, Quaternion.Euler(0f, 0f, 0f));
             }
             Destroy(this.gameObject);
-            //Morrer();
+           
         }
     }
-
-    //private void Morrer()
-    //{
-        //Destroy(gameObject);
-    //
 }
