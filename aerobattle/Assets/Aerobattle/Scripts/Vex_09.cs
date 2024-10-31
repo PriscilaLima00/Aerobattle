@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Vex_09 : MonoBehaviour
 {
-    public float velocidadeDoInimigo; // Velocidade do movimento vertical
+    public float velocidadeDoInimigo;
+    public int velocidadeHorizontal;
     public float limiteSuperior; // Limite superior do movimento
     public float limiteInferior; // Limite inferior do movimento
     
@@ -51,6 +52,7 @@ public class Vex_09 : MonoBehaviour
     void Update()
     {
         MovimentoVertical();
+        MovimentoHorizontal();
 
         if (jogador != null)
         {
@@ -91,6 +93,11 @@ public class Vex_09 : MonoBehaviour
         transform.position = new Vector2(transform.position.x, novaPosicaoY);
     }
 
+
+    private void MovimentoHorizontal()
+    {
+        transform.Translate(Vector3.left * velocidadeHorizontal* Time.deltaTime);
+    }
     private void PerseguirJogador()
     {
         if (jogadorDetectado)

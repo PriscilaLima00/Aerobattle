@@ -9,18 +9,18 @@ public class Vitória : MonoBehaviour
     public void ShowVictoryScreen()
     {
         victoryPanel.SetActive(true);
-        Time.timeScale = 0; // Pausa o jogo
+        Time.timeScale = 0;
     }
 
     public void RestartGame()
     {
-        Time.timeScale = 1; // Reinicia o tempo
+        Time.timeScale = 1; 
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     public void LoadNextLevel()
     {
-        Time.timeScale = 1; // Reinicia o tempo
+        Time.timeScale = 1; 
         int nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
         if (nextSceneIndex < SceneManager.sceneCountInBuildSettings)
         {
@@ -34,7 +34,7 @@ public class Vitória : MonoBehaviour
 
     public void LoadMainMenu()
     {
-        Time.timeScale = 1; // Reinicia o tempo
-        SceneManager.LoadScene("MainMenu"); // Verifique se "MainMenu" é o nome correto da sua cena
+        Time.timeScale = 1;
+        SceneManager.LoadScene("MainMenu"); 
     }
 }
