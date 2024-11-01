@@ -10,6 +10,7 @@ public class Nebuloso : MonoBehaviour
     public float velocidadeDoNebuloso;
     public float velocidadeFrontal;
     private float inicioVertical;
+    public int velocidade;
     
     public float tempoMaximoEntreOsLasers;
     public float tempoAtualDosLasers;
@@ -45,6 +46,7 @@ public class Nebuloso : MonoBehaviour
         MovimentarNebuloso();
         VerificarJogador();
         AtirarSeNecessario();
+        Movimento();
     }
 
     private void MovimentarNebuloso()
@@ -64,10 +66,10 @@ public class Nebuloso : MonoBehaviour
             // Movimenta o inimigo horizontalmente dentro dos limites
             float novaPosicaoX = transform.position.x + (indoParaDireita ? velocidadeFrontal : -velocidadeFrontal) * Time.deltaTime;
             
-            // Verifica se o inimigo atingiu o limite horizontal e inverte a direção
+            //Verifica se o inimigo atingiu o limite horizontal e inverte a direção
             if (novaPosicaoX > posicaoInicial.x + limiteHorizontal)
             {
-                indoParaDireita = false;
+               indoParaDireita = false;
             }
             else if (novaPosicaoX < posicaoInicial.x - limiteHorizontal)
             {
@@ -77,7 +79,11 @@ public class Nebuloso : MonoBehaviour
             transform.position = posFinal; //Vector3.Lerp(transform.position, posFinal, 5 * Time.deltaTime);
         }
     }
-    
+
+    private void Movimento()
+    {
+        transform.Translate(Vector3.left * velocidade* Time.deltaTime);
+    }
     private void MoverParaJogador()
     {
         // Move o inimigo em direção ao jogador
@@ -88,7 +94,7 @@ public class Nebuloso : MonoBehaviour
         float novaPosicaoY = Mathf.Clamp(transform.position.y, posicaoInicial.y - limiteVertical, posicaoInicial.y + limiteVertical);
         transform.position = new Vector3(transform.position.x, novaPosicaoY, transform.position.z);
     }
-
+    
     private void VerificarJogador()
     {
         // Verifica se o jogador está dentro do raio de detecção

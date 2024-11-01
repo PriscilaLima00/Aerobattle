@@ -6,18 +6,18 @@ using UnityEngine.UI;
 public class VidaDoJogador : MonoBehaviour
 {
     public GameObject escudoDoJogador;
-    
+
     public Slider barraDeVidaDoJogador;
     public int vidaMaximaDoJogador;
     public int vidaAtualDoJogador;
-    
+
     public int vidaMaximaDoEscudo;
     public int vidaAtualDoEscudo;
 
     public bool temEscudo;
 
     private Animator an;
-    public int danoParaMeteoro = 3; 
+    public int danoParaMeteoro = 3;
     public int danoParaOAsteroide = 3;
     public int danoParaInimigo = 2;
 
@@ -28,10 +28,10 @@ public class VidaDoJogador : MonoBehaviour
         an = GetComponent<Animator>();
         vidaAtualDoEscudo = vidaMaximaDoEscudo;
         vidaAtualDoJogador = vidaMaximaDoJogador;
-        
+
         barraDeVidaDoJogador.maxValue = vidaMaximaDoJogador;
         barraDeVidaDoJogador.value = vidaAtualDoJogador;
-        
+
         escudoDoJogador.SetActive(false);
         temEscudo = false;
     }
@@ -67,33 +67,33 @@ public class VidaDoJogador : MonoBehaviour
 
     public void MachucarJogador(int danoParaReceber)
     {
-            if (!temEscudo)
+        if (!temEscudo)
+        {
+            vidaAtualDoJogador -= danoParaReceber;
+            barraDeVidaDoJogador.value = vidaAtualDoJogador;
+
+            if (an != null)
             {
-                vidaAtualDoJogador -= danoParaReceber;
-                barraDeVidaDoJogador.value = vidaAtualDoJogador; // Atualiza a barra de vida
-
-                if (an != null)
-                {
-                    an.SetBool("dano", true);
-                }
-
-                StartCoroutine(DesativarAnimacaoDeDano());
-
-                if (vidaAtualDoJogador <= 0)
-                {
-                    Morrer();
-                }
+                an.SetBool("dano", true);
             }
-            else
+
+            StartCoroutine(DesativarAnimacaoDeDano());
+
+            if (vidaAtualDoJogador <= 0)
             {
-                vidaAtualDoEscudo -= danoParaReceber;
-
-                if (vidaAtualDoEscudo <= 0)
-                {
-                    escudoDoJogador.SetActive(false);
-                    temEscudo = false;
-                }
+                Morrer();
             }
+        }
+        else
+        {
+            vidaAtualDoEscudo -= danoParaReceber;
+
+            if (vidaAtualDoEscudo <= 0)
+            {
+                escudoDoJogador.SetActive(false);
+                temEscudo = false;
+            }
+        }
     }
 
     private IEnumerator DesativarAnimacaoDeDano()
@@ -106,10 +106,10 @@ public class VidaDoJogador : MonoBehaviour
     }
 
     void OnCollisionEnter2D(Collision2D colisao)
-    { 
+    {
         if (colisao.gameObject.CompareTag("Meteoro"))
         {
-            MachucarJogador(danoParaMeteoro); // Chama o método de machucar jogador
+            MachucarJogador(danoParaMeteoro);
 
             Meteoro meteoro = colisao.gameObject.GetComponent<Meteoro>();
             if (meteoro != null)
@@ -119,7 +119,7 @@ public class VidaDoJogador : MonoBehaviour
         }
         else if (colisao.gameObject.CompareTag("Asteroide P."))
         {
-            MachucarJogador(danoParaOAsteroide); 
+            MachucarJogador(danoParaOAsteroide);
             AsteroideP asteroide = colisao.gameObject.GetComponent<AsteroideP>();
             if (asteroide != null)
             {
@@ -128,7 +128,7 @@ public class VidaDoJogador : MonoBehaviour
         }
         else if (colisao.gameObject.CompareTag("Asteroide G."))
         {
-            MachucarJogador(danoParaOAsteroide); 
+            MachucarJogador(danoParaOAsteroide);
 
             AsteroideG asteroide = colisao.gameObject.GetComponent<AsteroideG>();
             if (asteroide != null)
@@ -138,7 +138,7 @@ public class VidaDoJogador : MonoBehaviour
         }
         else if (colisao.gameObject.CompareTag("Inimigo"))
         {
-            MachucarJogador(danoParaInimigo); 
+            MachucarJogador(danoParaInimigo);
 
             Inimigo asteroide = colisao.gameObject.GetComponent<Inimigo>();
             if (asteroide != null)
@@ -147,21 +147,24 @@ public class VidaDoJogador : MonoBehaviour
             }
         }
     }
-    
-        void Morrer()
+
+    void Morrer()
+    {
+        // Adicione a lógica para mostrar a tela de Game Over ou reiniciar o nível
+        if (gameOver != null)
         {
-            // Adicione a lógica para mostrar a tela de Game Over ou reiniciar o nível
-            if (gameOver != null)
-            {
-                gameOver.ShowGameOver();
-            }
-            Destroy(gameObject); 
+            gameOver.ShowGameOver();
         }
-    
+
+        Destroy(gameObject);
+    }
+
+    // Método para verificar se o jogador está vivo
+    public bool EstahVivo()
+    {
+        return vidaAtualDoJogador > 0;
+    }
 }
-
-
-
     
     
    
