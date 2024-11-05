@@ -20,14 +20,14 @@ public class CenarioInfinito : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        /*if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
             direcaoParaDireita = false;
         }
         else if (Input.GetKeyDown(KeyCode.RightArrow))
         {
             direcaoParaDireita = true;
-        }
+        }*/
 
       
 

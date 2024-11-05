@@ -14,6 +14,7 @@ public class Vitória : MonoBehaviour
 
     public void RestartGame()
     {
+        Debug.Log("DEBUG RESTART");
         Time.timeScale = 1; 
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
@@ -22,18 +23,20 @@ public class Vitória : MonoBehaviour
     {
         Time.timeScale = 1; 
         int nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
+        Debug.Log(""+SceneManager.GetActiveScene());
         if (nextSceneIndex < SceneManager.sceneCountInBuildSettings)
         {
             SceneManager.LoadScene(nextSceneIndex);
         }
-        else
-        {
-            LoadMainMenu();
-        }
+        //else
+        //{
+            //LoadMainMenu();
+        //}
     }
 
     public void LoadMainMenu()
     {
+        Debug.Log("DEBUG LOAD");
         Time.timeScale = 1;
         SceneManager.LoadScene("MainMenu"); 
     }
