@@ -82,16 +82,18 @@ public class jogador : MonoBehaviour
 
     private void AtirarLaser()
     {
-        if (Input.GetButtonDown("Fire1"))
+        
+        if (Input.GetKeyDown(KeyCode.K))
         {
+            
             if (temLaserDuplo == false)
             {
-                Instantiate(laser,localDoDisparoUnico.position,localDoDisparoUnico.rotation);
+                Instantiate(laser, localDoDisparoUnico.position, localDoDisparoUnico.rotation);
             }
-            else
+            else 
             {
-                Instantiate(laser,localDoDisparoDaEsquerda.position,localDoDisparoDaEsquerda.rotation);
-                Instantiate(laser,localDoDisparoDaDireita.position,localDoDisparoDaDireita.rotation);
+                Instantiate(laser, localDoDisparoDaEsquerda.position, localDoDisparoDaEsquerda.rotation);
+                Instantiate(laser, localDoDisparoDaDireita.position, localDoDisparoDaDireita.rotation);
             }
         }
     }

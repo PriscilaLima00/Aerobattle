@@ -9876,6 +9876,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 1718546440}
+  gameOverScreen: {fileID: 179770268}
 --- !u!1001 &1512334013
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12770,6 +12771,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 0}
+  gameOverScreen: {fileID: 0}
 --- !u!4 &1962079789
 Transform:
   m_ObjectHideFlags: 0

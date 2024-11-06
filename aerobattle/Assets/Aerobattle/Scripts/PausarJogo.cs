@@ -5,17 +5,19 @@ using UnityEngine;
 public class PausarJogo : MonoBehaviour
 {
     public Transform pauseMenu;
-    
-    // Start is called before the first frame update
+    public Transform gameOverScreen;
+
+// Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
-    // Update is called once per frame
+// Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+       
+        if (Input.GetKeyDown(KeyCode.Space) && !gameOverScreen.gameObject.activeSelf)
         {
             if (pauseMenu.gameObject.activeSelf)
             {
@@ -35,5 +37,4 @@ public class PausarJogo : MonoBehaviour
         pauseMenu.gameObject.SetActive(false);
         Time.timeScale = 1;
     }
-   
 }
