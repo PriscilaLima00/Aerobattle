@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Vex_09 : MonoBehaviour
 {
-    public float velocidadeDoInimigo;
+   public float velocidadeDoInimigo;
     public int velocidadeHorizontal;
     public float limiteSuperior; // Limite superior do movimento
     public float limiteInferior; // Limite inferior do movimento
@@ -51,9 +51,6 @@ public class Vex_09 : MonoBehaviour
 
     void Update()
     {
-        MovimentoVertical();
-        MovimentoHorizontal();
-
         if (jogador != null)
         {
             // Verifica se o jogador está dentro do raio de detecção
@@ -61,13 +58,14 @@ public class Vex_09 : MonoBehaviour
             if (distanciaParaJogador <= raioDeDeteccao)
             {
                 jogadorDetectado = true;
-                PerseguirJogador();
-                AtirarSeNecessario();
-                AjusteParaJogador();
+                AtirarSeNecessario(); // Atira se o jogador foi detectado
+                PararMovimento(); // Impede o movimento do Vex
             }
             else
             {
                 jogadorDetectado = false;
+                MovimentoVertical(); // Movimenta o Vex verticalmente
+                MovimentoHorizontal(); // Movimenta o Vex horizontalmente
             }
         }
     }
@@ -93,18 +91,16 @@ public class Vex_09 : MonoBehaviour
         transform.position = new Vector2(transform.position.x, novaPosicaoY);
     }
 
-
     private void MovimentoHorizontal()
     {
-        transform.Translate(Vector3.left * velocidadeHorizontal* Time.deltaTime);
+        transform.Translate(Vector3.left * velocidadeHorizontal * Time.deltaTime);
     }
-    private void PerseguirJogador()
+
+    private void PararMovimento()
     {
-        if (jogadorDetectado)
-        {
-            Vector2 direcaoParaJogador = (jogador.position - transform.position).normalized;
-            transform.Translate(direcaoParaJogador * velocidadeDoInimigo * Time.deltaTime, Space.World);
-        }
+        // Impede o Vex de se mover quando o jogador está detectado
+        velocidadeHorizontal = 0; // Impede o movimento horizontal
+        velocidadeDoInimigo = 0;  // Impede o movimento vertical
     }
 
     private void AtirarSeNecessario()
@@ -125,38 +121,28 @@ public class Vex_09 : MonoBehaviour
     {
         if (laserDoInimigo != null && localDoDisparo != null)
         {
+            // Instancia o laser na posição do local de disparo, mantendo a rotação do local
             GameObject tiro = Instantiate(laserDoInimigo, localDoDisparo.position, localDoDisparo.rotation);
 
-            // Calcula a direção do tiro
-            Vector2 direcao = (jogador.position - transform.position).normalized;
-            float angulo = Mathf.Rad2Deg * Mathf.Atan2(direcao.y, direcao.x);
+            // Cria um script ou lógica para mover o laser em direção ao jogador
+            TiroDoInimigo laserScript = tiro.GetComponent<TiroDoInimigo>(); // Use o nome correto da classe
+            if (laserScript != null)
+            {
+                laserScript.MoverLaserEmDirecaoAoJogador(jogador.position); // Chama o método correto
+            }
 
-            // Ajusta a rotação do tiro
-            tiro.transform.eulerAngles = new Vector3(0, 0, angulo);
-
-            // Ajusta a orientação do tiro com base na orientação do Vex
+            // Ajusta o flipX do laser com base na orientação do Vex (nave)
             AjusteParaLaser(tiro);
-        }
-    }
-
-    private void AjusteParaJogador()
-    {
-        if (jogador != null)
-        {
-            // Calcula a direção para o jogador
-            Vector2 direcaoParaJogador = jogador.position - transform.position;
-
-            // Verifica se o jogador está à direita ou à esquerda
-            spriteRenderer.flipX = direcaoParaJogador.x > 0;
         }
     }
 
     private void AjusteParaLaser(GameObject tiro)
     {
-        // Ajusta a orientação do laser com base na orientação do Vex
+        // Ajusta a orientação do laser com base no flipX do Vex
         SpriteRenderer tiroSpriteRenderer = tiro.GetComponent<SpriteRenderer>();
         if (tiroSpriteRenderer != null)
         {
+            // O flipX do laser deve ser igual ao flipX da nave
             tiroSpriteRenderer.flipX = spriteRenderer.flipX;
         }
     }
@@ -184,7 +170,6 @@ public class Vex_09 : MonoBehaviour
                 Instantiate(itemParaDropar, transform.position, Quaternion.Euler(0f, 0f, 0f));
             }
             Destroy(this.gameObject);
-           
         }
     }
 }
