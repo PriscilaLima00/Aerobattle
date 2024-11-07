@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7329093768393327546}
   - component: {fileID: 3566725031602574195}
   - component: {fileID: -6575843318630037697}
+  - component: {fileID: -5183206931024670365}
   m_Layer: 0
   m_Name: Laser do Vex
   m_TagString: Untagged
@@ -142,9 +143,27 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2489940251796190028}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6651e9cfb96154c4ba9ce87ccabe5240, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocidadeDoLaser: 12
+  danoParaDar: 2
+  raioDeDeteccao: 10
+  layerDeColisao:
+    serializedVersion: 2
+    m_Bits: 1
+--- !u!114 &-5183206931024670365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2489940251796190028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ed215dd33d299e4f87ae9271bb8b403, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   velocidadeDoLaser: 12
