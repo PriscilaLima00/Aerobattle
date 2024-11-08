@@ -2148,7 +2148,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 512bffd834d48d541993169058b97e94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  laserDoInimigo: {fileID: 2489940251796190028, guid: 2ec161cf83c19674c9b2e488b53a330d, type: 3}
+  laserDoInimigo: {fileID: 2489940251796190028, guid: b2f710a0b62a1164aaaa9d290e16ae0d, type: 3}
   localDoDisparo:
   - {fileID: 1358747979}
   - {fileID: 1278983272}
@@ -4460,7 +4460,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 512bffd834d48d541993169058b97e94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  laserDoInimigo: {fileID: 2489940251796190028, guid: 2ec161cf83c19674c9b2e488b53a330d, type: 3}
+  laserDoInimigo: {fileID: 2489940251796190028, guid: 161020aae0478384388c3064aade3233, type: 3}
   localDoDisparo:
   - {fileID: 2035814075}
   - {fileID: 1450013598}
@@ -5369,7 +5369,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 512bffd834d48d541993169058b97e94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  laserDoInimigo: {fileID: 2489940251796190028, guid: 2ec161cf83c19674c9b2e488b53a330d, type: 3}
+  laserDoInimigo: {fileID: 2489940251796190028, guid: 161020aae0478384388c3064aade3233, type: 3}
   localDoDisparo:
   - {fileID: 308146350}
   - {fileID: 980295739}
@@ -6102,7 +6102,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 512bffd834d48d541993169058b97e94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  laserDoInimigo: {fileID: 2489940251796190028, guid: 2ec161cf83c19674c9b2e488b53a330d, type: 3}
+  laserDoInimigo: {fileID: 2489940251796190028, guid: 895e4a96000e7aa438a5d63bd5de6c61, type: 3}
   localDoDisparo:
   - {fileID: 333756048}
   - {fileID: 959632648}
@@ -7690,7 +7690,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 512bffd834d48d541993169058b97e94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  laserDoInimigo: {fileID: 2489940251796190028, guid: 2ec161cf83c19674c9b2e488b53a330d, type: 3}
+  laserDoInimigo: {fileID: 2489940251796190028, guid: 895e4a96000e7aa438a5d63bd5de6c61, type: 3}
   localDoDisparo:
   - {fileID: 1702877499}
   - {fileID: 1409248391}

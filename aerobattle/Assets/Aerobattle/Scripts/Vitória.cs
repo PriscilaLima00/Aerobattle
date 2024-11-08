@@ -4,7 +4,8 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class Vitória : MonoBehaviour
-{public GameObject victoryPanel;
+{
+    public GameObject victoryPanel;
 
     public void ShowVictoryScreen()
     {
@@ -28,10 +29,10 @@ public class Vitória : MonoBehaviour
         {
             SceneManager.LoadScene(nextSceneIndex);
         }
-        //else
-        //{
-            //LoadMainMenu();
-        //}
+        else
+        {
+            LoadMainMenu();
+        }
     }
 
     public void LoadMainMenu()
