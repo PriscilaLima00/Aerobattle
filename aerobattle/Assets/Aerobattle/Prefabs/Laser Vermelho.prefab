@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7393238797513918284}
   - component: {fileID: 3566725031602574195}
   m_Layer: 0
-  m_Name: laser Inimigo
+  m_Name: Laser Vermelho
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 3
-  m_Sprite: {fileID: 21300000, guid: 7e7152474d4d7ff48bfe361e710d3b92, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d2a2be06c7be0874bbe86ec9da83c830, type: 3}
   m_Color: {r: 0.9811321, g: 0.9811321, b: 0.9811321, a: 1}
   m_FlipX: 0
   m_FlipY: 0
