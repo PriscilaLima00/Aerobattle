@@ -15,7 +15,6 @@ public class Vitória : MonoBehaviour
 
     public void RestartGame()
     {
-        Debug.Log("DEBUG RESTART");
         Time.timeScale = 1; 
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
@@ -37,7 +36,6 @@ public class Vitória : MonoBehaviour
 
     public void LoadMainMenu()
     {
-        Debug.Log("DEBUG LOAD");
         Time.timeScale = 1;
         SceneManager.LoadScene("MainMenu"); 
     }
