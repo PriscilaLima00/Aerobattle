@@ -237,7 +237,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   escudoDoJogador: {fileID: 2072045082}
   barraDeVidaDoJogador: {fileID: 1572679428}
-  vidaMaximaDoJogador: 15
+  vidaMaximaDoJogador: 13
   vidaAtualDoJogador: 0
   vidaMaximaDoEscudo: 5
   vidaAtualDoEscudo: 5
@@ -653,8 +653,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b5c0977b120367419579444fe312d32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameOverPanel: {fileID: 0}
-  restartButton: {fileID: 0}
+  gameOverPanel: {fileID: 132035866}
+  restartButton: {fileID: 209376566}
 --- !u!1001 &126878914
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1431,6 +1431,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4279950592087971365, guid: 04ffb6d49bc13e64fa495f9c19c71ed4, type: 3}
+      propertyPath: m_BodyType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4279950592087971365, guid: 04ffb6d49bc13e64fa495f9c19c71ed4, type: 3}
       propertyPath: m_Constraints
       value: 6
       objectReference: {fileID: 0}
@@ -1576,7 +1580,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1595,7 +1599,7 @@ Transform:
   m_GameObject: {fileID: 240579500}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.24, y: -5.87, z: 0}
+  m_LocalPosition: {x: -0.24, y: -5.71, z: 0}
   m_LocalScale: {x: 27.286873, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1777,6 +1781,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 97724380936594595, guid: 64ef86fe1aa7e554cacb5dda2443d168, type: 3}
+      propertyPath: m_BodyType
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 97724380936594595, guid: 64ef86fe1aa7e554cacb5dda2443d168, type: 3}
       propertyPath: m_Constraints
       value: 6
@@ -2306,6 +2314,10 @@ PrefabInstance:
       propertyPath: velocidadeDoMeteoro
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 3519617724172303702, guid: cd2da8b16c54e784baf7eb18efa4c183, type: 3}
+      propertyPath: m_BodyType
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4360854100541352239, guid: cd2da8b16c54e784baf7eb18efa4c183, type: 3}
       propertyPath: m_Name
       value: Meteoro (6)
@@ -2501,6 +2513,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2397580226792229244, guid: 04ffb6d49bc13e64fa495f9c19c71ed4, type: 3}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4279950592087971365, guid: 04ffb6d49bc13e64fa495f9c19c71ed4, type: 3}
+      propertyPath: m_BodyType
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4279950592087971365, guid: 04ffb6d49bc13e64fa495f9c19c71ed4, type: 3}
@@ -2773,6 +2789,10 @@ PrefabInstance:
     - target: {fileID: 964817638622828405, guid: 04cf93097b09bc74fab4c9367d242fa4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2703448826007125239, guid: 04cf93097b09bc74fab4c9367d242fa4, type: 3}
+      propertyPath: m_BodyType
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2703448826007125239, guid: 04cf93097b09bc74fab4c9367d242fa4, type: 3}
       propertyPath: m_Constraints
@@ -3223,6 +3243,10 @@ PrefabInstance:
       propertyPath: velocidadeDoMeteoro
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 3519617724172303702, guid: cd2da8b16c54e784baf7eb18efa4c183, type: 3}
+      propertyPath: m_BodyType
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4360854100541352239, guid: cd2da8b16c54e784baf7eb18efa4c183, type: 3}
       propertyPath: m_Name
       value: Meteoro (3)
@@ -3472,6 +3496,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 97724380936594595, guid: 64ef86fe1aa7e554cacb5dda2443d168, type: 3}
+      propertyPath: m_BodyType
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 97724380936594595, guid: 64ef86fe1aa7e554cacb5dda2443d168, type: 3}
       propertyPath: m_Constraints
       value: 6
@@ -6491,6 +6519,10 @@ PrefabInstance:
       propertyPath: velocidadeDoMeteoro
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 3519617724172303702, guid: cd2da8b16c54e784baf7eb18efa4c183, type: 3}
+      propertyPath: m_BodyType
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4360854100541352239, guid: cd2da8b16c54e784baf7eb18efa4c183, type: 3}
       propertyPath: m_Name
       value: Meteoro (2)
@@ -7590,6 +7622,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 97724380936594595, guid: 64ef86fe1aa7e554cacb5dda2443d168, type: 3}
+      propertyPath: m_BodyType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 97724380936594595, guid: 64ef86fe1aa7e554cacb5dda2443d168, type: 3}
       propertyPath: m_Constraints
       value: 6
       objectReference: {fileID: 0}
@@ -7848,6 +7884,10 @@ PrefabInstance:
       propertyPath: velocidadeDoMeteoro
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 3519617724172303702, guid: cd2da8b16c54e784baf7eb18efa4c183, type: 3}
+      propertyPath: m_BodyType
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4360854100541352239, guid: cd2da8b16c54e784baf7eb18efa4c183, type: 3}
       propertyPath: m_Name
       value: Meteoro (5)
@@ -7974,7 +8014,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -7993,7 +8033,7 @@ Transform:
   m_GameObject: {fileID: 1673068263}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.09, y: 5.95, z: 0}
+  m_LocalPosition: {x: 0.09, y: 5.79, z: 0}
   m_LocalScale: {x: 27.286873, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8082,6 +8122,10 @@ PrefabInstance:
     - target: {fileID: 59316281626633889, guid: cd2da8b16c54e784baf7eb18efa4c183, type: 3}
       propertyPath: velocidadeDoMeteoro
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3519617724172303702, guid: cd2da8b16c54e784baf7eb18efa4c183, type: 3}
+      propertyPath: m_BodyType
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4360854100541352239, guid: cd2da8b16c54e784baf7eb18efa4c183, type: 3}
       propertyPath: m_Name
@@ -8209,6 +8253,10 @@ PrefabInstance:
     - target: {fileID: 59316281626633889, guid: cd2da8b16c54e784baf7eb18efa4c183, type: 3}
       propertyPath: velocidadeDoMeteoro
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3519617724172303702, guid: cd2da8b16c54e784baf7eb18efa4c183, type: 3}
+      propertyPath: m_BodyType
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4360854100541352239, guid: cd2da8b16c54e784baf7eb18efa4c183, type: 3}
       propertyPath: m_Name
@@ -10211,6 +10259,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2703448826007125239, guid: 04cf93097b09bc74fab4c9367d242fa4, type: 3}
+      propertyPath: m_BodyType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2703448826007125239, guid: 04cf93097b09bc74fab4c9367d242fa4, type: 3}
       propertyPath: m_Constraints
       value: 6
       objectReference: {fileID: 0}
@@ -10663,7 +10715,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2798192586633814025}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -10690,7 +10742,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2798192588301304820}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -10887,7 +10939,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2397580225299437174}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -10914,7 +10966,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2397580225886477052}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0

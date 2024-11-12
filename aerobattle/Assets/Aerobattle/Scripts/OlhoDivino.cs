@@ -3,10 +3,9 @@ using UnityEngine.SceneManagement;
 
 public class OlhoDivino : MonoBehaviour
 {
-    public VitóriaFinal vitoriaFinalScript; // Referência para o script de Vitória Final
-
-    // Quando o jogador colide com o "olho divino"
-    void OnTriggerEnter(Collider other)
+    public VitóriaFinal vitoriaFinalScript; 
+    
+    void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Jogador"))  
         {

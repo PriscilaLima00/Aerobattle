@@ -20,22 +20,22 @@ public class InimigoChefão : MonoBehaviour
     public GameObject itemParaDropar;
     public int chanceDeDropar;
 
-    public Transform jogador; // Referência ao transform do jogador
-    private VidaDoJogador vidaDoJogador; // Referência ao script de vida do jogador
+    public Transform jogador; 
+    private VidaDoJogador vidaDoJogador; 
 
     // Start is called before the first frame update
     void Start()
     {
         vidaAtualDoInimigo = vidaMaximaDoInimigo;
-        tempoAtualDosLasers = tempoMaximoEntreOsLasers; // Inicializa o tempo atual dos lasers
-        vidaDoJogador = jogador.GetComponent<VidaDoJogador>(); // Obtém a referência do jogador
+        tempoAtualDosLasers = tempoMaximoEntreOsLasers; 
+        vidaDoJogador = jogador.GetComponent<VidaDoJogador>(); 
     }
 
     // Update is called once per frame
     void Update()
     {
         MovimentarInimigo();
-        if (inimigoAtirador && vidaDoJogador != null && vidaDoJogador.EstahVivo()) // Verifica se o jogador está vivo
+        if (inimigoAtirador && vidaDoJogador != null && vidaDoJogador.EstahVivo()) 
         {
             AtirarLaser();
         }

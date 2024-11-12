@@ -63,11 +63,11 @@ public class jogador : MonoBehaviour
             Destroy(col.gameObject);
         }
     }
-    
+
 
     private void MovimentoPlay()
     {
-        teclasApertadas = new Vector2(Input.GetAxisRaw("Horizontal"),Input.GetAxisRaw("Vertical"));
+        teclasApertadas = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
         rigi.velocity = teclasApertadas.normalized * velocidadeDaNave;
         if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
         {
@@ -77,6 +77,15 @@ public class jogador : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
         {
             transform.eulerAngles = new Vector3(0, 180, 0);
+        }
+
+        if (transform.position.x > 10)
+        {
+            transform.position = new Vector3(10, transform.position.y, transform.position.z); // Limite para frente
+        }
+        else if (transform.position.x < -10)
+        {
+            transform.position = new Vector3(-10, transform.position.y, transform.position.z); // Limite para trás
         }
     }
 
