@@ -33,16 +33,13 @@ public class Vex_09 : MonoBehaviour
 
     void Start()
     {
-        
         posicaoInicialY = transform.position.y;
         tempoParaOProximoTiro = tempoEntreOsTiros;
         jogadorDetectado = false;
 
-       
         jogador = GameObject.FindGameObjectWithTag("Jogador")?.transform;
         vidaAtualDoVex = vidaMaximaDoVex;
 
-        
         spriteRenderer = GetComponent<SpriteRenderer>();
         if (spriteRenderer == null)
         {
@@ -53,7 +50,7 @@ public class Vex_09 : MonoBehaviour
     void Update()
     {
         VerificarJogador();
-        
+
         if (movimentoVerticalAtivado)
         {
             MovimentoVertical();
@@ -62,7 +59,7 @@ public class Vex_09 : MonoBehaviour
         {
             MovimentoHorizontal();
         }
-        
+
         AtirarSeNecessario();
     }
 
@@ -94,7 +91,7 @@ public class Vex_09 : MonoBehaviour
 
     private void VerificarJogador()
     {
-        if (jogador != null && !movimentoVerticalAtivado) 
+        if (jogador != null && !movimentoVerticalAtivado)
         {
             float distanciaParaJogador = Vector3.Distance(transform.position, jogador.position);
             jogadorDetectado = distanciaParaJogador <= raioDeDeteccao;
@@ -108,15 +105,19 @@ public class Vex_09 : MonoBehaviour
 
     private void AtirarSeNecessario()
     {
-        if (tempoParaOProximoTiro <= 0)
+        if (jogadorDetectado &&
+            movimentoVerticalAtivado) // Verifica se o jogador está no raio de detecção e o movimento vertical está ativado
         {
-            AtirarLaser(localDoDisparoDaDireita);
-            AtirarLaser(localDoDisparoDaEsquerda);
-            tempoParaOProximoTiro = tempoEntreOsTiros; 
-        }
-        else
-        {
-            tempoParaOProximoTiro -= Time.deltaTime;
+            if (tempoParaOProximoTiro <= 0)
+            {
+                AtirarLaser(localDoDisparoDaDireita);
+                AtirarLaser(localDoDisparoDaEsquerda);
+                tempoParaOProximoTiro = tempoEntreOsTiros;
+            }
+            else
+            {
+                tempoParaOProximoTiro -= Time.deltaTime;
+            }
         }
     }
 
@@ -125,7 +126,7 @@ public class Vex_09 : MonoBehaviour
         if (laserDoInimigo != null && localDoDisparo != null)
         {
             GameObject tiro = Instantiate(laserDoInimigo, localDoDisparo.position, localDoDisparo.rotation);
-            
+
             AjusteParaLaser(tiro);
         }
     }
@@ -148,7 +149,7 @@ public class Vex_09 : MonoBehaviour
 
         if (col.CompareTag("Laser"))
         {
-            ReceberDanoVex(1); 
+            ReceberDanoVex(1);
         }
         else if (col.CompareTag("Laser Duplo"))
         {
@@ -160,7 +161,6 @@ public class Vex_09 : MonoBehaviour
     {
         if (col.CompareTag("Jogador"))
         {
-            
             movimentoVerticalAtivado = false;
         }
     }
