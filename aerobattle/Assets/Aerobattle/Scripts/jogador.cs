@@ -79,13 +79,13 @@ public class jogador : MonoBehaviour
             transform.eulerAngles = new Vector3(0, 180, 0);
         }
 
-        if (transform.position.x > 10)
+        if (transform.position.x > 9)
         {
-            transform.position = new Vector3(10, transform.position.y, transform.position.z); // Limite para frente
+            transform.position = new Vector3(9, transform.position.y, transform.position.z); // Limite para frente
         }
-        else if (transform.position.x < -10)
+        else if (transform.position.x < -9)
         {
-            transform.position = new Vector3(-10, transform.position.y, transform.position.z); // Limite para trás
+            transform.position = new Vector3(-9, transform.position.y, transform.position.z); // Limite para trás
         }
     }
 
