@@ -249,7 +249,7 @@ MonoBehaviour:
   rigi: {fileID: 27085985}
   velocidadeDaNave: 10
   temLaserDuplo: 0
-  laser: {fileID: 2388550535184066914, guid: b5c8a716b2176bb41b40d2146e3ae91a, type: 3}
+  laser: {fileID: 5807330973656066383, guid: bdd2763c379a5a142a6ede7e3db3cbfc, type: 3}
   localDoDisparoUnico: {fileID: 896859808}
   localDoDisparoDaEsquerda: {fileID: 1716887131}
   localDoDisparoDaDireita: {fileID: 1949000274}
@@ -787,7 +787,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e8ea13a113ff984bb4774bee6f7022f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  laserDaFrotaVex: {fileID: 2489940251796190028, guid: 2ec161cf83c19674c9b2e488b53a330d, type: 3}
+  laserDaFrotaVex: {fileID: 7928385790296243842, guid: cbb5aeb389034e64bb05447d6cf5a016, type: 3}
   localDoDisparo:
   - {fileID: 1815383776}
   velocidadeDaFrotaVex: 4
@@ -1803,7 +1803,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e8ea13a113ff984bb4774bee6f7022f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  laserDaFrotaVex: {fileID: 2489940251796190028, guid: 2ec161cf83c19674c9b2e488b53a330d, type: 3}
+  laserDaFrotaVex: {fileID: 7928385790296243842, guid: cbb5aeb389034e64bb05447d6cf5a016, type: 3}
   localDoDisparo:
   - {fileID: 684842731}
   velocidadeDaFrotaVex: 5
@@ -2994,7 +2994,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e8ea13a113ff984bb4774bee6f7022f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  laserDaFrotaVex: {fileID: 2489940251796190028, guid: 2ec161cf83c19674c9b2e488b53a330d, type: 3}
+  laserDaFrotaVex: {fileID: 7928385790296243842, guid: cbb5aeb389034e64bb05447d6cf5a016, type: 3}
   localDoDisparo:
   - {fileID: 891172377}
   velocidadeDaFrotaVex: 6
@@ -3751,7 +3751,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e8ea13a113ff984bb4774bee6f7022f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  laserDaFrotaVex: {fileID: 2489940251796190028, guid: 2ec161cf83c19674c9b2e488b53a330d, type: 3}
+  laserDaFrotaVex: {fileID: 7928385790296243842, guid: cbb5aeb389034e64bb05447d6cf5a016, type: 3}
   localDoDisparo:
   - {fileID: 1805194571}
   velocidadeDaFrotaVex: 4
@@ -4747,7 +4747,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e8ea13a113ff984bb4774bee6f7022f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  laserDaFrotaVex: {fileID: 2489940251796190028, guid: 2ec161cf83c19674c9b2e488b53a330d, type: 3}
+  laserDaFrotaVex: {fileID: 7928385790296243842, guid: cbb5aeb389034e64bb05447d6cf5a016, type: 3}
   localDoDisparo:
   - {fileID: 1968670136}
   velocidadeDaFrotaVex: 6
@@ -5016,7 +5016,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e8ea13a113ff984bb4774bee6f7022f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  laserDaFrotaVex: {fileID: 2489940251796190028, guid: 2ec161cf83c19674c9b2e488b53a330d, type: 3}
+  laserDaFrotaVex: {fileID: 7928385790296243842, guid: cbb5aeb389034e64bb05447d6cf5a016, type: 3}
   localDoDisparo:
   - {fileID: 1897932336}
   velocidadeDaFrotaVex: 4
@@ -5429,7 +5429,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e8ea13a113ff984bb4774bee6f7022f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  laserDaFrotaVex: {fileID: 2489940251796190028, guid: 2ec161cf83c19674c9b2e488b53a330d, type: 3}
+  laserDaFrotaVex: {fileID: 7928385790296243842, guid: cbb5aeb389034e64bb05447d6cf5a016, type: 3}
   localDoDisparo:
   - {fileID: 1129101964}
   velocidadeDaFrotaVex: 6
@@ -5972,7 +5972,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e8ea13a113ff984bb4774bee6f7022f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  laserDaFrotaVex: {fileID: 2489940251796190028, guid: 2ec161cf83c19674c9b2e488b53a330d, type: 3}
+  laserDaFrotaVex: {fileID: 7928385790296243842, guid: cbb5aeb389034e64bb05447d6cf5a016, type: 3}
   localDoDisparo:
   - {fileID: 205821385}
   velocidadeDaFrotaVex: 6
@@ -7133,7 +7133,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e8ea13a113ff984bb4774bee6f7022f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  laserDaFrotaVex: {fileID: 2489940251796190028, guid: 2ec161cf83c19674c9b2e488b53a330d, type: 3}
+  laserDaFrotaVex: {fileID: 7928385790296243842, guid: cbb5aeb389034e64bb05447d6cf5a016, type: 3}
   localDoDisparo:
   - {fileID: 297426403}
   velocidadeDaFrotaVex: 4
@@ -7981,7 +7981,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e8ea13a113ff984bb4774bee6f7022f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  laserDaFrotaVex: {fileID: 2489940251796190028, guid: 2ec161cf83c19674c9b2e488b53a330d, type: 3}
+  laserDaFrotaVex: {fileID: 7928385790296243842, guid: cbb5aeb389034e64bb05447d6cf5a016, type: 3}
   localDoDisparo:
   - {fileID: 718616775}
   velocidadeDaFrotaVex: 4
@@ -9852,7 +9852,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e8ea13a113ff984bb4774bee6f7022f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  laserDaFrotaVex: {fileID: 2489940251796190028, guid: 2ec161cf83c19674c9b2e488b53a330d, type: 3}
+  laserDaFrotaVex: {fileID: 7928385790296243842, guid: cbb5aeb389034e64bb05447d6cf5a016, type: 3}
   localDoDisparo:
   - {fileID: 1007076032}
   velocidadeDaFrotaVex: 4
@@ -11292,7 +11292,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e8ea13a113ff984bb4774bee6f7022f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  laserDaFrotaVex: {fileID: 2489940251796190028, guid: 2ec161cf83c19674c9b2e488b53a330d, type: 3}
+  laserDaFrotaVex: {fileID: 7928385790296243842, guid: cbb5aeb389034e64bb05447d6cf5a016, type: 3}
   localDoDisparo:
   - {fileID: 1196858176}
   velocidadeDaFrotaVex: 6
@@ -11979,7 +11979,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e8ea13a113ff984bb4774bee6f7022f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  laserDaFrotaVex: {fileID: 2489940251796190028, guid: 2ec161cf83c19674c9b2e488b53a330d, type: 3}
+  laserDaFrotaVex: {fileID: 7928385790296243842, guid: cbb5aeb389034e64bb05447d6cf5a016, type: 3}
   localDoDisparo:
   - {fileID: 99930152}
   velocidadeDaFrotaVex: 4
@@ -12700,7 +12700,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e8ea13a113ff984bb4774bee6f7022f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  laserDaFrotaVex: {fileID: 2489940251796190028, guid: 2ec161cf83c19674c9b2e488b53a330d, type: 3}
+  laserDaFrotaVex: {fileID: 7928385790296243842, guid: cbb5aeb389034e64bb05447d6cf5a016, type: 3}
   localDoDisparo:
   - {fileID: 1965893368}
   velocidadeDaFrotaVex: 5
@@ -13099,7 +13099,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e8ea13a113ff984bb4774bee6f7022f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  laserDaFrotaVex: {fileID: 2489940251796190028, guid: 2ec161cf83c19674c9b2e488b53a330d, type: 3}
+  laserDaFrotaVex: {fileID: 7928385790296243842, guid: cbb5aeb389034e64bb05447d6cf5a016, type: 3}
   localDoDisparo:
   - {fileID: 823902320}
   velocidadeDaFrotaVex: 4
@@ -13690,7 +13690,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e8ea13a113ff984bb4774bee6f7022f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  laserDaFrotaVex: {fileID: 2489940251796190028, guid: 2ec161cf83c19674c9b2e488b53a330d, type: 3}
+  laserDaFrotaVex: {fileID: 7928385790296243842, guid: cbb5aeb389034e64bb05447d6cf5a016, type: 3}
   localDoDisparo:
   - {fileID: 1611387456}
   velocidadeDaFrotaVex: 6
@@ -16843,7 +16843,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e8ea13a113ff984bb4774bee6f7022f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  laserDaFrotaVex: {fileID: 2489940251796190028, guid: 2ec161cf83c19674c9b2e488b53a330d, type: 3}
+  laserDaFrotaVex: {fileID: 7928385790296243842, guid: cbb5aeb389034e64bb05447d6cf5a016, type: 3}
   localDoDisparo:
   - {fileID: 1211683763}
   velocidadeDaFrotaVex: 6
@@ -20171,7 +20171,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e8ea13a113ff984bb4774bee6f7022f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  laserDaFrotaVex: {fileID: 2489940251796190028, guid: 2ec161cf83c19674c9b2e488b53a330d, type: 3}
+  laserDaFrotaVex: {fileID: 7928385790296243842, guid: cbb5aeb389034e64bb05447d6cf5a016, type: 3}
   localDoDisparo:
   - {fileID: 1451130436}
   velocidadeDaFrotaVex: 4
@@ -21389,7 +21389,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e8ea13a113ff984bb4774bee6f7022f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  laserDaFrotaVex: {fileID: 2489940251796190028, guid: 2ec161cf83c19674c9b2e488b53a330d, type: 3}
+  laserDaFrotaVex: {fileID: 7928385790296243842, guid: cbb5aeb389034e64bb05447d6cf5a016, type: 3}
   localDoDisparo:
   - {fileID: 1722013781}
   velocidadeDaFrotaVex: 5

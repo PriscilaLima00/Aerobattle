@@ -261,7 +261,7 @@ MonoBehaviour:
   rigi: {fileID: 27085985}
   velocidadeDaNave: 10
   temLaserDuplo: 0
-  laser: {fileID: 2388550535184066914, guid: b5c8a716b2176bb41b40d2146e3ae91a, type: 3}
+  laser: {fileID: 5807330973656066383, guid: bdd2763c379a5a142a6ede7e3db3cbfc, type: 3}
   localDoDisparoUnico: {fileID: 896859808}
   localDoDisparoDaEsquerda: {fileID: 1716887131}
   localDoDisparoDaDireita: {fileID: 1949000274}
@@ -784,7 +784,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33758b3096b6a294990451e7e7ca8f82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  laserDoInimigo: {fileID: 2489940251796190028, guid: b2f710a0b62a1164aaaa9d290e16ae0d, type: 3}
+  laserDoInimigo: {fileID: 1491252396394637682, guid: 2d25160e70a3c2442bc3fc253a01c961, type: 3}
   localDoDisparo: {fileID: 1995425524}
   velocidadeDoNebuloso: 4
   velocidadeFrontal: 3
@@ -13844,7 +13844,7 @@ GameObject:
   m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1995425524
 Transform:
   m_ObjectHideFlags: 0
@@ -13854,7 +13854,7 @@ Transform:
   m_GameObject: {fileID: 1995425523}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.707971, w: 0.70624155}
-  m_LocalPosition: {x: -0.0245, y: 0.1134, z: 0}
+  m_LocalPosition: {x: -0.059, y: 0.113, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

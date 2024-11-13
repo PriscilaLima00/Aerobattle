@@ -261,7 +261,7 @@ MonoBehaviour:
   rigi: {fileID: 27085985}
   velocidadeDaNave: 10
   temLaserDuplo: 0
-  laser: {fileID: 2388550535184066914, guid: b5c8a716b2176bb41b40d2146e3ae91a, type: 3}
+  laser: {fileID: 5807330973656066383, guid: bdd2763c379a5a142a6ede7e3db3cbfc, type: 3}
   localDoDisparoUnico: {fileID: 896859808}
   localDoDisparoDaEsquerda: {fileID: 1716887131}
   localDoDisparoDaDireita: {fileID: 1949000274}
