@@ -71,12 +71,12 @@ public class jogador : MonoBehaviour
         rigi.velocity = teclasApertadas.normalized * velocidadeDaNave;
         if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
         {
-            transform.eulerAngles = new Vector3(0, 0, 0);
+            //transform.eulerAngles = new Vector3(0, 0, 0);
         }
 
         if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
         {
-            transform.eulerAngles = new Vector3(0, 180, 0);
+            //transform.eulerAngles = new Vector3(0, 180, 0);
         }
 
         if (transform.position.x > 9)

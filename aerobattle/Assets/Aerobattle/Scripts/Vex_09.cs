@@ -31,6 +31,7 @@ public class Vex_09 : MonoBehaviour
     public GameObject itemParaDropar;
     public int chanceDeDropar;
 
+    public float distanciaMinimaParaPerseguir = 1.5f; 
     void Start()
     {
         posicaoInicialY = transform.position.y;
@@ -91,14 +92,28 @@ public class Vex_09 : MonoBehaviour
 
     private void VerificarJogador()
     {
-        if (jogador != null && !movimentoVerticalAtivado)
+        if (jogador != null)
         {
             float distanciaParaJogador = Vector3.Distance(transform.position, jogador.position);
             jogadorDetectado = distanciaParaJogador <= raioDeDeteccao;
 
             if (jogadorDetectado)
             {
-                movimentoVerticalAtivado = true;
+                // Verifica se o Vex está à frente do jogador no eixo X (para evitar que ele persiga o jogador por trás)
+                if (transform.position.x > jogador.position.x)
+                {
+                    movimentoVerticalAtivado = true;
+                }
+                else if (distanciaParaJogador >= distanciaMinimaParaPerseguir)
+                {
+                    // Se o jogador está à frente e a uma distância mínima, ativa a perseguição novamente
+                    movimentoVerticalAtivado = true;
+                }
+                else
+                {
+                    // Desativa o movimento vertical para evitar que o Vex fique "grudado" no jogador
+                    movimentoVerticalAtivado = false;
+                }
             }
         }
     }
@@ -106,7 +121,7 @@ public class Vex_09 : MonoBehaviour
     private void AtirarSeNecessario()
     {
         if (jogadorDetectado &&
-            movimentoVerticalAtivado) // Verifica se o jogador está no raio de detecção e o movimento vertical está ativado
+            movimentoVerticalAtivado) 
         {
             if (tempoParaOProximoTiro <= 0)
             {
