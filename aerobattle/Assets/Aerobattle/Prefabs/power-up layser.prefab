@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5766954325706059647}
   m_Layer: 0
   m_Name: power-up layser
-  m_TagString: Untagged
+  m_TagString: Laser duplo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

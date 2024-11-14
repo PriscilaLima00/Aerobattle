@@ -31,7 +31,10 @@ public class Vex_09 : MonoBehaviour
     public GameObject itemParaDropar;
     public int chanceDeDropar;
 
-    public float distanciaMinimaParaPerseguir = 1.5f; 
+    public float distanciaMinimaParaPerseguir = 1.5f;
+    private bool jogadorNoCollider = false;
+    public int danoParaDar = 1;
+
     void Start()
     {
         posicaoInicialY = transform.position.y;
@@ -121,7 +124,7 @@ public class Vex_09 : MonoBehaviour
     private void AtirarSeNecessario()
     {
         if (jogadorDetectado &&
-            movimentoVerticalAtivado) 
+            movimentoVerticalAtivado)
         {
             if (tempoParaOProximoTiro <= 0)
             {
@@ -141,7 +144,6 @@ public class Vex_09 : MonoBehaviour
         if (laserDoInimigo != null && localDoDisparo != null)
         {
             GameObject tiro = Instantiate(laserDoInimigo, localDoDisparo.position, localDoDisparo.rotation);
-
             AjusteParaLaser(tiro);
         }
     }
@@ -160,13 +162,19 @@ public class Vex_09 : MonoBehaviour
         if (col.CompareTag("Jogador"))
         {
             movimentoVerticalAtivado = true;
+            // Aplica o dano ao jogador
+            VidaDoJogador playerHealth = col.GetComponent<VidaDoJogador>();
+            if (playerHealth != null)
+            {
+                playerHealth.MachucarJogador(danoParaDar);
+            }
         }
 
         if (col.CompareTag("Laser"))
         {
             ReceberDanoVex(1);
         }
-        else if (col.CompareTag("Laser Duplo"))
+        else if (col.CompareTag("Laser duplo"))
         {
             ReceberDanoVex(2);
         }

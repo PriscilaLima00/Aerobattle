@@ -69,4 +69,12 @@ public class Lamina : MonoBehaviour
         // Rotaciona a lâmina
         transform.Rotate(Vector3.forward, 100 * Time.deltaTime);
     }
+    
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Destroy"))
+        {
+            Destroy(gameObject);
+        }
+    }
 }

@@ -56,6 +56,10 @@ public class Missel : MonoBehaviour
         {
             // Destrói o míssil
             Destroy(gameObject);
+        } 
+        if (collider.CompareTag("Destroy"))
+        {
+            Destroy(gameObject);
         }
     }
     
@@ -64,4 +68,5 @@ public class Missel : MonoBehaviour
     {
         transform.Translate(Vector3.left * velocidade * Time.deltaTime);
     }
+    
 }

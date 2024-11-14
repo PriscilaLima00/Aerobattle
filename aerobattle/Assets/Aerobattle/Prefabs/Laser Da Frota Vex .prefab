@@ -157,5 +157,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ed215dd33d299e4f87ae9271bb8b403, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidadeDoLaser: 12
+  velocidadeDoLaser: 10
   danoParaDar: 1

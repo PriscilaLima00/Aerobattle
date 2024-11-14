@@ -48,6 +48,16 @@ public class Meteoro : MonoBehaviour
             Morrer();
         }
     }
+    
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        // Verifica se o objeto com o qual a moeda colidiu tem a tag "destroy"
+        if (other.CompareTag("Destroy"))
+        {
+            // Destroi a moeda
+            Destroy(gameObject);
+        }
+    }
 
     void Morrer()
     {

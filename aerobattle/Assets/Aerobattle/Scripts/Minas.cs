@@ -40,6 +40,10 @@ public class MinaEspacial : MonoBehaviour
             // Detona imediatamente ao detectar o jogador
             Detonar();
         }
+        if (other.CompareTag("Destroy"))
+        { 
+            Destroy(gameObject);
+        }
     }
 
     private void Detonar()

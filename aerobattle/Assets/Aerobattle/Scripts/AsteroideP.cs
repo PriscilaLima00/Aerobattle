@@ -58,6 +58,16 @@ public class AsteroideP : MonoBehaviour
             Morrer();
         }
     }
+    
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        // Verifica se o objeto com o qual a moeda colidiu tem a tag "destroy"
+        if (other.CompareTag("Destroy"))
+        {
+            // Destroi a moeda
+            Destroy(gameObject);
+        }
+    }
 
 // Método para lidar com a morte do asteroide
     void Morrer()

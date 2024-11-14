@@ -69,7 +69,6 @@ public class Laser : MonoBehaviour
         else if (colision.gameObject.CompareTag("Chefão"))
         {
             colision.gameObject.GetComponent<InimigoChefão>().MachucarInimigoChefao(danoParaDar);
-            Destroy(gameObject);
         }
     }
 

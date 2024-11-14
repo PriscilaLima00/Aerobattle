@@ -34,4 +34,12 @@ public class NuvemDePoeira : MonoBehaviour
     {
         transform.Translate(Vector3.left * velocidade* Time.deltaTime);
     }
+    
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Destroy"))
+        {
+            Destroy(gameObject);
+        }
+    }
 }

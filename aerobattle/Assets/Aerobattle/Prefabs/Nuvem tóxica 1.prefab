@@ -128,7 +128,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   danoParaCausar: 1
   tempoDeDano: 1
-  velocidade: 2
+  velocidade: 4
 --- !u!60 &6114965935925560407
 PolygonCollider2D:
   m_ObjectHideFlags: 0

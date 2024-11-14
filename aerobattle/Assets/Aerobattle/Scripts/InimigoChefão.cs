@@ -20,22 +20,24 @@ public class InimigoChefão : MonoBehaviour
     public GameObject itemParaDropar;
     public int chanceDeDropar;
 
-    public Transform jogador; 
-    private VidaDoJogador vidaDoJogador; 
+    public Transform jogador;
+    private VidaDoJogador vidaDoJogador;
 
-    // Start is called before the first frame update
+    public float distanciaMinimaParaParar = 0.5f; // Distância mínima antes de parar de se mover para o jogador
+
+// Start is called before the first frame update
     void Start()
     {
         vidaAtualDoInimigo = vidaMaximaDoInimigo;
-        tempoAtualDosLasers = tempoMaximoEntreOsLasers; 
-        vidaDoJogador = jogador.GetComponent<VidaDoJogador>(); 
+        tempoAtualDosLasers = tempoMaximoEntreOsLasers;
+        vidaDoJogador = jogador.GetComponent<VidaDoJogador>();
     }
 
-    // Update is called once per frame
+// Update is called once per frame
     void Update()
     {
         MovimentarInimigo();
-        if (inimigoAtirador && vidaDoJogador != null && vidaDoJogador.EstahVivo()) 
+        if (inimigoAtirador && vidaDoJogador != null && vidaDoJogador.EstahVivo())
         {
             AtirarLaser();
         }
@@ -43,11 +45,24 @@ public class InimigoChefão : MonoBehaviour
 
     private void MovimentarInimigo()
     {
-        // Move o inimigo em direção ao jogador
         if (jogador != null)
         {
+            // Calcula a direção para o jogador
             Vector3 direcao = (jogador.position - transform.position).normalized;
-            transform.position += direcao * velocidadeDoInimigo * Time.deltaTime;
+
+            // Verifica a distância entre o inimigo e o jogador
+            float distanciaParaJogador = Vector3.Distance(transform.position, jogador.position);
+
+            if (distanciaParaJogador > distanciaMinimaParaParar)
+            {
+                // Se o inimigo estiver distante o suficiente do jogador, ele pode continuar a perseguição
+                transform.position += direcao * velocidadeDoInimigo * Time.deltaTime;
+            }
+            else
+            {
+                // Caso o inimigo esteja muito perto, ele para de se mover
+                transform.position = transform.position;
+            }
         }
     }
 
@@ -92,6 +107,7 @@ public class InimigoChefão : MonoBehaviour
         }
     }
 
+// Detecta colisões com o jogador
     void OnCollisionEnter2D(Collision2D colisao)
     {
         if (colisao.gameObject.CompareTag("Jogador"))

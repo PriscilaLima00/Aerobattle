@@ -23,7 +23,8 @@ public class ItensColetavéis : MonoBehaviour
             if (itemDeLaserDuplo == true)
             {
                 other.gameObject.GetComponent<jogador>().temLaserDuplo = false;
-                other.gameObject.GetComponent<jogador>().tempoAtualDosLasersDuplos = other.gameObject.GetComponent<jogador>().tempoMaximoDosLasersDuplos;
+                other.gameObject.GetComponent<jogador>().tempoAtualDosLasersDuplos = 
+                    other.gameObject.GetComponent<jogador>().tempoMaximoDosLasersDuplos;
                 other.gameObject.GetComponent<jogador>().temLaserDuplo = true;
             }
 
@@ -31,7 +32,12 @@ public class ItensColetavéis : MonoBehaviour
             {
                 other.gameObject.GetComponent<VidaDoJogador>().GanharVida(vidaParaDar);
             }
-            
+
+            Destroy(this.gameObject);
+        }
+        if (other.CompareTag("Destroy"))
+        {
+            // Destrói o objeto ao qual este script está anexado
             Destroy(this.gameObject);
         }
     }
