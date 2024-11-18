@@ -9,6 +9,8 @@ public class Meteoro : MonoBehaviour
     public int vidaMaximaDoMeteoro;
 
     public int velocidadeDoMeteoro;
+
+    public GameObject efeitoDeExplosão;
     // Start is called before the first frame update
     void Start()
     {
@@ -51,7 +53,7 @@ public class Meteoro : MonoBehaviour
     
     private void OnTriggerEnter2D(Collider2D other)
     {
-        // Verifica se o objeto com o qual a moeda colidiu tem a tag "destroy"
+        Instantiate(efeitoDeExplosão, transform.position, transform.rotation);
         if (other.CompareTag("Destroy"))
         {
             // Destroi a moeda

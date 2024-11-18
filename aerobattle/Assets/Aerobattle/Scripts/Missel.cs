@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class Missel : MonoBehaviour
 {
-    public Transform jogador; // Referência ao Transform do jogador
+    public Transform jogador;
     public float velocidade;
     public float detectionRadius;
     public float destroyRadius;
 
-    private bool isTracking = false; // Para verificar se o míssil deve começar a seguir o jogador
+    private bool isTracking = false;
+
+    public GameObject efeitoDeExplosão;
 
     private void Update()
     {
@@ -54,7 +56,7 @@ public class Missel : MonoBehaviour
         // Verifica se o objeto com o qual o míssil colidiu tem a tag "Laser do Jogador"
         if (collider.gameObject.CompareTag("Laser do Jogador"))
         {
-            // Destrói o míssil
+            Instantiate(efeitoDeExplosão, transform.position, transform.rotation);
             Destroy(gameObject);
         } 
         if (collider.CompareTag("Destroy"))

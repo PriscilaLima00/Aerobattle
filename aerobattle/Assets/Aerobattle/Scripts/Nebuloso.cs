@@ -23,7 +23,7 @@ public class Nebuloso : MonoBehaviour
     public float limiteVertical;
     public float limiteHorizontal;
     private bool jogadorDentroRaio = false;
-    private bool perseguindoJogador = false; // Nova variável de controle
+    private bool perseguindoJogador = false; 
     public float raioDeDeteccao;
     public Transform jogador;
 
@@ -32,6 +32,8 @@ public class Nebuloso : MonoBehaviour
 
     public GameObject itemParaDropar;
     public int chanceDeDropar;
+
+    public GameObject efeitoDeExplosão;
 
 // Start is called before the first frame update
     void Start()
@@ -144,6 +146,7 @@ public class Nebuloso : MonoBehaviour
     {
         vidaAtualDoNebuloso -= danoparareceber;
 
+        Instantiate(efeitoDeExplosão, transform.position, transform.rotation);
         if (vidaAtualDoNebuloso <= 0)
         {
             int numeroAleatorio = Random.Range(0, 100);

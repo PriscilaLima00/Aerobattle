@@ -16,6 +16,7 @@ public class FrotaVex : MonoBehaviour
 
     public GameObject itemParaDropar;
     public int chanceDeDropar;
+    public GameObject efeitoDeExplosão;
 
     void Start()
     {
@@ -52,6 +53,7 @@ public class FrotaVex : MonoBehaviour
 
         if (vidaAtualDoFrotaVex <= 0)
         {
+            Instantiate(efeitoDeExplosão, transform.position, transform.rotation);
             int numeroAleatorio = Random.Range(0, 100);
             if (numeroAleatorio <= chanceDeDropar)
             {

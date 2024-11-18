@@ -22,6 +22,8 @@ public class Inimigo : MonoBehaviour
 
     public GameObject itemParaDropar;
     public int chanceDeDropar;
+    
+    public GameObject efeitoDeExplosão;
 
     // Start is called before the first frame update
     void Start()
@@ -61,8 +63,10 @@ public class Inimigo : MonoBehaviour
     {
         vidaAtualDoInimigo -= danoParaReceber;
 
+        
         if (vidaAtualDoInimigo <= 0)
-        {
+        { 
+            Instantiate(efeitoDeExplosão, transform.position, transform.rotation);
             int numeroAleatorio = Random.Range(0, 100);
 
             if (numeroAleatorio <= chanceDeDropar)

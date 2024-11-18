@@ -9,6 +9,8 @@ public class MinaEspacial : MonoBehaviour
     public int danoParaJogador;
     public int velocidadeDaMina;
 
+    public GameObject efeitoDeExplosão;
+
     void Start()
     {
         // Obtém o Collider2D da mina
@@ -48,8 +50,7 @@ public class MinaEspacial : MonoBehaviour
 
     private void Detonar()
     {
-        // Adiciona a lógica para a detonação
-        Debug.Log("Mina detonada!");
+        Instantiate(efeitoDeExplosão, transform.position, transform.rotation);
         
         Destroy(gameObject);
         

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 3463fb16b3929e84b82aaca389345902
+guid: 057b169ab4339ad4c93cbf6549e8bba9
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 106
+  spritePixelsToUnits: 52
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -121,133 +121,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: "Explos\xE3o_0"
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 106
-        width: 53
-        height: 53
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6a60a92cca5ec8346bfa6411382e80f1
-      internalID: -1806305537
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "Explos\xE3o_1"
-      rect:
-        serializedVersion: 2
-        x: 53
-        y: 106
-        width: 53
-        height: 53
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 95a8a51b388a3b14588708458b6d0064
-      internalID: -1388329481
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "Explos\xE3o_2"
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 53
-        width: 53
-        height: 53
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bee2a61086b0d7744ad20fd2cb0d6405
-      internalID: -1119093169
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "Explos\xE3o_3"
-      rect:
-        serializedVersion: 2
-        x: 53
-        y: 53
-        width: 53
-        height: 53
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d5e4374f7810e4e43a7becd8e2fea3ed
-      internalID: 1548430063
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "Explos\xE3o_4"
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 53
-        height: 53
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4417b7ed30c4e454680c0159bcde8165
-      internalID: -1905112094
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "Explos\xE3o_5"
-      rect:
-        serializedVersion: 2
-        x: 53
-        y: 0
-        width: 53
-        height: 53
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 81617178c536b7d459fc2a76c5cf48c5
-      internalID: -106835887
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
@@ -258,13 +132,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      "Explos\xE3o_0": -1806305537
-      "Explos\xE3o_1": -1388329481
-      "Explos\xE3o_2": -1119093169
-      "Explos\xE3o_3": 1548430063
-      "Explos\xE3o_4": -1905112094
-      "Explos\xE3o_5": -106835887
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

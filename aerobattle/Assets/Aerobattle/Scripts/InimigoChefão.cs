@@ -23,7 +23,8 @@ public class InimigoChefão : MonoBehaviour
     public Transform jogador;
     private VidaDoJogador vidaDoJogador;
 
-    public float distanciaMinimaParaParar = 0.5f; // Distância mínima antes de parar de se mover para o jogador
+    public float distanciaMinimaParaParar = 0.5f;
+    public GameObject efeitoDeExplosão;
 
 // Start is called before the first frame update
     void Start()
@@ -94,6 +95,7 @@ public class InimigoChefão : MonoBehaviour
     {
         vidaAtualDoInimigo -= danoParaReceber;
 
+        Instantiate(efeitoDeExplosão, transform.position, transform.rotation);
         if (vidaAtualDoInimigo <= 0)
         {
             int numeroAleatorio = Random.Range(0, 100);

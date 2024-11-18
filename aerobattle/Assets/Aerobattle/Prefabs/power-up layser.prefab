@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8892006230159416365}
   - component: {fileID: 7833062716723404790}
   - component: {fileID: 5766954325706059647}
+  - component: {fileID: 864016324510481106}
   m_Layer: 0
   m_Name: power-up layser
   m_TagString: Laser duplo
@@ -151,3 +152,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tempoDeVida: 10
+--- !u!114 &864016324510481106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3525905135518307588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc4047193c98686449d92b407ef57ebc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocidadeDoLaser: 10
+  danoParaDar: 2

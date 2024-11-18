@@ -35,6 +35,8 @@ public class Vex_09 : MonoBehaviour
     private bool jogadorNoCollider = false;
     public int danoParaDar = 1;
 
+    public GameObject efeitoDeExplosão;
+
     void Start()
     {
         posicaoInicialY = transform.position.y;
@@ -193,6 +195,7 @@ public class Vex_09 : MonoBehaviour
         vidaAtualDoVex -= dano;
         if (vidaAtualDoVex <= 0)
         {
+            Instantiate(efeitoDeExplosão, transform.position, transform.rotation);
             int numeroAleatorio = Random.Range(0, 100);
             if (numeroAleatorio <= chanceDeDropar)
             {

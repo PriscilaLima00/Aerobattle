@@ -19,7 +19,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1538176531513255291
 Transform:
   m_ObjectHideFlags: 0
@@ -101,9 +101,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vidaAtualDoAsteroide: 4
   vidaMaximaDoAsteroide: 4
-  velocidadeDoAsteroide: -3
+  velocidadeDoAsteroide: 4
   amplitude: 4
-  velocidadeHorizontal: 6
+  velocidadeHorizontal: 4
+  "efeitoDeExplos\xE3o": {fileID: 3701190526550224290, guid: 15c0dea2e454f6746bd9a7d5fe20307e, type: 3}
 --- !u!50 &4279950592087971365
 Rigidbody2D:
   serializedVersion: 4

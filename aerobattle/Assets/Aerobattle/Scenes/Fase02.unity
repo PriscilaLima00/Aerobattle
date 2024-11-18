@@ -801,6 +801,7 @@ MonoBehaviour:
   jogador: {fileID: 27085987}
   itemParaDropar: {fileID: 423754188516412765}
   chanceDeDropar: 100
+  "efeitoDeExplos\xE3o": {fileID: 3025290391906523000, guid: 5ce0e54a989dc844e9107cb2bdd4a290, type: 3}
 --- !u!50 &83837875
 Rigidbody2D:
   serializedVersion: 4
@@ -1891,6 +1892,7 @@ MonoBehaviour:
   danoAoJogador: 1
   itemParaDropar: {fileID: 3525905135518307588, guid: e31ec134bc4e86b46be8d18e068c1faa, type: 3}
   chanceDeDropar: 20
+  "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
 --- !u!58 &224846452
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2087,6 +2089,7 @@ MonoBehaviour:
   danoAoJogador: 1
   itemParaDropar: {fileID: 3525905135518307588, guid: e31ec134bc4e86b46be8d18e068c1faa, type: 3}
   chanceDeDropar: 20
+  "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
 --- !u!58 &232317465
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2417,6 +2420,7 @@ MonoBehaviour:
   danoAoJogador: 1
   itemParaDropar: {fileID: 7618214839703894807, guid: b7c2a27e2b9a50a4c9f41f1e41526a54, type: 3}
   chanceDeDropar: 25
+  "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
 --- !u!50 &287878283
 Rigidbody2D:
   serializedVersion: 4
@@ -2696,6 +2700,7 @@ MonoBehaviour:
   vidaAtualDoMeteoro: 3
   vidaMaximaDoMeteoro: 3
   velocidadeDoMeteoro: 3
+  "efeitoDeExplos\xE3o": {fileID: 3701190526550224290, guid: 15c0dea2e454f6746bd9a7d5fe20307e, type: 3}
 --- !u!50 &313950740
 Rigidbody2D:
   serializedVersion: 4
@@ -4510,6 +4515,7 @@ MonoBehaviour:
   vidaAtualDoMeteoro: 3
   vidaMaximaDoMeteoro: 3
   velocidadeDoMeteoro: 3
+  "efeitoDeExplos\xE3o": {fileID: 3701190526550224290, guid: 15c0dea2e454f6746bd9a7d5fe20307e, type: 3}
 --- !u!50 &519822975
 Rigidbody2D:
   serializedVersion: 4
@@ -4934,6 +4940,7 @@ MonoBehaviour:
   vidaAtualDoMeteoro: 3
   vidaMaximaDoMeteoro: 3
   velocidadeDoMeteoro: 3
+  "efeitoDeExplos\xE3o": {fileID: 3701190526550224290, guid: 15c0dea2e454f6746bd9a7d5fe20307e, type: 3}
 --- !u!50 &568024579
 Rigidbody2D:
   serializedVersion: 4
@@ -6155,6 +6162,7 @@ MonoBehaviour:
   vidaAtualDoMeteoro: 3
   vidaMaximaDoMeteoro: 3
   velocidadeDoMeteoro: 3
+  "efeitoDeExplos\xE3o": {fileID: 3701190526550224290, guid: 15c0dea2e454f6746bd9a7d5fe20307e, type: 3}
 --- !u!50 &898540198
 Rigidbody2D:
   serializedVersion: 4
@@ -8059,6 +8067,7 @@ MonoBehaviour:
   danoAoJogador: 1
   itemParaDropar: {fileID: 3525905135518307588, guid: e31ec134bc4e86b46be8d18e068c1faa, type: 3}
   chanceDeDropar: 20
+  "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
 --- !u!58 &1178451501
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -8630,6 +8639,7 @@ MonoBehaviour:
   vidaAtualDoMeteoro: 3
   vidaMaximaDoMeteoro: 3
   velocidadeDoMeteoro: 3
+  "efeitoDeExplos\xE3o": {fileID: 3701190526550224290, guid: 15c0dea2e454f6746bd9a7d5fe20307e, type: 3}
 --- !u!50 &1285383020
 Rigidbody2D:
   serializedVersion: 4
@@ -9079,6 +9089,7 @@ MonoBehaviour:
   danoAoJogador: 1
   itemParaDropar: {fileID: 7618214839703894807, guid: b7c2a27e2b9a50a4c9f41f1e41526a54, type: 3}
   chanceDeDropar: 25
+  "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
 --- !u!50 &1339874299
 Rigidbody2D:
   serializedVersion: 4
@@ -9492,6 +9503,7 @@ MonoBehaviour:
   vidaAtualDoMeteoro: 3
   vidaMaximaDoMeteoro: 3
   velocidadeDoMeteoro: 3
+  "efeitoDeExplos\xE3o": {fileID: 3701190526550224290, guid: 15c0dea2e454f6746bd9a7d5fe20307e, type: 3}
 --- !u!50 &1375428291
 Rigidbody2D:
   serializedVersion: 4
@@ -9749,6 +9761,7 @@ MonoBehaviour:
   danoAoJogador: 1
   itemParaDropar: {fileID: 7618214839703894807, guid: b7c2a27e2b9a50a4c9f41f1e41526a54, type: 3}
   chanceDeDropar: 25
+  "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
 --- !u!50 &1399335649
 Rigidbody2D:
   serializedVersion: 4
@@ -12499,6 +12512,7 @@ MonoBehaviour:
   danoAoJogador: 1
   itemParaDropar: {fileID: 7618214839703894807, guid: b7c2a27e2b9a50a4c9f41f1e41526a54, type: 3}
   chanceDeDropar: 25
+  "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
 --- !u!50 &1850274008
 Rigidbody2D:
   serializedVersion: 4
@@ -12760,6 +12774,7 @@ MonoBehaviour:
   danoAoJogador: 1
   itemParaDropar: {fileID: 3525905135518307588, guid: e31ec134bc4e86b46be8d18e068c1faa, type: 3}
   chanceDeDropar: 20
+  "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
 --- !u!58 &1890411833
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -12962,6 +12977,7 @@ MonoBehaviour:
   vidaAtualDoMeteoro: 3
   vidaMaximaDoMeteoro: 3
   velocidadeDoMeteoro: 3
+  "efeitoDeExplos\xE3o": {fileID: 3701190526550224290, guid: 15c0dea2e454f6746bd9a7d5fe20307e, type: 3}
 --- !u!50 &1896159158
 Rigidbody2D:
   serializedVersion: 4
@@ -13142,6 +13158,7 @@ MonoBehaviour:
   danoAoJogador: 1
   itemParaDropar: {fileID: 7618214839703894807, guid: b7c2a27e2b9a50a4c9f41f1e41526a54, type: 3}
   chanceDeDropar: 25
+  "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
 --- !u!50 &1901727126
 Rigidbody2D:
   serializedVersion: 4
@@ -14655,6 +14672,7 @@ MonoBehaviour:
   vidaAtualDoMeteoro: 3
   vidaMaximaDoMeteoro: 3
   velocidadeDoMeteoro: 3
+  "efeitoDeExplos\xE3o": {fileID: 3701190526550224290, guid: 15c0dea2e454f6746bd9a7d5fe20307e, type: 3}
 --- !u!50 &2012998695
 Rigidbody2D:
   serializedVersion: 4
@@ -17456,6 +17474,7 @@ MonoBehaviour:
   vidaAtualDoMeteoro: 3
   vidaMaximaDoMeteoro: 3
   velocidadeDoMeteoro: 3
+  "efeitoDeExplos\xE3o": {fileID: 3701190526550224290, guid: 15c0dea2e454f6746bd9a7d5fe20307e, type: 3}
 --- !u!212 &3975918378579821490
 SpriteRenderer:
   m_ObjectHideFlags: 0

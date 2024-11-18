@@ -828,6 +828,7 @@ MonoBehaviour:
   danoAoJogador: 1
   itemParaDropar: {fileID: 3525905135518307588, guid: e31ec134bc4e86b46be8d18e068c1faa, type: 3}
   chanceDeDropar: 45
+  "efeitoDeExplos\xE3o": {fileID: 0}
 --- !u!50 &63127156
 Rigidbody2D:
   serializedVersion: 4
@@ -1977,6 +1978,7 @@ MonoBehaviour:
   danoAoJogador: 1
   itemParaDropar: {fileID: 3525905135518307588, guid: e31ec134bc4e86b46be8d18e068c1faa, type: 3}
   chanceDeDropar: 45
+  "efeitoDeExplos\xE3o": {fileID: 0}
 --- !u!50 &155439037
 Rigidbody2D:
   serializedVersion: 4
@@ -2749,6 +2751,7 @@ MonoBehaviour:
   velocidade: 5
   detectionRadius: 10
   destroyRadius: 2.5
+  "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
 --- !u!61 &295703950
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2971,22 +2974,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Asteroide Pequeno inverso (3)
       objectReference: {fileID: 0}
-    - target: {fileID: 2397580226792229244, guid: 04ffb6d49bc13e64fa495f9c19c71ed4, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4279950592087971365, guid: 04ffb6d49bc13e64fa495f9c19c71ed4, type: 3}
-      propertyPath: m_BodyType
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5364452896220815924, guid: 04ffb6d49bc13e64fa495f9c19c71ed4, type: 3}
-      propertyPath: velocidadeHorizontal
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 5364452896220815924, guid: 04ffb6d49bc13e64fa495f9c19c71ed4, type: 3}
-      propertyPath: velocidadeDoAsteroide
-      value: 4
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3168,6 +3155,7 @@ MonoBehaviour:
   danoAoJogador: 1
   itemParaDropar: {fileID: 3525905135518307588, guid: e31ec134bc4e86b46be8d18e068c1faa, type: 3}
   chanceDeDropar: 45
+  "efeitoDeExplos\xE3o": {fileID: 0}
 --- !u!50 &329272839
 Rigidbody2D:
   serializedVersion: 4
@@ -3771,21 +3759,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2703448826007125239, guid: 04cf93097b09bc74fab4c9367d242fa4, type: 3}
-      propertyPath: m_BodyType
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2798192587647259736, guid: 04cf93097b09bc74fab4c9367d242fa4, type: 3}
       propertyPath: m_Name
       value: Asteroide Pequeno
-      objectReference: {fileID: 0}
-    - target: {fileID: 2798192587647259736, guid: 04cf93097b09bc74fab4c9367d242fa4, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3144394600775026308, guid: 04cf93097b09bc74fab4c9367d242fa4, type: 3}
-      propertyPath: velocidadeHorizontal
-      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4059,6 +4035,7 @@ MonoBehaviour:
   danoAoJogador: 1
   itemParaDropar: {fileID: 3525905135518307588, guid: e31ec134bc4e86b46be8d18e068c1faa, type: 3}
   chanceDeDropar: 45
+  "efeitoDeExplos\xE3o": {fileID: 0}
 --- !u!50 &410003074
 Rigidbody2D:
   serializedVersion: 4
@@ -4559,18 +4536,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Asteroide Pequeno inverso (2)
       objectReference: {fileID: 0}
-    - target: {fileID: 2397580226792229244, guid: 04ffb6d49bc13e64fa495f9c19c71ed4, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4279950592087971365, guid: 04ffb6d49bc13e64fa495f9c19c71ed4, type: 3}
-      propertyPath: m_BodyType
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5364452896220815924, guid: 04ffb6d49bc13e64fa495f9c19c71ed4, type: 3}
-      propertyPath: velocidadeHorizontal
-      value: 4
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5055,6 +5020,7 @@ MonoBehaviour:
   danoAoJogador: 1
   itemParaDropar: {fileID: 3525905135518307588, guid: e31ec134bc4e86b46be8d18e068c1faa, type: 3}
   chanceDeDropar: 45
+  "efeitoDeExplos\xE3o": {fileID: 0}
 --- !u!50 &460201492
 Rigidbody2D:
   serializedVersion: 4
@@ -5324,6 +5290,7 @@ MonoBehaviour:
   danoAoJogador: 1
   itemParaDropar: {fileID: 3525905135518307588, guid: e31ec134bc4e86b46be8d18e068c1faa, type: 3}
   chanceDeDropar: 45
+  "efeitoDeExplos\xE3o": {fileID: 0}
 --- !u!50 &464309930
 Rigidbody2D:
   serializedVersion: 4
@@ -5737,6 +5704,7 @@ MonoBehaviour:
   danoAoJogador: 1
   itemParaDropar: {fileID: 3525905135518307588, guid: e31ec134bc4e86b46be8d18e068c1faa, type: 3}
   chanceDeDropar: 45
+  "efeitoDeExplos\xE3o": {fileID: 0}
 --- !u!50 &535822694
 Rigidbody2D:
   serializedVersion: 4
@@ -6280,6 +6248,7 @@ MonoBehaviour:
   danoAoJogador: 1
   itemParaDropar: {fileID: 3525905135518307588, guid: e31ec134bc4e86b46be8d18e068c1faa, type: 3}
   chanceDeDropar: 45
+  "efeitoDeExplos\xE3o": {fileID: 0}
 --- !u!50 &608051708
 Rigidbody2D:
   serializedVersion: 4
@@ -7112,25 +7081,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2703448826007125239, guid: 04cf93097b09bc74fab4c9367d242fa4, type: 3}
-      propertyPath: m_BodyType
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2798192587647259736, guid: 04cf93097b09bc74fab4c9367d242fa4, type: 3}
       propertyPath: m_Name
       value: Asteroide Pequeno (3)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2798192587647259736, guid: 04cf93097b09bc74fab4c9367d242fa4, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3144394600775026308, guid: 04cf93097b09bc74fab4c9367d242fa4, type: 3}
-      propertyPath: velocidadeHorizontal
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 3144394600775026308, guid: 04cf93097b09bc74fab4c9367d242fa4, type: 3}
-      propertyPath: velocidadeDoAsteroide
-      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7606,6 +7559,7 @@ MonoBehaviour:
   danoAoJogador: 1
   itemParaDropar: {fileID: 3525905135518307588, guid: e31ec134bc4e86b46be8d18e068c1faa, type: 3}
   chanceDeDropar: 45
+  "efeitoDeExplos\xE3o": {fileID: 0}
 --- !u!50 &711509618
 Rigidbody2D:
   serializedVersion: 4
@@ -7867,6 +7821,7 @@ MonoBehaviour:
   velocidade: 4
   detectionRadius: 10
   destroyRadius: 3.5
+  "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
 --- !u!61 &742791423
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8194,21 +8149,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2703448826007125239, guid: 04cf93097b09bc74fab4c9367d242fa4, type: 3}
-      propertyPath: m_BodyType
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2798192587647259736, guid: 04cf93097b09bc74fab4c9367d242fa4, type: 3}
       propertyPath: m_Name
       value: Asteroide Pequeno (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2798192587647259736, guid: 04cf93097b09bc74fab4c9367d242fa4, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3144394600775026308, guid: 04cf93097b09bc74fab4c9367d242fa4, type: 3}
-      propertyPath: velocidadeHorizontal
-      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8454,6 +8397,7 @@ MonoBehaviour:
   danoAoJogador: 1
   itemParaDropar: {fileID: 3525905135518307588, guid: e31ec134bc4e86b46be8d18e068c1faa, type: 3}
   chanceDeDropar: 45
+  "efeitoDeExplos\xE3o": {fileID: 0}
 --- !u!50 &804511662
 Rigidbody2D:
   serializedVersion: 4
@@ -9052,6 +8996,7 @@ MonoBehaviour:
   velocidade: 4
   detectionRadius: 10
   destroyRadius: 3.5
+  "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
 --- !u!61 &885735871
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10325,6 +10270,7 @@ MonoBehaviour:
   danoAoJogador: 1
   itemParaDropar: {fileID: 3525905135518307588, guid: e31ec134bc4e86b46be8d18e068c1faa, type: 3}
   chanceDeDropar: 45
+  "efeitoDeExplos\xE3o": {fileID: 0}
 --- !u!50 &985795377
 Rigidbody2D:
   serializedVersion: 4
@@ -10934,6 +10880,7 @@ MonoBehaviour:
   velocidade: 4
   detectionRadius: 10
   destroyRadius: 3.5
+  "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
 --- !u!61 &1037152622
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12022,6 +11969,7 @@ MonoBehaviour:
   danoAoJogador: 1
   itemParaDropar: {fileID: 3525905135518307588, guid: e31ec134bc4e86b46be8d18e068c1faa, type: 3}
   chanceDeDropar: 45
+  "efeitoDeExplos\xE3o": {fileID: 0}
 --- !u!95 &1112667293
 Animator:
   serializedVersion: 5
@@ -12709,6 +12657,7 @@ MonoBehaviour:
   danoAoJogador: 1
   itemParaDropar: {fileID: 3525905135518307588, guid: e31ec134bc4e86b46be8d18e068c1faa, type: 3}
   chanceDeDropar: 45
+  "efeitoDeExplos\xE3o": {fileID: 0}
 --- !u!50 &1180876872
 Rigidbody2D:
   serializedVersion: 4
@@ -13595,6 +13544,7 @@ MonoBehaviour:
   danoAoJogador: 1
   itemParaDropar: {fileID: 3525905135518307588, guid: e31ec134bc4e86b46be8d18e068c1faa, type: 3}
   chanceDeDropar: 45
+  "efeitoDeExplos\xE3o": {fileID: 0}
 --- !u!50 &1242764971
 Rigidbody2D:
   serializedVersion: 4
@@ -13994,6 +13944,7 @@ MonoBehaviour:
   danoAoJogador: 1
   itemParaDropar: {fileID: 3525905135518307588, guid: e31ec134bc4e86b46be8d18e068c1faa, type: 3}
   chanceDeDropar: 45
+  "efeitoDeExplos\xE3o": {fileID: 0}
 --- !u!50 &1263828193
 Rigidbody2D:
   serializedVersion: 4
@@ -14719,6 +14670,7 @@ MonoBehaviour:
   danoAoJogador: 1
   itemParaDropar: {fileID: 3525905135518307588, guid: e31ec134bc4e86b46be8d18e068c1faa, type: 3}
   chanceDeDropar: 45
+  "efeitoDeExplos\xE3o": {fileID: 0}
 --- !u!50 &1309724145
 Rigidbody2D:
   serializedVersion: 4
@@ -16189,6 +16141,7 @@ MonoBehaviour:
   velocidade: 4
   detectionRadius: 10
   destroyRadius: 3.5
+  "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
 --- !u!61 &1467816471
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16386,6 +16339,7 @@ MonoBehaviour:
   velocidade: 4
   detectionRadius: 10
   destroyRadius: 3.5
+  "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
 --- !u!61 &1485302031
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16916,6 +16870,7 @@ MonoBehaviour:
   velocidade: 5
   detectionRadius: 10
   destroyRadius: 2.5
+  "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
 --- !u!61 &1521802944
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17359,18 +17314,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Asteroide Pequeno inverso (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 2397580226792229244, guid: 04ffb6d49bc13e64fa495f9c19c71ed4, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4279950592087971365, guid: 04ffb6d49bc13e64fa495f9c19c71ed4, type: 3}
-      propertyPath: m_BodyType
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5364452896220815924, guid: 04ffb6d49bc13e64fa495f9c19c71ed4, type: 3}
-      propertyPath: velocidadeHorizontal
-      value: 4
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17499,6 +17442,7 @@ MonoBehaviour:
   velocidade: 5
   detectionRadius: 10
   destroyRadius: 2.5
+  "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
 --- !u!61 &1558992318
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18202,6 +18146,7 @@ MonoBehaviour:
   danoAoJogador: 1
   itemParaDropar: {fileID: 3525905135518307588, guid: e31ec134bc4e86b46be8d18e068c1faa, type: 3}
   chanceDeDropar: 45
+  "efeitoDeExplos\xE3o": {fileID: 0}
 --- !u!50 &1627058354
 Rigidbody2D:
   serializedVersion: 4
@@ -18939,18 +18884,6 @@ PrefabInstance:
     - target: {fileID: 2397580226792229244, guid: 04ffb6d49bc13e64fa495f9c19c71ed4, type: 3}
       propertyPath: m_Name
       value: Asteroide Pequeno inverso
-      objectReference: {fileID: 0}
-    - target: {fileID: 2397580226792229244, guid: 04ffb6d49bc13e64fa495f9c19c71ed4, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4279950592087971365, guid: 04ffb6d49bc13e64fa495f9c19c71ed4, type: 3}
-      propertyPath: m_BodyType
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5364452896220815924, guid: 04ffb6d49bc13e64fa495f9c19c71ed4, type: 3}
-      propertyPath: velocidadeHorizontal
-      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -19742,6 +19675,7 @@ MonoBehaviour:
   velocidade: 5
   detectionRadius: 10
   destroyRadius: 2.5
+  "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
 --- !u!61 &1805873525
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -20399,21 +20333,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2703448826007125239, guid: 04cf93097b09bc74fab4c9367d242fa4, type: 3}
-      propertyPath: m_BodyType
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2798192587647259736, guid: 04cf93097b09bc74fab4c9367d242fa4, type: 3}
       propertyPath: m_Name
       value: Asteroide Pequeno (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2798192587647259736, guid: 04cf93097b09bc74fab4c9367d242fa4, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3144394600775026308, guid: 04cf93097b09bc74fab4c9367d242fa4, type: 3}
-      propertyPath: velocidadeHorizontal
-      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -21780,6 +21702,7 @@ MonoBehaviour:
   danoAoJogador: 1
   itemParaDropar: {fileID: 3525905135518307588, guid: e31ec134bc4e86b46be8d18e068c1faa, type: 3}
   chanceDeDropar: 45
+  "efeitoDeExplos\xE3o": {fileID: 0}
 --- !u!50 &1978537717
 Rigidbody2D:
   serializedVersion: 4
@@ -22063,6 +21986,7 @@ MonoBehaviour:
   velocidade: 4
   detectionRadius: 10
   destroyRadius: 3.5
+  "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
 --- !u!61 &2002112140
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -22655,6 +22579,7 @@ MonoBehaviour:
   velocidade: 5
   detectionRadius: 10
   destroyRadius: 2.5
+  "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
 --- !u!61 &2014260589
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -23163,6 +23088,7 @@ MonoBehaviour:
   danoAoJogador: 1
   itemParaDropar: {fileID: 3525905135518307588, guid: e31ec134bc4e86b46be8d18e068c1faa, type: 3}
   chanceDeDropar: 45
+  "efeitoDeExplos\xE3o": {fileID: 0}
 --- !u!50 &2049266557
 Rigidbody2D:
   serializedVersion: 4
@@ -23690,6 +23616,7 @@ MonoBehaviour:
   velocidade: 4
   detectionRadius: 10
   destroyRadius: 3.5
+  "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
 --- !u!61 &2110585016
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -24600,6 +24527,7 @@ MonoBehaviour:
   chanceDeDropar: 100
   distanciaMinimaParaPerseguir: 1.5
   danoParaDar: 1
+  "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
 --- !u!60 &8640358965408426793
 PolygonCollider2D:
   m_ObjectHideFlags: 0

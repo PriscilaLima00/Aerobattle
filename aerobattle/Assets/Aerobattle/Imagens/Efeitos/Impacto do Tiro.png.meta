@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 3463fb16b3929e84b82aaca389345902
+guid: c00f7ee68cb17d84d80c745727369fd6
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 106
+  spritePixelsToUnits: 53
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -123,127 +123,85 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "Explos\xE3o_0"
+      name: Efeito do Tiro_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 106
-        width: 53
-        height: 53
+        y: 54
+        width: 54
+        height: 54
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6a60a92cca5ec8346bfa6411382e80f1
-      internalID: -1806305537
+      spriteID: 9d0681da49c49fa40b4a18ab31d01519
+      internalID: -1235139430
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "Explos\xE3o_1"
+      name: Efeito do Tiro_1
       rect:
         serializedVersion: 2
-        x: 53
-        y: 106
-        width: 53
-        height: 53
+        x: 54
+        y: 54
+        width: 54
+        height: 54
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 95a8a51b388a3b14588708458b6d0064
-      internalID: -1388329481
+      spriteID: 9927dd89833741e4b82a4a508d67f85c
+      internalID: 337730802
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "Explos\xE3o_2"
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 53
-        width: 53
-        height: 53
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bee2a61086b0d7744ad20fd2cb0d6405
-      internalID: -1119093169
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "Explos\xE3o_3"
-      rect:
-        serializedVersion: 2
-        x: 53
-        y: 53
-        width: 53
-        height: 53
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d5e4374f7810e4e43a7becd8e2fea3ed
-      internalID: 1548430063
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "Explos\xE3o_4"
+      name: Efeito do Tiro_2
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 53
-        height: 53
+        width: 54
+        height: 54
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4417b7ed30c4e454680c0159bcde8165
-      internalID: -1905112094
+      spriteID: 238fefe45f11ffc46ac7e7a8e88131de
+      internalID: -1925456033
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "Explos\xE3o_5"
+      name: Efeito do Tiro_3
       rect:
         serializedVersion: 2
-        x: 53
+        x: 54
         y: 0
-        width: 53
-        height: 53
+        width: 54
+        height: 54
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 81617178c536b7d459fc2a76c5cf48c5
-      internalID: -106835887
+      spriteID: 9918d68b4ffe2c546a61202d962f6a20
+      internalID: -733284618
       vertices: []
       indices: 
       edges: []
@@ -259,12 +217,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      "Explos\xE3o_0": -1806305537
-      "Explos\xE3o_1": -1388329481
-      "Explos\xE3o_2": -1119093169
-      "Explos\xE3o_3": 1548430063
-      "Explos\xE3o_4": -1905112094
-      "Explos\xE3o_5": -106835887
+      Efeito do Tiro_0: -1235139430
+      Efeito do Tiro_1: 337730802
+      Efeito do Tiro_2: -1925456033
+      Efeito do Tiro_3: -733284618
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

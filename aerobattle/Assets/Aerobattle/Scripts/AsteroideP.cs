@@ -8,10 +8,11 @@ public class AsteroideP : MonoBehaviour
     public int vidaAtualDoAsteroide;
     public int vidaMaximaDoAsteroide;
     public int velocidadeDoAsteroide;
-    public float amplitude = 1.0f; // Amplitude do movimento vertical
-    public float velocidadeHorizontal = 2.0f; // Velocidade do movimento para trás
+    public float amplitude = 1.0f;
+    public float velocidadeHorizontal = 2.0f;
 
-    private float tempoInicial; // Tempo inicial para cálculo da oscilação
+    private float tempoInicial;
+    public GameObject efeitoDeExplosão;
 
 // Start is called before the first frame update
     void Start()
@@ -52,6 +53,7 @@ public class AsteroideP : MonoBehaviour
     {
         vidaAtualDoAsteroide -= dano;
 
+        Instantiate(efeitoDeExplosão, transform.position, transform.rotation);
         // Verifica se o asteroide morreu
         if (vidaAtualDoAsteroide <= 0)
         {

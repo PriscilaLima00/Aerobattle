@@ -186,3 +186,4 @@ MonoBehaviour:
   raioDeDeteccao: 10
   danoParaJogador: 2
   velocidadeDaMina: 3
+  "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
