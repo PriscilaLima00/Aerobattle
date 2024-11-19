@@ -49,7 +49,6 @@ MonoBehaviour:
   musicSource: {fileID: 3098559623743381366}
   SfxSource: {fileID: 584296476022660283}
   ClipColetavel: {fileID: 8300000, guid: ff0d0ff4069c5ec498dfbedaaa41b739, type: 3}
-  "ClipMovimenta\xE7\xE3o": {fileID: 0}
 --- !u!82 &3098559623743381366
 AudioSource:
   m_ObjectHideFlags: 0
@@ -60,7 +59,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: b71eaa20ff67e724ab1d46b8cb721222, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 8c89455957701ee4b8792054690e83fd, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.29
   m_Pitch: 1
