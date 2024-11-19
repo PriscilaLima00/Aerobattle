@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Aerobattle/Scenes/MainMenu.unity
     guid: 791cdd501a75ab2498c664843ef0cf35
   - enabled: 1
+    path: Assets/Aerobattle/Scenes/Cutscene.unity
+    guid: 79f316160e3c7a940a44b2b1767f6597
+  - enabled: 1
     path: Assets/Aerobattle/Scenes/Fase01.unity
     guid: ea0ef8d2ed5d32a48839903fca8bb2dd
   - enabled: 1

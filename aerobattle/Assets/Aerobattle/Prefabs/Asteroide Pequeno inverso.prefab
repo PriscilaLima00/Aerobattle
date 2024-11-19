@@ -99,8 +99,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 702f8d25af77a7342921721ae7db44d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vidaAtualDoAsteroide: 4
-  vidaMaximaDoAsteroide: 4
+  vidaAtualDoAsteroide: 2
+  vidaMaximaDoAsteroide: 2
   velocidadeDoAsteroide: 4
   amplitude: 4
   velocidadeHorizontal: 4
