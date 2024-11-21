@@ -33,7 +33,7 @@ public class Meteoro : MonoBehaviour
     {
         vidaAtualDoMeteoro -= danoParaReceber;
 
-        Instantiate(efeitoDeExplosão, transform.position, transform.rotation);
+        
         if (vidaAtualDoMeteoro <= 0)
         {
             Destroy(this.gameObject);
@@ -45,6 +45,7 @@ public class Meteoro : MonoBehaviour
     {
         vidaAtualDoMeteoro -= dano;
 
+        Instantiate(efeitoDeExplosão, transform.position, transform.rotation);
         // Verifica se o inimigo morreu
         if (vidaAtualDoMeteoro <= 0)
         {
