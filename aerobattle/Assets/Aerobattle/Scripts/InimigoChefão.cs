@@ -95,9 +95,11 @@ public class InimigoChefão : MonoBehaviour
     {
         vidaAtualDoInimigo -= danoParaReceber;
 
-        Instantiate(efeitoDeExplosão, transform.position, transform.rotation);
+        
         if (vidaAtualDoInimigo <= 0)
         {
+            Instantiate(efeitoDeExplosão, transform.position, transform.rotation);
+            
             int numeroAleatorio = Random.Range(0, 100);
 
             if (numeroAleatorio <= chanceDeDropar)

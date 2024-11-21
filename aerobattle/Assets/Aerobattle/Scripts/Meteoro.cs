@@ -33,6 +33,7 @@ public class Meteoro : MonoBehaviour
     {
         vidaAtualDoMeteoro -= danoParaReceber;
 
+        Instantiate(efeitoDeExplosão, transform.position, transform.rotation);
         if (vidaAtualDoMeteoro <= 0)
         {
             Destroy(this.gameObject);
@@ -53,7 +54,7 @@ public class Meteoro : MonoBehaviour
     
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Instantiate(efeitoDeExplosão, transform.position, transform.rotation);
+        
         if (other.CompareTag("Destroy"))
         {
             // Destroi a moeda
