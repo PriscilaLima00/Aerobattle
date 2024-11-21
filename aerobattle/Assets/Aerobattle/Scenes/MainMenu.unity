@@ -2779,7 +2779,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: CONTROLE
+  m_text: CONTROLES
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f996025108bd8d947ad7a174b4a00da5, type: 2}
   m_sharedMaterial: {fileID: 7125611882698630672, guid: f996025108bd8d947ad7a174b4a00da5, type: 2}
@@ -3038,7 +3038,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93461a4cc98f17e4ca6aa2f21c2d5570, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cenaParaCarregar: Cutscene
+  cenaFase01: 
+  tempoDeCutscene: 88
 --- !u!1 &1419102571
 GameObject:
   m_ObjectHideFlags: 0

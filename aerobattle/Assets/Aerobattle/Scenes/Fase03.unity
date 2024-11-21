@@ -7243,7 +7243,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: FIM DE JOGO.
+  m_text: FIM DE JOGO
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f996025108bd8d947ad7a174b4a00da5, type: 2}
   m_sharedMaterial: {fileID: 7125611882698630672, guid: f996025108bd8d947ad7a174b4a00da5, type: 2}
