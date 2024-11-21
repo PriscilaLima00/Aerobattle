@@ -8,7 +8,7 @@ public class CarregarCena : MonoBehaviour
 {
 
     public string cenaFase01; 
-    public float tempoDeCutscene = 88f; 
+    public float tempoDeCutscene ; 
 
     private void Start()
     {
