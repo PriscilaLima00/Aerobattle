@@ -11,7 +11,6 @@ public class Meteoro : MonoBehaviour
     public int velocidadeDoMeteoro;
 
     public GameObject efeitoDeExplosão;
-    // Start is called before the first frame update
     void Start()
     {
         vidaAtualDoMeteoro = vidaMaximaDoMeteoro;
@@ -36,6 +35,7 @@ public class Meteoro : MonoBehaviour
         
         if (vidaAtualDoMeteoro <= 0)
         {
+            Instantiate(efeitoDeExplosão, transform.position, transform.rotation);
             Destroy(this.gameObject);
         }
     }
@@ -44,9 +44,7 @@ public class Meteoro : MonoBehaviour
     public void AplicaDano(int dano)
     {
         vidaAtualDoMeteoro -= dano;
-
-        Instantiate(efeitoDeExplosão, transform.position, transform.rotation);
-        // Verifica se o inimigo morreu
+        
         if (vidaAtualDoMeteoro <= 0)
         {
             Morrer();
@@ -58,14 +56,13 @@ public class Meteoro : MonoBehaviour
         
         if (other.CompareTag("Destroy"))
         {
-            // Destroi a moeda
             Destroy(gameObject);
         }
     }
 
     void Morrer()
     {
-        Destroy(gameObject); // Exclui o GameObject do inimigo
+        Destroy(gameObject); 
     }
 }
 

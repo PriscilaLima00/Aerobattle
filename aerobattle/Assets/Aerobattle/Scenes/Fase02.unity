@@ -167,7 +167,7 @@ MonoBehaviour:
   vidaAtualDoInimigo: 3
   danoAoJogador: 1
   itemParaDropar: {fileID: 1155319595704185419, guid: 8561b74ad057e4d42a3f0575b14fd184, type: 3}
-  chanceDeDropar: 45
+  chanceDeDropar: 35
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
 --- !u!58 &3739448
 CircleCollider2D:
@@ -320,6 +320,140 @@ Transform:
   - {fileID: 985900924}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &12798542
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 12798543}
+  - component: {fileID: 12798545}
+  - component: {fileID: 12798544}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &12798543
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 12798542}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1473064139}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &12798544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 12798542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: SAIR
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: f996025108bd8d947ad7a174b4a00da5, type: 2}
+  m_sharedMaterial: {fileID: 7125611882698630672, guid: f996025108bd8d947ad7a174b4a00da5, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 25.2
+  m_fontSizeBase: 25.2
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &12798545
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 12798542}
+  m_CullTransparentMesh: 1
 --- !u!1001 &18206149
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -419,7 +553,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &27085981
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1427,7 +1561,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6290388079940535369, guid: 8561b74ad057e4d42a3f0575b14fd184, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 22.535622
+      value: 30.68
       objectReference: {fileID: 0}
     - target: {fileID: 6290388079940535369, guid: 8561b74ad057e4d42a3f0575b14fd184, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2258,7 +2392,7 @@ MonoBehaviour:
   vidaAtualDoInimigo: 3
   danoAoJogador: 1
   itemParaDropar: {fileID: 1155319595704185419, guid: 8561b74ad057e4d42a3f0575b14fd184, type: 3}
-  chanceDeDropar: 45
+  chanceDeDropar: 35
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
 --- !u!58 &122729066
 CircleCollider2D:
@@ -2429,7 +2563,7 @@ PrefabInstance:
       objectReference: {fileID: 179770267}
     - target: {fileID: 5335037867490196851, guid: 36bb1e15e908e164fbdd928fe7490831, type: 3}
       propertyPath: m_Radius
-      value: 0.15551604
+      value: 0.17355359
       objectReference: {fileID: 0}
     - target: {fileID: 8815799859703536977, guid: 36bb1e15e908e164fbdd928fe7490831, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2707,7 +2841,7 @@ MonoBehaviour:
   vidaAtualDoInimigo: 3
   danoAoJogador: 1
   itemParaDropar: {fileID: 7618214839703894807, guid: b7c2a27e2b9a50a4c9f41f1e41526a54, type: 3}
-  chanceDeDropar: 50
+  chanceDeDropar: 40
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
 --- !u!50 &168470623
 Rigidbody2D:
@@ -3268,6 +3402,7 @@ RectTransform:
   m_Children:
   - {fileID: 1704523552}
   - {fileID: 594251703}
+  - {fileID: 1473064139}
   m_Father: {fileID: 618893314}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -4120,7 +4255,7 @@ MonoBehaviour:
   vidaAtualDoInimigo: 3
   danoAoJogador: 1
   itemParaDropar: {fileID: 1155319595704185419, guid: 8561b74ad057e4d42a3f0575b14fd184, type: 3}
-  chanceDeDropar: 45
+  chanceDeDropar: 35
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
 --- !u!58 &224846452
 CircleCollider2D:
@@ -4394,7 +4529,7 @@ MonoBehaviour:
   vidaAtualDoInimigo: 3
   danoAoJogador: 1
   itemParaDropar: {fileID: 1155319595704185419, guid: 8561b74ad057e4d42a3f0575b14fd184, type: 3}
-  chanceDeDropar: 45
+  chanceDeDropar: 35
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
 --- !u!58 &232317465
 CircleCollider2D:
@@ -5233,7 +5368,7 @@ MonoBehaviour:
   vidaAtualDoInimigo: 3
   danoAoJogador: 1
   itemParaDropar: {fileID: 7618214839703894807, guid: b7c2a27e2b9a50a4c9f41f1e41526a54, type: 3}
-  chanceDeDropar: 50
+  chanceDeDropar: 40
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
 --- !u!50 &287878283
 Rigidbody2D:
@@ -5641,7 +5776,7 @@ MonoBehaviour:
   vidaAtualDoInimigo: 3
   danoAoJogador: 1
   itemParaDropar: {fileID: 7618214839703894807, guid: b7c2a27e2b9a50a4c9f41f1e41526a54, type: 3}
-  chanceDeDropar: 50
+  chanceDeDropar: 40
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
 --- !u!50 &317142290
 Rigidbody2D:
@@ -6027,7 +6162,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.15004878
+  m_Radius: 0.16615279
 --- !u!250 &342974769
 PointEffector2D:
   m_ObjectHideFlags: 0
@@ -9514,7 +9649,7 @@ MonoBehaviour:
   vidaAtualDoInimigo: 3
   danoAoJogador: 1
   itemParaDropar: {fileID: 1155319595704185419, guid: 8561b74ad057e4d42a3f0575b14fd184, type: 3}
-  chanceDeDropar: 45
+  chanceDeDropar: 35
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
 --- !u!58 &524162694
 CircleCollider2D:
@@ -9683,6 +9818,14 @@ PrefabInstance:
       propertyPath: painelGameOver
       value: 
       objectReference: {fileID: 179770267}
+    - target: {fileID: 5335037867490196851, guid: 36bb1e15e908e164fbdd928fe7490831, type: 3}
+      propertyPath: m_Radius
+      value: 0.2590178
+      objectReference: {fileID: 0}
+    - target: {fileID: 5335037867490196851, guid: 36bb1e15e908e164fbdd928fe7490831, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.009017729
+      objectReference: {fileID: 0}
     - target: {fileID: 8815799859703536977, guid: 36bb1e15e908e164fbdd928fe7490831, type: 3}
       propertyPath: m_LocalPosition.x
       value: 73.25172
@@ -10148,7 +10291,7 @@ MonoBehaviour:
   vidaAtualDoInimigo: 3
   danoAoJogador: 1
   itemParaDropar: {fileID: 7618214839703894807, guid: b7c2a27e2b9a50a4c9f41f1e41526a54, type: 3}
-  chanceDeDropar: 50
+  chanceDeDropar: 40
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
 --- !u!50 &575867585
 Rigidbody2D:
@@ -11779,7 +11922,7 @@ MonoBehaviour:
   vidaAtualDoInimigo: 3
   danoAoJogador: 1
   itemParaDropar: {fileID: 1155319595704185419, guid: 8561b74ad057e4d42a3f0575b14fd184, type: 3}
-  chanceDeDropar: 45
+  chanceDeDropar: 35
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
 --- !u!58 &718096365
 CircleCollider2D:
@@ -12873,7 +13016,7 @@ MonoBehaviour:
   vidaAtualDoInimigo: 3
   danoAoJogador: 1
   itemParaDropar: {fileID: 1155319595704185419, guid: 8561b74ad057e4d42a3f0575b14fd184, type: 3}
-  chanceDeDropar: 45
+  chanceDeDropar: 35
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
 --- !u!58 &791874960
 CircleCollider2D:
@@ -14846,7 +14989,7 @@ MonoBehaviour:
   vidaAtualDoInimigo: 3
   danoAoJogador: 1
   itemParaDropar: {fileID: 1155319595704185419, guid: 8561b74ad057e4d42a3f0575b14fd184, type: 3}
-  chanceDeDropar: 45
+  chanceDeDropar: 35
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
 --- !u!58 &906988187
 CircleCollider2D:
@@ -18372,7 +18515,7 @@ MonoBehaviour:
   vidaAtualDoInimigo: 3
   danoAoJogador: 1
   itemParaDropar: {fileID: 7618214839703894807, guid: b7c2a27e2b9a50a4c9f41f1e41526a54, type: 3}
-  chanceDeDropar: 50
+  chanceDeDropar: 40
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
 --- !u!50 &1084989973
 Rigidbody2D:
@@ -20154,7 +20297,7 @@ MonoBehaviour:
   vidaAtualDoInimigo: 3
   danoAoJogador: 1
   itemParaDropar: {fileID: 1155319595704185419, guid: 8561b74ad057e4d42a3f0575b14fd184, type: 3}
-  chanceDeDropar: 45
+  chanceDeDropar: 35
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
 --- !u!58 &1178451501
 CircleCollider2D:
@@ -20574,7 +20717,7 @@ MonoBehaviour:
   vidaAtualDoInimigo: 3
   danoAoJogador: 1
   itemParaDropar: {fileID: 1155319595704185419, guid: 8561b74ad057e4d42a3f0575b14fd184, type: 3}
-  chanceDeDropar: 45
+  chanceDeDropar: 35
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
 --- !u!58 &1199824337
 CircleCollider2D:
@@ -21083,7 +21226,7 @@ MonoBehaviour:
   vidaAtualDoInimigo: 3
   danoAoJogador: 1
   itemParaDropar: {fileID: 1155319595704185419, guid: 8561b74ad057e4d42a3f0575b14fd184, type: 3}
-  chanceDeDropar: 45
+  chanceDeDropar: 35
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
 --- !u!58 &1218099602
 CircleCollider2D:
@@ -22536,6 +22679,14 @@ PrefabInstance:
       propertyPath: painelGameOver
       value: 
       objectReference: {fileID: 179770267}
+    - target: {fileID: 5335037867490196851, guid: 36bb1e15e908e164fbdd928fe7490831, type: 3}
+      propertyPath: m_Radius
+      value: 0.25701383
+      objectReference: {fileID: 0}
+    - target: {fileID: 5335037867490196851, guid: 36bb1e15e908e164fbdd928fe7490831, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.007013816
+      objectReference: {fileID: 0}
     - target: {fileID: 8815799859703536977, guid: 36bb1e15e908e164fbdd928fe7490831, type: 3}
       propertyPath: m_LocalPosition.x
       value: 116.25172
@@ -23247,7 +23398,7 @@ MonoBehaviour:
   vidaAtualDoInimigo: 3
   danoAoJogador: 1
   itemParaDropar: {fileID: 7618214839703894807, guid: b7c2a27e2b9a50a4c9f41f1e41526a54, type: 3}
-  chanceDeDropar: 50
+  chanceDeDropar: 40
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
 --- !u!50 &1339874299
 Rigidbody2D:
@@ -23552,7 +23703,7 @@ PrefabInstance:
       objectReference: {fileID: 179770267}
     - target: {fileID: 5335037867490196851, guid: 36bb1e15e908e164fbdd928fe7490831, type: 3}
       propertyPath: m_Radius
-      value: 0.19006136
+      value: 0.22475533
       objectReference: {fileID: 0}
     - target: {fileID: 8815799859703536977, guid: 36bb1e15e908e164fbdd928fe7490831, type: 3}
       propertyPath: m_LocalPosition.x
@@ -23643,7 +23794,7 @@ MonoBehaviour:
   vidaAtualDoInimigo: 3
   danoAoJogador: 1
   itemParaDropar: {fileID: 7618214839703894807, guid: b7c2a27e2b9a50a4c9f41f1e41526a54, type: 3}
-  chanceDeDropar: 50
+  chanceDeDropar: 40
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
 --- !u!50 &1353601375
 Rigidbody2D:
@@ -24757,7 +24908,7 @@ MonoBehaviour:
   vidaAtualDoInimigo: 3
   danoAoJogador: 1
   itemParaDropar: {fileID: 7618214839703894807, guid: b7c2a27e2b9a50a4c9f41f1e41526a54, type: 3}
-  chanceDeDropar: 50
+  chanceDeDropar: 40
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
 --- !u!50 &1399335649
 Rigidbody2D:
@@ -25268,7 +25419,7 @@ MonoBehaviour:
   vidaAtualDoInimigo: 3
   danoAoJogador: 1
   itemParaDropar: {fileID: 7618214839703894807, guid: b7c2a27e2b9a50a4c9f41f1e41526a54, type: 3}
-  chanceDeDropar: 50
+  chanceDeDropar: 40
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
 --- !u!50 &1408522298
 Rigidbody2D:
@@ -26034,7 +26185,7 @@ MonoBehaviour:
   vidaAtualDoInimigo: 3
   danoAoJogador: 1
   itemParaDropar: {fileID: 7618214839703894807, guid: b7c2a27e2b9a50a4c9f41f1e41526a54, type: 3}
-  chanceDeDropar: 50
+  chanceDeDropar: 40
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
 --- !u!50 &1454139871
 Rigidbody2D:
@@ -26397,6 +26548,139 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a3590e3068eeecc4b87e67b568c431f3, type: 3}
+--- !u!1 &1473064138
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1473064139}
+  - component: {fileID: 1473064142}
+  - component: {fileID: 1473064141}
+  - component: {fileID: 1473064140}
+  m_Layer: 5
+  m_Name: 'Sair para o menu '
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1473064139
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1473064138}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.047230616, y: 0.047230616, z: 0.047230616}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 12798543}
+  m_Father: {fileID: 179770268}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 36.700806, y: -25.695465}
+  m_SizeDelta: {x: 482.4383, y: 199.0839}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1473064140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1473064138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1473064141}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 432462569}
+        m_TargetAssemblyTypeName: PausarJogo, Assembly-CSharp
+        m_MethodName: ExitToMainMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1473064141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1473064138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: a6e96765b4716d549bdc810596953d9e, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1473064142
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1473064138}
+  m_CullTransparentMesh: 1
 --- !u!1 &1475171545
 GameObject:
   m_ObjectHideFlags: 0
@@ -27114,7 +27398,7 @@ MonoBehaviour:
   vidaAtualDoInimigo: 3
   danoAoJogador: 1
   itemParaDropar: {fileID: 7618214839703894807, guid: b7c2a27e2b9a50a4c9f41f1e41526a54, type: 3}
-  chanceDeDropar: 50
+  chanceDeDropar: 40
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
 --- !u!50 &1516892681
 Rigidbody2D:
@@ -27311,7 +27595,7 @@ MonoBehaviour:
   vidaAtualDoInimigo: 3
   danoAoJogador: 1
   itemParaDropar: {fileID: 1155319595704185419, guid: 8561b74ad057e4d42a3f0575b14fd184, type: 3}
-  chanceDeDropar: 45
+  chanceDeDropar: 35
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
 --- !u!58 &1527235343
 CircleCollider2D:
@@ -27953,7 +28237,7 @@ MonoBehaviour:
   vidaAtualDoInimigo: 3
   danoAoJogador: 1
   itemParaDropar: {fileID: 1155319595704185419, guid: 8561b74ad057e4d42a3f0575b14fd184, type: 3}
-  chanceDeDropar: 45
+  chanceDeDropar: 35
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
 --- !u!58 &1564633974
 CircleCollider2D:
@@ -28150,7 +28434,7 @@ MonoBehaviour:
   vidaAtualDoInimigo: 3
   danoAoJogador: 1
   itemParaDropar: {fileID: 7618214839703894807, guid: b7c2a27e2b9a50a4c9f41f1e41526a54, type: 3}
-  chanceDeDropar: 50
+  chanceDeDropar: 40
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
 --- !u!50 &1569230851
 Rigidbody2D:
@@ -28760,7 +29044,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.15004878
+  m_Radius: 0.1884822
 --- !u!250 &1612864103
 PointEffector2D:
   m_ObjectHideFlags: 0
@@ -29961,7 +30245,7 @@ MonoBehaviour:
   vidaAtualDoInimigo: 3
   danoAoJogador: 1
   itemParaDropar: {fileID: 1155319595704185419, guid: 8561b74ad057e4d42a3f0575b14fd184, type: 3}
-  chanceDeDropar: 45
+  chanceDeDropar: 35
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
 --- !u!58 &1689660688
 CircleCollider2D:
@@ -32301,7 +32585,7 @@ MonoBehaviour:
   vidaAtualDoInimigo: 3
   danoAoJogador: 1
   itemParaDropar: {fileID: 7618214839703894807, guid: b7c2a27e2b9a50a4c9f41f1e41526a54, type: 3}
-  chanceDeDropar: 50
+  chanceDeDropar: 40
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
 --- !u!50 &1850274008
 Rigidbody2D:
@@ -32719,7 +33003,7 @@ MonoBehaviour:
   vidaAtualDoInimigo: 3
   danoAoJogador: 1
   itemParaDropar: {fileID: 1155319595704185419, guid: 8561b74ad057e4d42a3f0575b14fd184, type: 3}
-  chanceDeDropar: 45
+  chanceDeDropar: 35
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
 --- !u!58 &1877834552
 CircleCollider2D:
@@ -32916,7 +33200,7 @@ MonoBehaviour:
   vidaAtualDoInimigo: 3
   danoAoJogador: 1
   itemParaDropar: {fileID: 1155319595704185419, guid: 8561b74ad057e4d42a3f0575b14fd184, type: 3}
-  chanceDeDropar: 45
+  chanceDeDropar: 35
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
 --- !u!58 &1890411833
 CircleCollider2D:
@@ -33565,7 +33849,7 @@ MonoBehaviour:
   vidaAtualDoInimigo: 3
   danoAoJogador: 1
   itemParaDropar: {fileID: 7618214839703894807, guid: b7c2a27e2b9a50a4c9f41f1e41526a54, type: 3}
-  chanceDeDropar: 50
+  chanceDeDropar: 40
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
 --- !u!50 &1901727126
 Rigidbody2D:
@@ -43332,7 +43616,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.15004878
+  m_Radius: 0.19173214
 --- !u!58 &5624275598419134079
 CircleCollider2D:
   m_ObjectHideFlags: 0
