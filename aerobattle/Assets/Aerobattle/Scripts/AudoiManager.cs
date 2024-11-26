@@ -10,6 +10,12 @@ public class AudoiManager : MonoBehaviour
 
     public AudioSource musicSource, SfxSource;
     public AudioClip ClipColetavel;
+
+    public bool isJogadorMenu;
+    public bool isJogadorMorreu;
+    public bool isGamePause;
+
+    public float musicTimePosition;
     public void Awake()
     {
         if (instance == null)
@@ -21,6 +27,25 @@ public class AudoiManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+    }
+
+    private void Update()
+    {
+        if (Time.timeScale == 0 && !isGamePause)
+        {
+            isGamePause = true;
+            musicTimePosition = musicSource.time;
+            PararMusica();
+        }
+        else if (Time.timeScale > 0 && isGamePause)
+        {
+            isGamePause = false;
+            if (!isJogadorMenu && !isJogadorMorreu) 
+            {
+                TocarMusica();
+                musicSource.time = musicTimePosition;
+            }
+        }    
     }
 
     void TocarEfeitoSonoro(string nomeDoClip)
@@ -52,11 +77,38 @@ public class AudoiManager : MonoBehaviour
 
     void TocarMusica()
     {
-        musicSource.Play();
+        if (!isJogadorMenu && !isJogadorMorreu && !isGamePause)
+        {
+            musicSource.Play();
+        }
+        
     }
 
     void PararMusica()
     {
         musicSource.Stop();
+    }
+
+    public void JogadorMorreu()
+    {
+        isJogadorMorreu = false;
+        if (!isJogadorMenu && !isGamePause)
+        {
+            TocarMusica();
+        }
+    }
+
+    public void EntrarNoMenu()
+    {
+        isJogadorMenu = true;
+        PararMusica();
+    }
+
+    public void SairDoMenu()
+    {
+        if (!isGamePause && !isJogadorMorreu)
+        {
+            TocarMusica();
+        }
     }
 }

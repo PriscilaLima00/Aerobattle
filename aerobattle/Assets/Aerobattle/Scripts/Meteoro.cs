@@ -36,6 +36,7 @@ public class Meteoro : MonoBehaviour
         if (vidaAtualDoMeteoro <= 0)
         {
             Instantiate(efeitoDeExplosão, transform.position, transform.rotation);
+            EfeitoSonoro.instance.somDaExplosão.Play();
             Destroy(this.gameObject);
         }
     }

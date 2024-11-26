@@ -196,6 +196,7 @@ public class Vex_09 : MonoBehaviour
         if (vidaAtualDoVex <= 0)
         {
             Instantiate(efeitoDeExplosão, transform.position, transform.rotation);
+            EfeitoSonoro.instance.somDaExplosão.Play();
             int numeroAleatorio = Random.Range(0, 100);
             if (numeroAleatorio <= chanceDeDropar)
             {

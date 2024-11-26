@@ -57,6 +57,7 @@ public class Missel : MonoBehaviour
         if (collider.gameObject.CompareTag("Laser do Jogador"))
         {
             Instantiate(efeitoDeExplosão, transform.position, transform.rotation);
+            EfeitoSonoro.instance.somDaExplosão.Play();
             Destroy(gameObject);
         } 
         if (collider.CompareTag("Destroy"))

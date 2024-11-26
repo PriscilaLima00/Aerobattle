@@ -1011,7 +1011,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: b7506757f59758e498aa2f5f62709fc7, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.644
+  m_Volume: 0.24
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1357,7 +1357,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cenaFase01: fase01
-  tempoDeCutscene: 60
+  tempoDeCutscene: 58
 --- !u!1 &1313120189
 GameObject:
   m_ObjectHideFlags: 0
@@ -1426,7 +1426,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: b7506757f59758e498aa2f5f62709fc7, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.644
+  m_Volume: 0.24
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1693,7 +1693,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: b7506757f59758e498aa2f5f62709fc7, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.664
+  m_Volume: 0.24
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1964,7 +1964,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: b7506757f59758e498aa2f5f62709fc7, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.644
+  m_Volume: 0.24
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -2342,7 +2342,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: b7506757f59758e498aa2f5f62709fc7, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.644
+  m_Volume: 0.24
   m_Pitch: 1
   Loop: 0
   Mute: 0

@@ -147,6 +147,7 @@ public class Nebuloso : MonoBehaviour
         vidaAtualDoNebuloso -= danoparareceber;
 
         Instantiate(efeitoDeExplosão, transform.position, transform.rotation);
+        EfeitoSonoro.instance.somDaExplosão.Play();
         if (vidaAtualDoNebuloso <= 0)
         {
             int numeroAleatorio = Random.Range(0, 100);

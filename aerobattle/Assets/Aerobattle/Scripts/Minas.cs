@@ -51,6 +51,7 @@ public class MinaEspacial : MonoBehaviour
     private void Detonar()
     {
         Instantiate(efeitoDeExplosão, transform.position, transform.rotation);
+        EfeitoSonoro.instance.somDaExplosão.Play();
         
         Destroy(gameObject);
         

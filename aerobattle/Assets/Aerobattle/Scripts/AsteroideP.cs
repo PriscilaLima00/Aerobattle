@@ -39,7 +39,8 @@ public class AsteroideP : MonoBehaviour
 
         if (vidaAtualDoAsteroide <= 0)
         {
-             Instantiate(efeitoDeExplosão, transform.position, transform.rotation);
+            Instantiate(efeitoDeExplosão, transform.position, transform.rotation);
+            EfeitoSonoro.instance.somDaExplosão.Play();
             Destroy(this.gameObject);
         }
     }

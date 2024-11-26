@@ -32,13 +32,16 @@ public class ItensColetavéis : MonoBehaviour
             {
                 other.gameObject.GetComponent<VidaDoJogador>().GanharVida(vidaParaDar);
             }
-
+            EfeitoSonoro.instance.somDeColeta.Play();
             Destroy(this.gameObject);
         }
         if (other.CompareTag("Destroy"))
         {
+            
             // Destrói o objeto ao qual este script está anexado
             Destroy(this.gameObject);
         }
+        
+        
     }
 }

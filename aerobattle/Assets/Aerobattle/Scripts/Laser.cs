@@ -78,6 +78,7 @@ public class Laser : MonoBehaviour
         else if (colision.gameObject.CompareTag("Chefão"))
         {
             Instantiate(impactoDoLaser, transform.position, transform.rotation);
+            EfeitoSonoro.instance.somDoImpacto.Play();
             colision.gameObject.GetComponent<InimigoChefão>().MachucarInimigoChefao(danoParaDar);
         }
     }
