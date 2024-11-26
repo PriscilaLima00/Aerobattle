@@ -22,5 +22,6 @@ public class CarregarCena : MonoBehaviour
 
         
         SceneManager.LoadScene(cenaFase01);
+        AudoiManager.instance.SairDoMenu();
     }
 }

@@ -577,6 +577,7 @@ MonoBehaviour:
   danoParaOAsteroide: 3
   danoParaInimigo: 2
   gameOver: {fileID: 87276702}
+  duracaoEscudo: 10
 --- !u!114 &27085982
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2355,6 +2356,10 @@ PrefabInstance:
     - target: {fileID: 3879155341109228713, guid: fbb65a453ba9ee34a816fa399801dca8, type: 3}
       propertyPath: m_Name
       value: Efeitos sonoros
+      objectReference: {fileID: 0}
+    - target: {fileID: 7636323734053005302, guid: fbb65a453ba9ee34a816fa399801dca8, type: 3}
+      propertyPath: m_Volume
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7809954915012581475, guid: fbb65a453ba9ee34a816fa399801dca8, type: 3}
       propertyPath: m_LocalPosition.x

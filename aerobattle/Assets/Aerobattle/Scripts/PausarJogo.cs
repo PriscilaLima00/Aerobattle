@@ -42,8 +42,7 @@ public class PausarJogo : MonoBehaviour
 
     public void ExitToMainMenu()
     {
-        // Despausa o jogo (opcional, caso queira garantir que o tempo volte ao normal ao carregar o menu)
-             Time.timeScale = 1;
+        Time.timeScale = 1;
         AudoiManager.instance.EntrarNoMenu();
         SceneManager.LoadScene("MainMenu");
         

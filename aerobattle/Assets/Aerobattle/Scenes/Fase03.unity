@@ -476,6 +476,7 @@ MonoBehaviour:
   danoParaOAsteroide: 3
   danoParaInimigo: 2
   gameOver: {fileID: 87276702}
+  duracaoEscudo: 10
 --- !u!114 &27085982
 MonoBehaviour:
   m_ObjectHideFlags: 0

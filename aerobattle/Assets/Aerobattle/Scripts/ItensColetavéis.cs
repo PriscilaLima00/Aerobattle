@@ -37,8 +37,6 @@ public class ItensColetavéis : MonoBehaviour
         }
         if (other.CompareTag("Destroy"))
         {
-            
-            // Destrói o objeto ao qual este script está anexado
             Destroy(this.gameObject);
         }
         

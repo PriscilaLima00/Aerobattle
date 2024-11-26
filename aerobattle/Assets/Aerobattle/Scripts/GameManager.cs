@@ -17,6 +17,7 @@ public class GameManager : MonoBehaviour
         
         if (restartButton != null)
             restartButton.onClick.AddListener(RestartGame);
+        
     }
 
     
@@ -30,6 +31,8 @@ public class GameManager : MonoBehaviour
     {
         Scene currentScene = SceneManager.GetActiveScene();
         SceneManager.LoadScene(currentScene.name);
+        AudoiManager.instance.JogadorMorreu();
+        Time.timeScale = 1;
     }
 
     

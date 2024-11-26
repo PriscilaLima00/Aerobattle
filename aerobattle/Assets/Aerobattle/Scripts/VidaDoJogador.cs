@@ -23,6 +23,8 @@ public class VidaDoJogador : MonoBehaviour
 
     public GameManager gameOver;
 
+    public float duracaoEscudo = 5f; // Duração do escudo em segundos
+
     void Start()
     {
         an = GetComponent<Animator>();
@@ -63,6 +65,9 @@ public class VidaDoJogador : MonoBehaviour
         vidaAtualDoEscudo = vidaMaximaDoEscudo;
         escudoDoJogador.SetActive(true);
         temEscudo = true;
+
+        // Iniciar a corrotina para desativar o escudo após a duração
+        StartCoroutine(DesativarEscudoAposTempo());
     }
 
     public void MachucarJogador(int danoParaReceber)
@@ -82,6 +87,7 @@ public class VidaDoJogador : MonoBehaviour
             if (vidaAtualDoJogador <= 0)
             {
                 Morrer();
+                Time.timeScale = 0;
             }
         }
         else
@@ -103,6 +109,13 @@ public class VidaDoJogador : MonoBehaviour
         {
             an.SetBool("dano", false);
         }
+    }
+
+    private IEnumerator DesativarEscudoAposTempo()
+    {
+        yield return new WaitForSeconds(duracaoEscudo);
+        escudoDoJogador.SetActive(false);
+        temEscudo = false;
     }
 
     void OnCollisionEnter2D(Collision2D colisao)
@@ -140,17 +153,16 @@ public class VidaDoJogador : MonoBehaviour
         {
             MachucarJogador(danoParaInimigo);
 
-            Inimigo asteroide = colisao.gameObject.GetComponent<Inimigo>();
-            if (asteroide != null)
+            Inimigo inimigo = colisao.gameObject.GetComponent<Inimigo>();
+            if (inimigo != null)
             {
-                asteroide.MachucarInimigo(danoParaInimigo);
+                inimigo.MachucarInimigo(danoParaInimigo);
             }
         }
     }
 
     void Morrer()
     {
-        // Adicione a lógica para mostrar a tela de Game Over ou reiniciar o nível
         if (gameOver != null)
         {
             gameOver.ShowGameOver();
@@ -159,13 +171,8 @@ public class VidaDoJogador : MonoBehaviour
         Destroy(gameObject);
     }
 
-    // Método para verificar se o jogador está vivo
     public bool EstahVivo()
     {
         return vidaAtualDoJogador > 0;
     }
 }
-    
-    
-   
-
