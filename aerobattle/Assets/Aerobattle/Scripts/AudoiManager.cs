@@ -84,7 +84,7 @@ public class AudoiManager : MonoBehaviour
         
     }
 
-    void PararMusica()
+    public void PararMusica()
     {
         musicSource.Stop();
     }
@@ -106,8 +106,10 @@ public class AudoiManager : MonoBehaviour
 
     public void SairDoMenu()
     {
+        
         if (!isGamePause && !isJogadorMorreu)
         {
+            isJogadorMenu = false;
             TocarMusica();
         }
     }
