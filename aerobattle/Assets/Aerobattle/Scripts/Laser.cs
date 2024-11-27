@@ -32,47 +32,51 @@ public class Laser : MonoBehaviour
         {
             colision.gameObject.GetComponent<Inimigo>().MachucarInimigo(danoParaDar);
             Instantiate(impactoDoLaser, transform.position, transform.rotation);
+            EfeitoSonoro.instance.somDoImpacto.Play();
             Destroy(gameObject); 
         }
         else if (colision.gameObject.CompareTag("Meteoro"))
         {
             colision.gameObject.GetComponent<Meteoro>().MachucarMeteoro(danoParaDar);
             Instantiate(impactoDoLaser, transform.position, transform.rotation);
+            EfeitoSonoro.instance.somDoImpacto.Play();
             Destroy(gameObject);
         }
         else if (colision.gameObject.CompareTag("Nebuloso"))
         {
             colision.gameObject.GetComponent<Nebuloso>().MachucarNebuloso(danoParaDar);
             Instantiate(impactoDoLaser, transform.position, transform.rotation);
+            EfeitoSonoro.instance.somDoImpacto.Play();
             Destroy(gameObject);
         }
         else if (colision.gameObject.CompareTag("Asteroide P."))
         {
-            colision.gameObject.GetComponent<AsteroideP>().MachucarAsteroide(danoParaDar);
             Instantiate(impactoDoLaser, transform.position, transform.rotation);
-            Destroy(gameObject); 
+            EfeitoSonoro.instance.somDoImpacto.Play();
         }
         else if (colision.gameObject.CompareTag("Vex.09"))
         {
             colision.gameObject.GetComponent<Vex_09>().ReceberDanoVex(danoParaDar);
             Instantiate(impactoDoLaser, transform.position, transform.rotation);
+            EfeitoSonoro.instance.somDoImpacto.Play();
             Destroy(gameObject); 
         }
         else if (colision.gameObject.CompareTag("Asteroide G."))
         {
-            colision.gameObject.GetComponent<AsteroideG>().MachucarAsteroideG(danoParaDar);
             Instantiate(impactoDoLaser, transform.position, transform.rotation);
-            Destroy(gameObject); 
+            EfeitoSonoro.instance.somDoImpacto.Play();
         }
         else if (colision.gameObject.CompareTag("Missel"))
         {
             Instantiate(impactoDoLaser, transform.position, transform.rotation);
+            EfeitoSonoro.instance.somDoImpacto.Play();
             Destroy(gameObject); 
         }
         else if (colision.gameObject.CompareTag("Frota Vex"))
         {
             colision.gameObject.GetComponent<FrotaVex>().MachucarFrota(danoParaDar);
             Instantiate(impactoDoLaser, transform.position, transform.rotation);
+            EfeitoSonoro.instance.somDoImpacto.Play();
             Destroy(gameObject);
         }
         else if (colision.gameObject.CompareTag("Chefão"))
@@ -80,6 +84,13 @@ public class Laser : MonoBehaviour
             Instantiate(impactoDoLaser, transform.position, transform.rotation);
             EfeitoSonoro.instance.somDoImpacto.Play();
             colision.gameObject.GetComponent<InimigoChefão>().MachucarInimigoChefao(danoParaDar);
+        }
+        
+        else if (colision.gameObject.CompareTag("Inimigo Vermelho"))
+        {
+            colision.gameObject.GetComponent<Nave_Vermelha>().MachucarVermelho(danoParaDar);
+            Instantiate(impactoDoLaser, transform.position, transform.rotation);
+            EfeitoSonoro.instance.somDoImpacto.Play();
         }
     }
 

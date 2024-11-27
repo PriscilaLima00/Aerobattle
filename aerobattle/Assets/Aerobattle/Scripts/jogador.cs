@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 public class jogador : MonoBehaviour
 {
-    public Rigidbody2D rigi;
+     public Rigidbody2D rigi;
     public float velocidadeDaNave;
     public bool temLaserDuplo;
 
@@ -19,65 +19,54 @@ public class jogador : MonoBehaviour
 
     public float tempoMaximoDosLasersDuplos;
     public float tempoAtualDosLasersDuplos;
-    
+
     public Text scoreText;
     public int score;
-    
+
+    // Novo campo para controle do intervalo de disparo do laser
+    public float intervaloEntreTiros = 0.2f;  // Tempo entre disparos consecutivos
+    private float tempoParaProximoTiro;
+
     void Start()
     {
-        
         temLaserDuplo = false;
-
         tempoAtualDosLasersDuplos = tempoMaximoDosLasersDuplos;
-
         score = 0;
+        tempoParaProximoTiro = 0f; // Inicializa o tempo de espera
     }
 
-    // Update is called once per frame
     void Update()
     {
-            MovimentoPlay();
-            AtirarLaser();
+        MovimentoPlay();
+        AtirarLaser();
 
-            if (temLaserDuplo == true)
+        if (temLaserDuplo)
+        {
+            tempoAtualDosLasersDuplos -= Time.deltaTime;
+
+            if (tempoAtualDosLasersDuplos <= 0)
             {
-                tempoAtualDosLasersDuplos -= Time.deltaTime;
-
-                if (tempoAtualDosLasersDuplos <= 0)
-                {
-                    DesativarLaserDuplo();
-                }
+                DesativarLaserDuplo();
             }
+        }
 
-            scoreText.text = score.ToString();
-            
+        scoreText.text = score.ToString();
     }
 
     private void OnTriggerEnter2D(Collider2D col)
     {
-
-        if (col.CompareTag("Moeda") == true)
+        if (col.CompareTag("Moeda"))
         {
             AudioObserver.OnPlaySfxEvent("coletavel");
-            score = score + 1;
+            score++;
             Destroy(col.gameObject);
         }
     }
-
 
     private void MovimentoPlay()
     {
         teclasApertadas = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
         rigi.velocity = teclasApertadas.normalized * velocidadeDaNave;
-        if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
-        {
-            //transform.eulerAngles = new Vector3(0, 0, 0);
-        }
-
-        if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
-        {
-            //transform.eulerAngles = new Vector3(0, 180, 0);
-        }
 
         if (transform.position.x > 9)
         {
@@ -91,30 +80,34 @@ public class jogador : MonoBehaviour
 
     private void AtirarLaser()
     {
-        
-        if (Input.GetKeyDown(KeyCode.K))
+        // Verifica se a tecla K está sendo pressionada
+        if (Input.GetKey(KeyCode.K))
         {
-            
-            if (temLaserDuplo == false)
+            // Verifica se o tempo de disparo passou o intervalo
+            if (Time.time >= tempoParaProximoTiro)
             {
-                Instantiate(laser, localDoDisparoUnico.position, localDoDisparoUnico.rotation);
+                if (temLaserDuplo)
+                {
+                    Instantiate(laser, localDoDisparoDaEsquerda.position, localDoDisparoDaEsquerda.rotation);
+                    Instantiate(laser, localDoDisparoDaDireita.position, localDoDisparoDaDireita.rotation);
+                }
+                else
+                {
+                    Instantiate(laser, localDoDisparoUnico.position, localDoDisparoUnico.rotation);
+                }
+
+                // Atualiza o tempo para o próximo disparo
+                tempoParaProximoTiro = Time.time + intervaloEntreTiros;
+
+                // Reproduz o som do laser
+                EfeitoSonoro.instance.somDoLaser.Play();
             }
-            else 
-            {
-                Instantiate(laser, localDoDisparoDaEsquerda.position, localDoDisparoDaEsquerda.rotation);
-                Instantiate(laser, localDoDisparoDaDireita.position, localDoDisparoDaDireita.rotation);
-            }
-            
-            EfeitoSonoro.instance.somDoLaser.Play();
         }
     }
 
     private void DesativarLaserDuplo()
     {
         temLaserDuplo = false;
-
         tempoAtualDosLasersDuplos = tempoMaximoDosLasersDuplos;
     }
-    
-    
 }

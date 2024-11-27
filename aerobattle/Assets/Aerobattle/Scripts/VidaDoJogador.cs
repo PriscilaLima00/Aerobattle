@@ -130,25 +130,6 @@ public class VidaDoJogador : MonoBehaviour
                 meteoro.MachucarMeteoro(danoParaMeteoro);
             }
         }
-        else if (colisao.gameObject.CompareTag("Asteroide P."))
-        {
-            MachucarJogador(danoParaOAsteroide);
-            AsteroideP asteroide = colisao.gameObject.GetComponent<AsteroideP>();
-            if (asteroide != null)
-            {
-                asteroide.MachucarAsteroide(danoParaOAsteroide);
-            }
-        }
-        else if (colisao.gameObject.CompareTag("Asteroide G."))
-        {
-            MachucarJogador(danoParaOAsteroide);
-
-            AsteroideG asteroide = colisao.gameObject.GetComponent<AsteroideG>();
-            if (asteroide != null)
-            {
-                asteroide.MachucarAsteroideG(danoParaOAsteroide);
-            }
-        }
         else if (colisao.gameObject.CompareTag("Inimigo"))
         {
             MachucarJogador(danoParaInimigo);

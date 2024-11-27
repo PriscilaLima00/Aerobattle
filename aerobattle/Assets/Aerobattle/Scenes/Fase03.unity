@@ -500,6 +500,7 @@ MonoBehaviour:
   tempoAtualDosLasersDuplos: 0
   scoreText: {fileID: 1420020425}
   score: 0
+  intervaloEntreTiros: 0.2
 --- !u!114 &27085983
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -637,7 +638,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -9.95, y: -0.49, z: 0}
-  m_LocalScale: {x: 3.7842, y: 3.7842, z: 3.7842}
+  m_LocalScale: {x: 3.137003, y: 3.137003, z: 3.137003}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 896859808}
@@ -5088,7 +5089,7 @@ RectTransform:
   m_GameObject: {fileID: 406029949}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.0349692, y: 1.0349692, z: 1.0349692}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1155902234}
@@ -7069,7 +7070,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 797, y: -395}
+  m_AnchoredPosition: {x: 788, y: -376}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &497238421
