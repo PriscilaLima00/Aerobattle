@@ -35,15 +35,14 @@ public class Nebuloso : MonoBehaviour
 
     public GameObject efeitoDeExplosão;
 
-// Start is called before the first frame update
+
     void Start()
     {
         vidaAtualDoNebuloso = vidaMaximaDoNebuloso;
         tempoAtualDosLasers = tempoMaximoEntreOsLasers;
         inicioVertical = transform.position.y;
     }
-
-// Update is called once per frame
+    
     void Update()
     {
         MovimentarNebuloso();
@@ -59,17 +58,14 @@ public class Nebuloso : MonoBehaviour
         }
         else
         {
-            // Movimenta o inimigo verticalmente usando PingPong sem Lerp
             float novaPosicaoY = Mathf.PingPong(Time.time * velocidadeDoNebuloso, limiteVertical * 2) - limiteVertical +
                                  inicioVertical;
             Vector3 posicaoVertical = new Vector3(transform.position.x, novaPosicaoY, transform.position.z);
             transform.position = posicaoVertical;
-
-            // Movimenta o inimigo horizontalmente
+            
             float novaPosicaoX = transform.position.x +
                                  (indoParaDireita ? velocidadeFrontal : -velocidadeFrontal) * Time.deltaTime;
-
-            // Verifica se o inimigo atingiu os limites horizontais e inverte a direção
+            
             if (novaPosicaoX > posicaoInicial.x + limiteHorizontal)
             {
                 indoParaDireita = false;
@@ -78,19 +74,15 @@ public class Nebuloso : MonoBehaviour
             {
                 indoParaDireita = true;
             }
-
-            // Atualiza a posição final horizontal
             transform.position = new Vector3(novaPosicaoX, transform.position.y, transform.position.z);
         }
     }
 
     private void MoverParaJogador()
     {
-        // Move o inimigo em direção ao jogador
         Vector3 direcaoParaJogador = (jogador.position - transform.position).normalized;
         transform.position += direcaoParaJogador * velocidadeFrontal * Time.deltaTime;
-
-        // Mantém a posição vertical dentro dos limites definidos
+        
         float novaPosicaoY = Mathf.Clamp(transform.position.y, posicaoInicial.y - limiteVertical,
             posicaoInicial.y + limiteVertical);
         transform.position = new Vector3(transform.position.x, novaPosicaoY, transform.position.z);
@@ -98,15 +90,14 @@ public class Nebuloso : MonoBehaviour
 
     private void VerificarJogador()
     {
-        // Verifica se o jogador está dentro do raio de detecção
-        if (jogador != null && !perseguindoJogador) // Só verifica se o jogador não está sendo perseguido
+        if (jogador != null && !perseguindoJogador)
         {
             float distanciaParaJogador = Vector3.Distance(transform.position, jogador.position);
             jogadorDentroRaio = distanciaParaJogador < raioDeDeteccao;
 
             if (jogadorDentroRaio)
             {
-                perseguindoJogador = true; // Começa a perseguir o jogador
+                perseguindoJogador = true; 
             }
         }
     }
@@ -145,11 +136,12 @@ public class Nebuloso : MonoBehaviour
     public void MachucarNebuloso(int danoparareceber)
     {
         vidaAtualDoNebuloso -= danoparareceber;
-
-        Instantiate(efeitoDeExplosão, transform.position, transform.rotation);
-        EfeitoSonoro.instance.somDaExplosão.Play();
+        
         if (vidaAtualDoNebuloso <= 0)
         {
+            Instantiate(efeitoDeExplosão, transform.position, transform.rotation);
+            EfeitoSonoro.instance.somDaExplosão.Play();
+            
             int numeroAleatorio = Random.Range(0, 100);
 
             if (numeroAleatorio <= chanceDeDropar)
@@ -166,27 +158,26 @@ public class Nebuloso : MonoBehaviour
     public void AplicaDano(int dano)
     {
         vidaAtualDoNebuloso -= dano;
-
-        // Verifica se o inimigo morreu
+        
         if (vidaAtualDoNebuloso <= 0)
         {
             Morrer();
+            
         }
     }
 
     void Morrer()
     {
-        Destroy(gameObject); // Exclui o GameObject do inimigo
+        Destroy(gameObject); 
     }
     
     void OnCollisionEnter2D(Collision2D collision)
     {
-        // Zera a velocidade do Rigidbody2D para impedir o empurrão
         Rigidbody2D rbNebuloso = GetComponent<Rigidbody2D>();
         if (rbNebuloso != null)
         {
             rbNebuloso.velocity = Vector2.zero;
-            rbNebuloso.angularVelocity = 0f; // Zera a velocidade angular também
+            rbNebuloso.angularVelocity = 0f; 
         }
     }
 
