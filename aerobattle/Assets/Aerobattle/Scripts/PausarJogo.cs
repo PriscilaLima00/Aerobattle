@@ -8,14 +8,11 @@ public class PausarJogo : MonoBehaviour
 {
     public Transform pauseMenu;
     public Transform gameOverScreen;
-
-// Start is called before the first frame update
+    
     void Start()
     {
 
     }
-
-// Update is called once per frame
     void Update()
     {
        
