@@ -22,9 +22,8 @@ public class jogador : MonoBehaviour
 
     public Text scoreText;
     public int score;
-
-    // Novo campo para controle do intervalo de disparo do laser
-    public float intervaloEntreTiros = 0.2f;  // Tempo entre disparos consecutivos
+    
+    public float intervaloEntreTiros = 0.2f;
     private float tempoParaProximoTiro;
 
     void Start()
@@ -32,7 +31,7 @@ public class jogador : MonoBehaviour
         temLaserDuplo = false;
         tempoAtualDosLasersDuplos = tempoMaximoDosLasersDuplos;
         score = 0;
-        tempoParaProximoTiro = 0f; // Inicializa o tempo de espera
+        tempoParaProximoTiro = 0f; 
     }
 
     void Update()
@@ -68,22 +67,20 @@ public class jogador : MonoBehaviour
         teclasApertadas = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
         rigi.velocity = teclasApertadas.normalized * velocidadeDaNave;
 
-        if (transform.position.x > 9)
+        if (transform.position.x > 8)
         {
-            transform.position = new Vector3(9, transform.position.y, transform.position.z); // Limite para frente
+            transform.position = new Vector3(8, transform.position.y, transform.position.z);
         }
-        else if (transform.position.x < -9)
+        else if (transform.position.x < -8)
         {
-            transform.position = new Vector3(-9, transform.position.y, transform.position.z); // Limite para trás
+            transform.position = new Vector3(-8, transform.position.y, transform.position.z); 
         }
     }
 
     private void AtirarLaser()
     {
-        // Verifica se a tecla K está sendo pressionada
         if (Input.GetKey(KeyCode.K))
         {
-            // Verifica se o tempo de disparo passou o intervalo
             if (Time.time >= tempoParaProximoTiro)
             {
                 if (temLaserDuplo)
@@ -95,11 +92,9 @@ public class jogador : MonoBehaviour
                 {
                     Instantiate(laser, localDoDisparoUnico.position, localDoDisparoUnico.rotation);
                 }
-
-                // Atualiza o tempo para o próximo disparo
+                
                 tempoParaProximoTiro = Time.time + intervaloEntreTiros;
-
-                // Reproduz o som do laser
+                
                 EfeitoSonoro.instance.somDoLaser.Play();
             }
         }
