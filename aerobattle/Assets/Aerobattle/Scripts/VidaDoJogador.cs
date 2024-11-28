@@ -23,7 +23,7 @@ public class VidaDoJogador : MonoBehaviour
 
     public GameManager gameOver;
 
-    public float duracaoEscudo = 5f; // Duração do escudo em segundos
+    public float duracaoEscudo = 5f; 
 
     void Start()
     {
@@ -65,8 +65,7 @@ public class VidaDoJogador : MonoBehaviour
         vidaAtualDoEscudo = vidaMaximaDoEscudo;
         escudoDoJogador.SetActive(true);
         temEscudo = true;
-
-        // Iniciar a corrotina para desativar o escudo após a duração
+        
         StartCoroutine(DesativarEscudoAposTempo());
     }
 

@@ -137,8 +137,9 @@ GameObject:
   - component: {fileID: 3739449}
   - component: {fileID: 3739448}
   - component: {fileID: 3739447}
+  - component: {fileID: 3739453}
   m_Layer: 0
-  m_Name: "Ex\xE9rcito de nebuloso (22)"
+  m_Name: "Ex\xE9rcito De Nebuloso Azul"
   m_TagString: Inimigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -212,7 +213,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3739446}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -320,6 +321,20 @@ Transform:
   - {fileID: 985900924}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3739453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3739446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 555cd202a8686794ca05b8876baeb78a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
+  distance: 3
 --- !u!1 &12798542
 GameObject:
   m_ObjectHideFlags: 0
@@ -2421,8 +2436,9 @@ GameObject:
   - component: {fileID: 122729067}
   - component: {fileID: 122729066}
   - component: {fileID: 122729065}
+  - component: {fileID: 122729071}
   m_Layer: 0
-  m_Name: "Ex\xE9rcito de nebuloso (16)"
+  m_Name: "Ex\xE9rcito De Nebuloso Azul"
   m_TagString: Inimigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2496,7 +2512,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 122729064}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -2604,6 +2620,20 @@ Transform:
   - {fileID: 1642382094}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &122729071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 122729064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 555cd202a8686794ca05b8876baeb78a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
+  distance: 3
 --- !u!1001 &140379857
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2870,8 +2900,9 @@ GameObject:
   - component: {fileID: 168470624}
   - component: {fileID: 168470623}
   - component: {fileID: 168470622}
+  - component: {fileID: 168470628}
   m_Layer: 0
-  m_Name: "Ex\xE9rcito de nebuloso (27)"
+  m_Name: "Ex\xE9rcito De Nebuloso Marrom"
   m_TagString: Inimigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2884,7 +2915,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 168470621}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 512bffd834d48d541993169058b97e94, type: 3}
   m_Name: 
@@ -2910,7 +2941,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 168470621}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -3053,6 +3084,32 @@ Transform:
   - {fileID: 1078192033}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &168470628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 168470621}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 467da475e3ab7af4ba65160af5fd2668, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  laserDoInimigo: {fileID: 8248208147322278770, guid: 3b42571da975d194db08823665db06dd, type: 3}
+  localDoDisparo:
+  - {fileID: 1078192033}
+  velocidadeDoInimigo: 3
+  tempoMaximoEntreOsLasers: 0.5
+  inimigoAtirador: 1
+  vidaMaximaDoInimigo: 3
+  vidaAtualDoInimigo: 3
+  danoAoJogador: 1
+  itemParaDropar: {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  chanceDeDropar: 40
+  jogador: {fileID: 27085987}
+  distanciaMinimaParaParar: 0.5
+  "efeitoDeExplos\xE3o": {fileID: 7618214839703894807, guid: b7c2a27e2b9a50a4c9f41f1e41526a54, type: 3}
 --- !u!1 &170473478
 GameObject:
   m_ObjectHideFlags: 0
@@ -4284,8 +4341,9 @@ GameObject:
   - component: {fileID: 224846453}
   - component: {fileID: 224846452}
   - component: {fileID: 224846451}
+  - component: {fileID: 224846457}
   m_Layer: 0
-  m_Name: "Ex\xE9rcito de nebuloso (3)"
+  m_Name: "Ex\xE9rcito De Nebuloso Azul"
   m_TagString: Inimigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4359,7 +4417,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 224846450}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -4467,6 +4525,20 @@ Transform:
   - {fileID: 976216128}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &224846457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 224846450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 555cd202a8686794ca05b8876baeb78a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
+  distance: 3
 --- !u!1001 &227948771
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4558,8 +4630,9 @@ GameObject:
   - component: {fileID: 232317466}
   - component: {fileID: 232317465}
   - component: {fileID: 232317464}
+  - component: {fileID: 232317470}
   m_Layer: 0
-  m_Name: "Ex\xE9rcito de nebuloso (6)"
+  m_Name: "Ex\xE9rcito De Nebuloso Azul"
   m_TagString: Inimigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4633,7 +4706,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 232317463}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -4741,6 +4814,20 @@ Transform:
   - {fileID: 1139329660}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &232317470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 232317463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 555cd202a8686794ca05b8876baeb78a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
+  distance: 3
 --- !u!1 &250162373
 GameObject:
   m_ObjectHideFlags: 0
@@ -5397,8 +5484,9 @@ GameObject:
   - component: {fileID: 287878284}
   - component: {fileID: 287878283}
   - component: {fileID: 287878282}
+  - component: {fileID: 287878288}
   m_Layer: 0
-  m_Name: "Ex\xE9rcito de nebuloso (5)"
+  m_Name: "Ex\xE9rcito De Nebuloso Marrom"
   m_TagString: Inimigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5411,7 +5499,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 287878281}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 512bffd834d48d541993169058b97e94, type: 3}
   m_Name: 
@@ -5437,7 +5525,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 287878281}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -5580,6 +5668,32 @@ Transform:
   - {fileID: 2059543918}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &287878288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 287878281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 467da475e3ab7af4ba65160af5fd2668, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  laserDoInimigo: {fileID: 8248208147322278770, guid: 3b42571da975d194db08823665db06dd, type: 3}
+  localDoDisparo:
+  - {fileID: 2059543918}
+  velocidadeDoInimigo: 3
+  tempoMaximoEntreOsLasers: 0.5
+  inimigoAtirador: 1
+  vidaMaximaDoInimigo: 3
+  vidaAtualDoInimigo: 3
+  danoAoJogador: 1
+  itemParaDropar: {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  chanceDeDropar: 40
+  jogador: {fileID: 27085987}
+  distanciaMinimaParaParar: 0.5
+  "efeitoDeExplos\xE3o": {fileID: 7618214839703894807, guid: b7c2a27e2b9a50a4c9f41f1e41526a54, type: 3}
 --- !u!1001 &302127048
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5805,8 +5919,9 @@ GameObject:
   - component: {fileID: 317142291}
   - component: {fileID: 317142290}
   - component: {fileID: 317142289}
+  - component: {fileID: 317142295}
   m_Layer: 0
-  m_Name: "Ex\xE9rcito de nebuloso (9)"
+  m_Name: "Ex\xE9rcito De Nebuloso Marrom"
   m_TagString: Inimigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5819,7 +5934,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 317142288}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 512bffd834d48d541993169058b97e94, type: 3}
   m_Name: 
@@ -5845,7 +5960,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 317142288}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -5988,6 +6103,32 @@ Transform:
   - {fileID: 94753467}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &317142295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 317142288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 467da475e3ab7af4ba65160af5fd2668, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  laserDoInimigo: {fileID: 8248208147322278770, guid: 3b42571da975d194db08823665db06dd, type: 3}
+  localDoDisparo:
+  - {fileID: 94753467}
+  velocidadeDoInimigo: 3
+  tempoMaximoEntreOsLasers: 0.5
+  inimigoAtirador: 1
+  vidaMaximaDoInimigo: 3
+  vidaAtualDoInimigo: 3
+  danoAoJogador: 1
+  itemParaDropar: {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  chanceDeDropar: 40
+  jogador: {fileID: 27085987}
+  distanciaMinimaParaParar: 0.5
+  "efeitoDeExplos\xE3o": {fileID: 7618214839703894807, guid: b7c2a27e2b9a50a4c9f41f1e41526a54, type: 3}
 --- !u!1 &341953864
 GameObject:
   m_ObjectHideFlags: 0
@@ -9678,8 +9819,9 @@ GameObject:
   - component: {fileID: 524162695}
   - component: {fileID: 524162694}
   - component: {fileID: 524162693}
+  - component: {fileID: 524162699}
   m_Layer: 0
-  m_Name: "Ex\xE9rcito de nebuloso (12)"
+  m_Name: "Ex\xE9rcito De Nebuloso Azul"
   m_TagString: Inimigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9753,7 +9895,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 524162692}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -9861,6 +10003,20 @@ Transform:
   - {fileID: 1476743878}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &524162699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 524162692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 555cd202a8686794ca05b8876baeb78a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
+  distance: 3
 --- !u!1001 &533066803
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10320,8 +10476,9 @@ GameObject:
   - component: {fileID: 575867586}
   - component: {fileID: 575867585}
   - component: {fileID: 575867584}
+  - component: {fileID: 575867590}
   m_Layer: 0
-  m_Name: "Ex\xE9rcito de nebuloso (23)"
+  m_Name: "Ex\xE9rcito De Nebuloso Marrom"
   m_TagString: Inimigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10334,7 +10491,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 575867583}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 512bffd834d48d541993169058b97e94, type: 3}
   m_Name: 
@@ -10360,7 +10517,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 575867583}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -10503,6 +10660,32 @@ Transform:
   - {fileID: 2113046451}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &575867590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 575867583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 467da475e3ab7af4ba65160af5fd2668, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  laserDoInimigo: {fileID: 8248208147322278770, guid: 3b42571da975d194db08823665db06dd, type: 3}
+  localDoDisparo:
+  - {fileID: 2101615883}
+  velocidadeDoInimigo: 3
+  tempoMaximoEntreOsLasers: 0.5
+  inimigoAtirador: 1
+  vidaMaximaDoInimigo: 3
+  vidaAtualDoInimigo: 3
+  danoAoJogador: 1
+  itemParaDropar: {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  chanceDeDropar: 40
+  jogador: {fileID: 27085987}
+  distanciaMinimaParaParar: 0.5
+  "efeitoDeExplos\xE3o": {fileID: 7618214839703894807, guid: b7c2a27e2b9a50a4c9f41f1e41526a54, type: 3}
 --- !u!1 &576219804
 GameObject:
   m_ObjectHideFlags: 0
@@ -11951,8 +12134,9 @@ GameObject:
   - component: {fileID: 718096366}
   - component: {fileID: 718096365}
   - component: {fileID: 718096364}
+  - component: {fileID: 718096370}
   m_Layer: 0
-  m_Name: "Ex\xE9rcito de nebuloso (25)"
+  m_Name: "Ex\xE9rcito De Nebuloso Azul"
   m_TagString: Inimigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12026,7 +12210,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 718096363}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -12134,6 +12318,20 @@ Transform:
   - {fileID: 219338167}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &718096370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 718096363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 555cd202a8686794ca05b8876baeb78a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
+  distance: 3
 --- !u!1001 &721727282
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13045,8 +13243,9 @@ GameObject:
   - component: {fileID: 791874961}
   - component: {fileID: 791874960}
   - component: {fileID: 791874959}
+  - component: {fileID: 791874965}
   m_Layer: 0
-  m_Name: "Ex\xE9rcito de nebuloso (14)"
+  m_Name: "Ex\xE9rcito De Nebuloso Azul"
   m_TagString: Inimigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13120,7 +13319,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 791874958}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -13228,6 +13427,20 @@ Transform:
   - {fileID: 494871730}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &791874965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 791874958}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 555cd202a8686794ca05b8876baeb78a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
+  distance: 3
 --- !u!1 &813018524
 GameObject:
   m_ObjectHideFlags: 0
@@ -14811,7 +15024,7 @@ Transform:
   m_GameObject: {fileID: 896859807}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0.7061024, w: 0.70810986}
-  m_LocalPosition: {x: 0.3303, y: -0.0103, z: 0}
+  m_LocalPosition: {x: 0.401, y: -0.015, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -15018,8 +15231,9 @@ GameObject:
   - component: {fileID: 906988188}
   - component: {fileID: 906988187}
   - component: {fileID: 906988186}
+  - component: {fileID: 906988192}
   m_Layer: 0
-  m_Name: "Ex\xE9rcito de nebuloso (21)"
+  m_Name: "Ex\xE9rcito De Nebuloso Azul"
   m_TagString: Inimigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15093,7 +15307,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 906988185}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -15201,6 +15415,20 @@ Transform:
   - {fileID: 1657119803}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &906988192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 906988185}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 555cd202a8686794ca05b8876baeb78a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
+  distance: 3
 --- !u!1 &909972656
 GameObject:
   m_ObjectHideFlags: 0
@@ -18544,8 +18772,9 @@ GameObject:
   - component: {fileID: 1084989974}
   - component: {fileID: 1084989973}
   - component: {fileID: 1084989972}
+  - component: {fileID: 1084989978}
   m_Layer: 0
-  m_Name: "Ex\xE9rcito de nebuloso (11)"
+  m_Name: "Ex\xE9rcito De Nebuloso Marrom"
   m_TagString: Inimigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18558,7 +18787,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1084989971}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 512bffd834d48d541993169058b97e94, type: 3}
   m_Name: 
@@ -18584,7 +18813,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1084989971}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -18727,6 +18956,32 @@ Transform:
   - {fileID: 556144215}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1084989978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1084989971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 467da475e3ab7af4ba65160af5fd2668, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  laserDoInimigo: {fileID: 8248208147322278770, guid: 3b42571da975d194db08823665db06dd, type: 3}
+  localDoDisparo:
+  - {fileID: 1430756215}
+  velocidadeDoInimigo: 3
+  tempoMaximoEntreOsLasers: 0.5
+  inimigoAtirador: 1
+  vidaMaximaDoInimigo: 3
+  vidaAtualDoInimigo: 3
+  danoAoJogador: 1
+  itemParaDropar: {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  chanceDeDropar: 40
+  jogador: {fileID: 27085987}
+  distanciaMinimaParaParar: 0.5
+  "efeitoDeExplos\xE3o": {fileID: 7618214839703894807, guid: b7c2a27e2b9a50a4c9f41f1e41526a54, type: 3}
 --- !u!1 &1085280210
 GameObject:
   m_ObjectHideFlags: 0
@@ -20237,8 +20492,9 @@ GameObject:
   - component: {fileID: 1178451502}
   - component: {fileID: 1178451501}
   - component: {fileID: 1178451500}
+  - component: {fileID: 1178451503}
   m_Layer: 0
-  m_Name: "Ex\xE9rcito de nebuloso"
+  m_Name: "Ex\xE9rcito De Nebuloso Azul"
   m_TagString: Inimigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20401,7 +20657,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1178451496}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -20420,6 +20676,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 6
+--- !u!114 &1178451503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1178451496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 555cd202a8686794ca05b8876baeb78a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
+  distance: 3
 --- !u!1 &1192562557
 GameObject:
   m_ObjectHideFlags: 0
@@ -20746,8 +21016,9 @@ GameObject:
   - component: {fileID: 1199824338}
   - component: {fileID: 1199824337}
   - component: {fileID: 1199824336}
+  - component: {fileID: 1199824342}
   m_Layer: 0
-  m_Name: "Ex\xE9rcito de nebuloso (28)"
+  m_Name: "Ex\xE9rcito De Nebuloso Azul"
   m_TagString: Inimigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20821,7 +21092,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1199824335}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -20929,6 +21200,20 @@ Transform:
   - {fileID: 145245554}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1199824342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1199824335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 555cd202a8686794ca05b8876baeb78a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
+  distance: 3
 --- !u!1 &1205289657
 GameObject:
   m_ObjectHideFlags: 0
@@ -21255,8 +21540,9 @@ GameObject:
   - component: {fileID: 1218099603}
   - component: {fileID: 1218099602}
   - component: {fileID: 1218099601}
+  - component: {fileID: 1218099607}
   m_Layer: 0
-  m_Name: "Ex\xE9rcito de nebuloso (24)"
+  m_Name: "Ex\xE9rcito De Nebuloso Azul"
   m_TagString: Inimigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21330,7 +21616,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1218099600}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -21438,6 +21724,20 @@ Transform:
   - {fileID: 1396599377}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1218099607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1218099600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 555cd202a8686794ca05b8876baeb78a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
+  distance: 3
 --- !u!1 &1229242511
 GameObject:
   m_ObjectHideFlags: 0
@@ -23427,8 +23727,9 @@ GameObject:
   - component: {fileID: 1339874300}
   - component: {fileID: 1339874299}
   - component: {fileID: 1339874298}
+  - component: {fileID: 1339874304}
   m_Layer: 0
-  m_Name: "Ex\xE9rcito de nebuloso (7)"
+  m_Name: "Ex\xE9rcito De Nebuloso Marrom"
   m_TagString: Inimigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23441,7 +23742,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1339874297}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 512bffd834d48d541993169058b97e94, type: 3}
   m_Name: 
@@ -23467,7 +23768,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1339874297}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -23610,6 +23911,32 @@ Transform:
   - {fileID: 171435046}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1339874304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1339874297}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 467da475e3ab7af4ba65160af5fd2668, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  laserDoInimigo: {fileID: 8248208147322278770, guid: 3b42571da975d194db08823665db06dd, type: 3}
+  localDoDisparo:
+  - {fileID: 171435046}
+  velocidadeDoInimigo: 3
+  tempoMaximoEntreOsLasers: 0.5
+  inimigoAtirador: 1
+  vidaMaximaDoInimigo: 3
+  vidaAtualDoInimigo: 3
+  danoAoJogador: 1
+  itemParaDropar: {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  chanceDeDropar: 40
+  jogador: {fileID: 27085987}
+  distanciaMinimaParaParar: 0.5
+  "efeitoDeExplos\xE3o": {fileID: 7618214839703894807, guid: b7c2a27e2b9a50a4c9f41f1e41526a54, type: 3}
 --- !u!1 &1346875997
 GameObject:
   m_ObjectHideFlags: 0
@@ -23823,8 +24150,9 @@ GameObject:
   - component: {fileID: 1353601376}
   - component: {fileID: 1353601375}
   - component: {fileID: 1353601374}
+  - component: {fileID: 1353601380}
   m_Layer: 0
-  m_Name: "Ex\xE9rcito de nebuloso (20)"
+  m_Name: "Ex\xE9rcito De Nebuloso Marrom"
   m_TagString: Inimigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23837,7 +24165,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1353601373}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 512bffd834d48d541993169058b97e94, type: 3}
   m_Name: 
@@ -23863,7 +24191,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1353601373}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -24006,6 +24334,32 @@ Transform:
   - {fileID: 2014358944}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1353601380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1353601373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 467da475e3ab7af4ba65160af5fd2668, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  laserDoInimigo: {fileID: 8248208147322278770, guid: 3b42571da975d194db08823665db06dd, type: 3}
+  localDoDisparo:
+  - {fileID: 2014358944}
+  velocidadeDoInimigo: 3
+  tempoMaximoEntreOsLasers: 0.5
+  inimigoAtirador: 1
+  vidaMaximaDoInimigo: 3
+  vidaAtualDoInimigo: 3
+  danoAoJogador: 1
+  itemParaDropar: {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  chanceDeDropar: 40
+  jogador: {fileID: 27085987}
+  distanciaMinimaParaParar: 0.5
+  "efeitoDeExplos\xE3o": {fileID: 7618214839703894807, guid: b7c2a27e2b9a50a4c9f41f1e41526a54, type: 3}
 --- !u!1 &1363858804
 GameObject:
   m_ObjectHideFlags: 0
@@ -24937,8 +25291,9 @@ GameObject:
   - component: {fileID: 1399335650}
   - component: {fileID: 1399335649}
   - component: {fileID: 1399335648}
+  - component: {fileID: 1399335654}
   m_Layer: 0
-  m_Name: "Ex\xE9rcito de nebuloso (4)"
+  m_Name: "Ex\xE9rcito De Nebuloso Marrom"
   m_TagString: Inimigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24951,7 +25306,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1399335647}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 512bffd834d48d541993169058b97e94, type: 3}
   m_Name: 
@@ -24977,7 +25332,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1399335647}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -25120,6 +25475,32 @@ Transform:
   - {fileID: 1716255324}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1399335654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1399335647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 467da475e3ab7af4ba65160af5fd2668, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  laserDoInimigo: {fileID: 8248208147322278770, guid: 3b42571da975d194db08823665db06dd, type: 3}
+  localDoDisparo:
+  - {fileID: 1716255324}
+  velocidadeDoInimigo: 3
+  tempoMaximoEntreOsLasers: 0.5
+  inimigoAtirador: 1
+  vidaMaximaDoInimigo: 3
+  vidaAtualDoInimigo: 3
+  danoAoJogador: 1
+  itemParaDropar: {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  chanceDeDropar: 40
+  jogador: {fileID: 27085987}
+  distanciaMinimaParaParar: 0.5
+  "efeitoDeExplos\xE3o": {fileID: 7618214839703894807, guid: b7c2a27e2b9a50a4c9f41f1e41526a54, type: 3}
 --- !u!1 &1402240992
 GameObject:
   m_ObjectHideFlags: 0
@@ -25448,8 +25829,9 @@ GameObject:
   - component: {fileID: 1408522299}
   - component: {fileID: 1408522298}
   - component: {fileID: 1408522297}
+  - component: {fileID: 1408522303}
   m_Layer: 0
-  m_Name: "Ex\xE9rcito de nebuloso (19)"
+  m_Name: "Ex\xE9rcito De Nebuloso Marrom"
   m_TagString: Inimigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25462,7 +25844,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1408522296}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 512bffd834d48d541993169058b97e94, type: 3}
   m_Name: 
@@ -25488,7 +25870,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1408522296}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -25631,6 +26013,32 @@ Transform:
   - {fileID: 2028957951}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1408522303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1408522296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 467da475e3ab7af4ba65160af5fd2668, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  laserDoInimigo: {fileID: 8248208147322278770, guid: 3b42571da975d194db08823665db06dd, type: 3}
+  localDoDisparo:
+  - {fileID: 2028957951}
+  velocidadeDoInimigo: 3
+  tempoMaximoEntreOsLasers: 0.5
+  inimigoAtirador: 1
+  vidaMaximaDoInimigo: 3
+  vidaAtualDoInimigo: 3
+  danoAoJogador: 1
+  itemParaDropar: {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  chanceDeDropar: 40
+  jogador: {fileID: 27085987}
+  distanciaMinimaParaParar: 0.5
+  "efeitoDeExplos\xE3o": {fileID: 7618214839703894807, guid: b7c2a27e2b9a50a4c9f41f1e41526a54, type: 3}
 --- !u!1 &1409151538
 GameObject:
   m_ObjectHideFlags: 0
@@ -26169,37 +26577,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1454139875}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90.498}
---- !u!1 &1450516798
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1450516799}
-  m_Layer: 0
-  m_Name: Local Do Disparo
-  m_TagString: Untagged
-  m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &1450516799
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1450516798}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: 0.70550776, w: 0.7087022}
-  m_LocalPosition: {x: -0.003400464, y: -0.0020000122, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1901727130}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 89.741}
 --- !u!1 &1454139869
 GameObject:
   m_ObjectHideFlags: 0
@@ -26214,8 +26591,9 @@ GameObject:
   - component: {fileID: 1454139872}
   - component: {fileID: 1454139871}
   - component: {fileID: 1454139870}
+  - component: {fileID: 1454139876}
   m_Layer: 0
-  m_Name: "Ex\xE9rcito de nebuloso (13)"
+  m_Name: "Ex\xE9rcito De Nebuloso Marrom"
   m_TagString: Inimigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26228,7 +26606,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1454139869}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 512bffd834d48d541993169058b97e94, type: 3}
   m_Name: 
@@ -26254,7 +26632,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1454139869}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -26397,6 +26775,32 @@ Transform:
   - {fileID: 1430756215}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1454139876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1454139869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 467da475e3ab7af4ba65160af5fd2668, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  laserDoInimigo: {fileID: 8248208147322278770, guid: 3b42571da975d194db08823665db06dd, type: 3}
+  localDoDisparo:
+  - {fileID: 0}
+  velocidadeDoInimigo: 3
+  tempoMaximoEntreOsLasers: 0.5
+  inimigoAtirador: 1
+  vidaMaximaDoInimigo: 3
+  vidaAtualDoInimigo: 3
+  danoAoJogador: 1
+  itemParaDropar: {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  chanceDeDropar: 40
+  jogador: {fileID: 27085987}
+  distanciaMinimaParaParar: 0.5
+  "efeitoDeExplos\xE3o": {fileID: 7618214839703894807, guid: b7c2a27e2b9a50a4c9f41f1e41526a54, type: 3}
 --- !u!1 &1466051390
 GameObject:
   m_ObjectHideFlags: 0
@@ -27427,8 +27831,9 @@ GameObject:
   - component: {fileID: 1516892682}
   - component: {fileID: 1516892681}
   - component: {fileID: 1516892680}
+  - component: {fileID: 1516892686}
   m_Layer: 0
-  m_Name: "Ex\xE9rcito de nebuloso (15)"
+  m_Name: "Ex\xE9rcito De Nebuloso Marrom"
   m_TagString: Inimigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27441,7 +27846,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1516892679}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 512bffd834d48d541993169058b97e94, type: 3}
   m_Name: 
@@ -27467,7 +27872,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1516892679}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -27610,6 +28015,32 @@ Transform:
   - {fileID: 669569153}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1516892686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1516892679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 467da475e3ab7af4ba65160af5fd2668, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  laserDoInimigo: {fileID: 8248208147322278770, guid: 3b42571da975d194db08823665db06dd, type: 3}
+  localDoDisparo:
+  - {fileID: 669569153}
+  velocidadeDoInimigo: 3
+  tempoMaximoEntreOsLasers: 0.5
+  inimigoAtirador: 1
+  vidaMaximaDoInimigo: 3
+  vidaAtualDoInimigo: 3
+  danoAoJogador: 1
+  itemParaDropar: {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  chanceDeDropar: 40
+  jogador: {fileID: 27085987}
+  distanciaMinimaParaParar: 0.5
+  "efeitoDeExplos\xE3o": {fileID: 7618214839703894807, guid: b7c2a27e2b9a50a4c9f41f1e41526a54, type: 3}
 --- !u!1 &1527235341
 GameObject:
   m_ObjectHideFlags: 0
@@ -27624,8 +28055,9 @@ GameObject:
   - component: {fileID: 1527235344}
   - component: {fileID: 1527235343}
   - component: {fileID: 1527235342}
+  - component: {fileID: 1527235348}
   m_Layer: 0
-  m_Name: "Ex\xE9rcito de nebuloso (18)"
+  m_Name: "Ex\xE9rcito De Nebuloso Azul"
   m_TagString: Inimigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27699,7 +28131,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1527235341}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -27807,6 +28239,20 @@ Transform:
   - {fileID: 474956717}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1527235348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1527235341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 555cd202a8686794ca05b8876baeb78a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
+  distance: 3
 --- !u!1 &1532756634
 GameObject:
   m_ObjectHideFlags: 0
@@ -28266,8 +28712,9 @@ GameObject:
   - component: {fileID: 1564633975}
   - component: {fileID: 1564633974}
   - component: {fileID: 1564633973}
+  - component: {fileID: 1564633979}
   m_Layer: 0
-  m_Name: "Ex\xE9rcito de nebuloso (17)"
+  m_Name: "Ex\xE9rcito De Nebuloso Azul"
   m_TagString: Inimigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28341,7 +28788,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1564633972}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -28449,6 +28896,20 @@ Transform:
   - {fileID: 1646922380}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1564633979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1564633972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 555cd202a8686794ca05b8876baeb78a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
+  distance: 3
 --- !u!1 &1569230849
 GameObject:
   m_ObjectHideFlags: 0
@@ -28463,8 +28924,9 @@ GameObject:
   - component: {fileID: 1569230852}
   - component: {fileID: 1569230851}
   - component: {fileID: 1569230850}
+  - component: {fileID: 1569230856}
   m_Layer: 0
-  m_Name: "Ex\xE9rcito de nebuloso (26)"
+  m_Name: "Ex\xE9rcito De Nebuloso Marrom"
   m_TagString: Inimigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28477,7 +28939,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1569230849}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 512bffd834d48d541993169058b97e94, type: 3}
   m_Name: 
@@ -28503,7 +28965,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1569230849}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -28646,6 +29108,32 @@ Transform:
   - {fileID: 2101615883}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1569230856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1569230849}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 467da475e3ab7af4ba65160af5fd2668, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  laserDoInimigo: {fileID: 8248208147322278770, guid: 3b42571da975d194db08823665db06dd, type: 3}
+  localDoDisparo:
+  - {fileID: 0}
+  velocidadeDoInimigo: 3
+  tempoMaximoEntreOsLasers: 0.5
+  inimigoAtirador: 1
+  vidaMaximaDoInimigo: 3
+  vidaAtualDoInimigo: 3
+  danoAoJogador: 1
+  itemParaDropar: {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  chanceDeDropar: 40
+  jogador: {fileID: 27085987}
+  distanciaMinimaParaParar: 0.5
+  "efeitoDeExplos\xE3o": {fileID: 7618214839703894807, guid: b7c2a27e2b9a50a4c9f41f1e41526a54, type: 3}
 --- !u!1001 &1592094985
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30274,8 +30762,9 @@ GameObject:
   - component: {fileID: 1689660689}
   - component: {fileID: 1689660688}
   - component: {fileID: 1689660687}
+  - component: {fileID: 1689660693}
   m_Layer: 0
-  m_Name: "Ex\xE9rcito de nebuloso (8)"
+  m_Name: "Ex\xE9rcito De Nebuloso Azul"
   m_TagString: Inimigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30349,7 +30838,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1689660686}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -30457,6 +30946,20 @@ Transform:
   - {fileID: 374851624}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1689660693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1689660686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 555cd202a8686794ca05b8876baeb78a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
+  distance: 3
 --- !u!1 &1693873482
 GameObject:
   m_ObjectHideFlags: 0
@@ -30955,7 +31458,7 @@ Transform:
   m_GameObject: {fileID: 1716887130}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0.70963347, w: 0.7045711}
-  m_LocalPosition: {x: 0.2927, y: 0.1535, z: 0}
+  m_LocalPosition: {x: 0.3634001, y: 0.1488, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -32614,8 +33117,9 @@ GameObject:
   - component: {fileID: 1850274009}
   - component: {fileID: 1850274008}
   - component: {fileID: 1850274007}
+  - component: {fileID: 1850274013}
   m_Layer: 0
-  m_Name: "Ex\xE9rcito de nebuloso (1)"
+  m_Name: "Ex\xE9rcito De Nebuloso Marrom"
   m_TagString: Inimigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32628,7 +33132,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1850274006}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 512bffd834d48d541993169058b97e94, type: 3}
   m_Name: 
@@ -32637,15 +33141,15 @@ MonoBehaviour:
   localDoDisparo:
   - {fileID: 1141024022}
   velocidadeDoInimigo: 3
-  tempoMaximoEntreOsLasers: 0.5
+  tempoMaximoEntreOsLasers: 0.8
   tempoAtualDosLasers: 0
   inimigoAtirador: 1
-  vidaMaximaDoInimigo: 3
-  vidaAtualDoInimigo: 3
-  danoAoJogador: 1
-  itemParaDropar: {fileID: 7618214839703894807, guid: b7c2a27e2b9a50a4c9f41f1e41526a54, type: 3}
-  chanceDeDropar: 40
-  "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  vidaMaximaDoInimigo: 0
+  vidaAtualDoInimigo: 0
+  danoAoJogador: 0
+  itemParaDropar: {fileID: 0}
+  chanceDeDropar: 0
+  "efeitoDeExplos\xE3o": {fileID: 0}
 --- !u!50 &1850274008
 Rigidbody2D:
   serializedVersion: 4
@@ -32654,7 +33158,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1850274006}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -32790,13 +33294,39 @@ Transform:
   m_GameObject: {fileID: 1850274006}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 91.98172, y: -4.12, z: 0}
+  m_LocalPosition: {x: 90.8, y: -4.12, z: 0}
   m_LocalScale: {x: 8.014258, y: 7.123785, z: 7.123785}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1141024022}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1850274013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1850274006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 467da475e3ab7af4ba65160af5fd2668, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  laserDoInimigo: {fileID: 0}
+  localDoDisparo:
+  - {fileID: 0}
+  velocidadeDoInimigo: 0
+  tempoMaximoEntreOsLasers: 0
+  inimigoAtirador: 0
+  vidaMaximaDoInimigo: 3
+  vidaAtualDoInimigo: 3
+  danoAoJogador: 1
+  itemParaDropar: {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  chanceDeDropar: 40
+  jogador: {fileID: 27085987}
+  distanciaMinimaParaParar: 0.5
+  "efeitoDeExplos\xE3o": {fileID: 7618214839703894807, guid: b7c2a27e2b9a50a4c9f41f1e41526a54, type: 3}
 --- !u!1001 &1855896376
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33032,8 +33562,9 @@ GameObject:
   - component: {fileID: 1877834553}
   - component: {fileID: 1877834552}
   - component: {fileID: 1877834551}
+  - component: {fileID: 1877834557}
   m_Layer: 0
-  m_Name: "Ex\xE9rcito de nebuloso (10)"
+  m_Name: "Ex\xE9rcito De Nebuloso Azul"
   m_TagString: Inimigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -33107,7 +33638,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1877834550}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -33215,6 +33746,20 @@ Transform:
   - {fileID: 190025943}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1877834557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1877834550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 555cd202a8686794ca05b8876baeb78a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
+  distance: 3
 --- !u!1 &1890411831
 GameObject:
   m_ObjectHideFlags: 0
@@ -33229,8 +33774,9 @@ GameObject:
   - component: {fileID: 1890411834}
   - component: {fileID: 1890411833}
   - component: {fileID: 1890411832}
+  - component: {fileID: 1890411838}
   m_Layer: 0
-  m_Name: "Ex\xE9rcito de nebuloso (2)"
+  m_Name: "Ex\xE9rcito De Nebuloso Azul"
   m_TagString: Inimigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -33304,7 +33850,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1890411831}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -33412,6 +33958,20 @@ Transform:
   - {fileID: 1972621900}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1890411838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1890411831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 555cd202a8686794ca05b8876baeb78a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
+  distance: 3
 --- !u!1 &1896159155
 GameObject:
   m_ObjectHideFlags: 0
@@ -33862,203 +34422,6 @@ Transform:
   m_LocalScale: {x: 1.363226, y: 1.363226, z: 1.363226}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1901727124
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1901727130}
-  - component: {fileID: 1901727129}
-  - component: {fileID: 1901727128}
-  - component: {fileID: 1901727127}
-  - component: {fileID: 1901727126}
-  - component: {fileID: 1901727125}
-  m_Layer: 0
-  m_Name: "Ex\xE9rcito de nebuloso"
-  m_TagString: Inimigo
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1901727125
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1901727124}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 512bffd834d48d541993169058b97e94, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  laserDoInimigo: {fileID: 8248208147322278770, guid: 3b42571da975d194db08823665db06dd, type: 3}
-  localDoDisparo:
-  - {fileID: 1450516799}
-  velocidadeDoInimigo: 3
-  tempoMaximoEntreOsLasers: 0.5
-  tempoAtualDosLasers: 0
-  inimigoAtirador: 1
-  vidaMaximaDoInimigo: 3
-  vidaAtualDoInimigo: 3
-  danoAoJogador: 1
-  itemParaDropar: {fileID: 7618214839703894807, guid: b7c2a27e2b9a50a4c9f41f1e41526a54, type: 3}
-  chanceDeDropar: 40
-  "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
---- !u!50 &1901727126
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1901727124}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 6
---- !u!58 &1901727127
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1901727124}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.12710698
---- !u!95 &1901727128
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1901727124}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: e2973b39b1b9c234299a3fac670e471e, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
---- !u!212 &1901727129
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1901727124}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: -1794178358, guid: db6971f8b96056f4c87ce4f1833d1381, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 0.26923078, y: 0.28846154}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!4 &1901727130
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1901727124}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 94.44172, y: 4.5, z: 0}
-  m_LocalScale: {x: 8.014258, y: 7.123785, z: 7.123785}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1450516799}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1907094545
@@ -34884,7 +35247,7 @@ Transform:
   m_GameObject: {fileID: 1949000273}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0.7093454, w: 0.70486104}
-  m_LocalPosition: {x: 0.2972, y: -0.1763, z: 0}
+  m_LocalPosition: {x: 0.3679001, y: -0.181, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -46433,7 +46796,6 @@ SceneRoots:
   - {fileID: 1015730034}
   - {fileID: 418676675}
   - {fileID: 878795901}
-  - {fileID: 1901727130}
   - {fileID: 1850274012}
   - {fileID: 1399335653}
   - {fileID: 287878287}

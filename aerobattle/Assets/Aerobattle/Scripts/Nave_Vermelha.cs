@@ -26,16 +26,14 @@ public class Nave_Vermelha : MonoBehaviour
 
     public float distanciaMinimaParaParar = 0.5f;
     public GameObject efeitoDeExplosão;
-
-// Start is called before the first frame update
+    
     void Start()
     {
         vidaAtualDoInimigo = vidaMaximaDoInimigo;
         tempoAtualDosLasers = tempoMaximoEntreOsLasers;
         vidaDoJogador = jogador.GetComponent<VidaDoJogador>();
     }
-
-// Update is called once per frame
+    
     void Update()
     {
         MovimentarInimigo();
@@ -74,20 +72,16 @@ public class Nave_Vermelha : MonoBehaviour
 
         if (tempoAtualDosLasers <= 0)
         {
-            // Itera sobre cada local de disparo e instância um laser
             foreach (var local in localDoDisparo)
             {
                 GameObject tiro = Instantiate(laserDoInimigo, local.position, local.rotation);
-
-                // Calcula a direção para o jogador
+                
                 Vector2 direcao = (jogador.position - local.position).normalized;
                 float angulo = Mathf.Rad2Deg * Mathf.Atan2(direcao.y, direcao.x);
-
-                // Aplica a rotação ao tiro
+                
                 tiro.transform.eulerAngles = new Vector3(0, 0, angulo);
             }
-
-            // Reinicia o tempo para o próximo disparo
+            
             tempoAtualDosLasers = tempoMaximoEntreOsLasers;
         }
     }
@@ -112,8 +106,7 @@ public class Nave_Vermelha : MonoBehaviour
             Destroy(this.gameObject);
         }
     }
-
-// Detecta colisões com o jogador
+    
     void OnCollisionEnter2D(Collision2D colisao)
     {
         if (colisao.gameObject.CompareTag("Jogador"))

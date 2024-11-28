@@ -79,23 +79,27 @@ public class jogador : MonoBehaviour
 
     private void AtirarLaser()
     {
-        if (Input.GetKey(KeyCode.K))
+        // Verifica se o jogo não está pausado
+        if (Time.timeScale != 0)
         {
-            if (Time.time >= tempoParaProximoTiro)
+            if (Input.GetKey(KeyCode.K))
             {
-                if (temLaserDuplo)
+                if (Time.time >= tempoParaProximoTiro)
                 {
-                    Instantiate(laser, localDoDisparoDaEsquerda.position, localDoDisparoDaEsquerda.rotation);
-                    Instantiate(laser, localDoDisparoDaDireita.position, localDoDisparoDaDireita.rotation);
-                }
-                else
-                {
-                    Instantiate(laser, localDoDisparoUnico.position, localDoDisparoUnico.rotation);
-                }
+                    if (temLaserDuplo)
+                    {
+                        Instantiate(laser, localDoDisparoDaEsquerda.position, localDoDisparoDaEsquerda.rotation);
+                        Instantiate(laser, localDoDisparoDaDireita.position, localDoDisparoDaDireita.rotation);
+                    }
+                    else
+                    {
+                        Instantiate(laser, localDoDisparoUnico.position, localDoDisparoUnico.rotation);
+                    }
                 
-                tempoParaProximoTiro = Time.time + intervaloEntreTiros;
+                    tempoParaProximoTiro = Time.time + intervaloEntreTiros;
                 
-                EfeitoSonoro.instance.somDoLaser.Play();
+                    EfeitoSonoro.instance.somDoLaser.Play();
+                }
             }
         }
     }
