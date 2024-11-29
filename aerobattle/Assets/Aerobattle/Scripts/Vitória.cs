@@ -37,6 +37,7 @@ public class Vitória : MonoBehaviour
     public void LoadMainMenu()
     {
         Time.timeScale = 1;
+        AudoiManager.instance.EntrarNoMenu();
         SceneManager.LoadScene("MainMenu"); 
     }
 }

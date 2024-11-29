@@ -909,6 +909,7 @@ MonoBehaviour:
   itemParaDropar: {fileID: 3525905135518307588, guid: e31ec134bc4e86b46be8d18e068c1faa, type: 3}
   chanceDeDropar: 25
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  ani: {fileID: 0}
 --- !u!50 &63127156
 Rigidbody2D:
   serializedVersion: 4
@@ -2261,6 +2262,7 @@ MonoBehaviour:
   itemParaDropar: {fileID: 3525905135518307588, guid: e31ec134bc4e86b46be8d18e068c1faa, type: 3}
   chanceDeDropar: 25
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  ani: {fileID: 0}
 --- !u!50 &155439037
 Rigidbody2D:
   serializedVersion: 4
@@ -2496,7 +2498,7 @@ Transform:
   m_GameObject: {fileID: 156928161}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11.77, y: 8.04, z: 0}
+  m_LocalPosition: {x: 2.3, y: -0.5, z: 0}
   m_LocalScale: {x: 0.77019, y: 0.77019, z: 0.77019}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2809,6 +2811,7 @@ MonoBehaviour:
   itemParaDropar: {fileID: 3525905135518307588, guid: e31ec134bc4e86b46be8d18e068c1faa, type: 3}
   chanceDeDropar: 25
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  ani: {fileID: 0}
 --- !u!50 &170817349
 Rigidbody2D:
   serializedVersion: 4
@@ -3728,6 +3731,7 @@ MonoBehaviour:
   detectionRadius: 10
   destroyRadius: 2.5
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  ani: {fileID: 0}
 --- !u!61 &295703950
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4137,6 +4141,7 @@ MonoBehaviour:
   itemParaDropar: {fileID: 3525905135518307588, guid: e31ec134bc4e86b46be8d18e068c1faa, type: 3}
   chanceDeDropar: 25
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  ani: {fileID: 0}
 --- !u!50 &329272839
 Rigidbody2D:
   serializedVersion: 4
@@ -5358,6 +5363,7 @@ MonoBehaviour:
   itemParaDropar: {fileID: 3525905135518307588, guid: e31ec134bc4e86b46be8d18e068c1faa, type: 3}
   chanceDeDropar: 25
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  ani: {fileID: 0}
 --- !u!50 &410003074
 Rigidbody2D:
   serializedVersion: 4
@@ -6561,6 +6567,7 @@ MonoBehaviour:
   itemParaDropar: {fileID: 3525905135518307588, guid: e31ec134bc4e86b46be8d18e068c1faa, type: 3}
   chanceDeDropar: 25
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  ani: {fileID: 0}
 --- !u!50 &460201492
 Rigidbody2D:
   serializedVersion: 4
@@ -6846,6 +6853,7 @@ MonoBehaviour:
   itemParaDropar: {fileID: 3525905135518307588, guid: e31ec134bc4e86b46be8d18e068c1faa, type: 3}
   chanceDeDropar: 25
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  ani: {fileID: 0}
 --- !u!50 &464309930
 Rigidbody2D:
   serializedVersion: 4
@@ -7341,6 +7349,7 @@ MonoBehaviour:
   itemParaDropar: {fileID: 3525905135518307588, guid: e31ec134bc4e86b46be8d18e068c1faa, type: 3}
   chanceDeDropar: 25
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  ani: {fileID: 0}
 --- !u!50 &535822694
 Rigidbody2D:
   serializedVersion: 4
@@ -8252,6 +8261,7 @@ MonoBehaviour:
   itemParaDropar: {fileID: 3525905135518307588, guid: e31ec134bc4e86b46be8d18e068c1faa, type: 3}
   chanceDeDropar: 25
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  ani: {fileID: 0}
 --- !u!50 &608051708
 Rigidbody2D:
   serializedVersion: 4
@@ -9235,6 +9245,7 @@ MonoBehaviour:
   detectionRadius: 10
   destroyRadius: 3.5
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  ani: {fileID: 0}
 --- !u!61 &683285534
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9845,6 +9856,7 @@ MonoBehaviour:
   itemParaDropar: {fileID: 3525905135518307588, guid: e31ec134bc4e86b46be8d18e068c1faa, type: 3}
   chanceDeDropar: 25
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  ani: {fileID: 0}
 --- !u!50 &711509618
 Rigidbody2D:
   serializedVersion: 4
@@ -10186,6 +10198,7 @@ MonoBehaviour:
   detectionRadius: 10
   destroyRadius: 3.5
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  ani: {fileID: 0}
 --- !u!61 &742791423
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11076,6 +11089,7 @@ MonoBehaviour:
   itemParaDropar: {fileID: 3525905135518307588, guid: e31ec134bc4e86b46be8d18e068c1faa, type: 3}
   chanceDeDropar: 25
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  ani: {fileID: 0}
 --- !u!50 &804511662
 Rigidbody2D:
   serializedVersion: 4
@@ -12049,6 +12063,7 @@ MonoBehaviour:
   detectionRadius: 10
   destroyRadius: 3.5
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  ani: {fileID: 0}
 --- !u!61 &885735871
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13752,6 +13767,7 @@ MonoBehaviour:
   itemParaDropar: {fileID: 3525905135518307588, guid: e31ec134bc4e86b46be8d18e068c1faa, type: 3}
   chanceDeDropar: 25
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  ani: {fileID: 0}
 --- !u!50 &985795377
 Rigidbody2D:
   serializedVersion: 4
@@ -14606,6 +14622,7 @@ MonoBehaviour:
   detectionRadius: 10
   destroyRadius: 3.5
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  ani: {fileID: 0}
 --- !u!61 &1037152622
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15696,6 +15713,7 @@ MonoBehaviour:
   itemParaDropar: {fileID: 3525905135518307588, guid: e31ec134bc4e86b46be8d18e068c1faa, type: 3}
   chanceDeDropar: 25
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  ani: {fileID: 0}
 --- !u!95 &1112667293
 Animator:
   serializedVersion: 5
@@ -16243,6 +16261,7 @@ MonoBehaviour:
   itemParaDropar: {fileID: 3525905135518307588, guid: e31ec134bc4e86b46be8d18e068c1faa, type: 3}
   chanceDeDropar: 25
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  ani: {fileID: 0}
 --- !u!50 &1146706402
 Rigidbody2D:
   serializedVersion: 4
@@ -16914,6 +16933,7 @@ MonoBehaviour:
   itemParaDropar: {fileID: 3525905135518307588, guid: e31ec134bc4e86b46be8d18e068c1faa, type: 3}
   chanceDeDropar: 25
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  ani: {fileID: 0}
 --- !u!50 &1180876872
 Rigidbody2D:
   serializedVersion: 4
@@ -17764,6 +17784,7 @@ MonoBehaviour:
   detectionRadius: 10
   destroyRadius: 3.5
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  ani: {fileID: 0}
 --- !u!61 &1229814022
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18321,6 +18342,7 @@ MonoBehaviour:
   itemParaDropar: {fileID: 3525905135518307588, guid: e31ec134bc4e86b46be8d18e068c1faa, type: 3}
   chanceDeDropar: 25
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  ani: {fileID: 0}
 --- !u!50 &1242764971
 Rigidbody2D:
   serializedVersion: 4
@@ -18862,6 +18884,7 @@ MonoBehaviour:
   itemParaDropar: {fileID: 3525905135518307588, guid: e31ec134bc4e86b46be8d18e068c1faa, type: 3}
   chanceDeDropar: 25
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  ani: {fileID: 0}
 --- !u!50 &1263828193
 Rigidbody2D:
   serializedVersion: 4
@@ -19603,6 +19626,7 @@ MonoBehaviour:
   itemParaDropar: {fileID: 3525905135518307588, guid: e31ec134bc4e86b46be8d18e068c1faa, type: 3}
   chanceDeDropar: 25
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  ani: {fileID: 0}
 --- !u!50 &1308542937
 Rigidbody2D:
   serializedVersion: 4
@@ -19953,6 +19977,7 @@ MonoBehaviour:
   itemParaDropar: {fileID: 3525905135518307588, guid: e31ec134bc4e86b46be8d18e068c1faa, type: 3}
   chanceDeDropar: 25
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  ani: {fileID: 0}
 --- !u!50 &1309724145
 Rigidbody2D:
   serializedVersion: 4
@@ -20238,6 +20263,7 @@ MonoBehaviour:
   itemParaDropar: {fileID: 3525905135518307588, guid: e31ec134bc4e86b46be8d18e068c1faa, type: 3}
   chanceDeDropar: 25
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  ani: {fileID: 0}
 --- !u!50 &1310356336
 Rigidbody2D:
   serializedVersion: 4
@@ -21953,6 +21979,7 @@ MonoBehaviour:
   detectionRadius: 10
   destroyRadius: 3.5
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  ani: {fileID: 0}
 --- !u!61 &1459943693
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -22151,6 +22178,7 @@ MonoBehaviour:
   detectionRadius: 10
   destroyRadius: 3.5
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  ani: {fileID: 0}
 --- !u!61 &1467816471
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -22349,6 +22377,7 @@ MonoBehaviour:
   detectionRadius: 10
   destroyRadius: 3.5
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  ani: {fileID: 0}
 --- !u!61 &1485302031
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -22880,6 +22909,7 @@ MonoBehaviour:
   detectionRadius: 10
   destroyRadius: 2.5
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  ani: {fileID: 0}
 --- !u!61 &1521802944
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -23456,6 +23486,7 @@ MonoBehaviour:
   detectionRadius: 10
   destroyRadius: 2.5
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  ani: {fileID: 0}
 --- !u!61 &1558992318
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -24209,6 +24240,7 @@ MonoBehaviour:
   detectionRadius: 10
   destroyRadius: 3.5
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  ani: {fileID: 0}
 --- !u!61 &1601896932
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -24516,6 +24548,7 @@ MonoBehaviour:
   itemParaDropar: {fileID: 3525905135518307588, guid: e31ec134bc4e86b46be8d18e068c1faa, type: 3}
   chanceDeDropar: 25
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  ani: {fileID: 0}
 --- !u!50 &1627058354
 Rigidbody2D:
   serializedVersion: 4
@@ -26606,6 +26639,7 @@ MonoBehaviour:
   detectionRadius: 10
   destroyRadius: 2.5
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  ani: {fileID: 0}
 --- !u!61 &1805873525
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -27357,6 +27391,7 @@ MonoBehaviour:
   itemParaDropar: {fileID: 3525905135518307588, guid: e31ec134bc4e86b46be8d18e068c1faa, type: 3}
   chanceDeDropar: 25
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  ani: {fileID: 0}
 --- !u!50 &1841200440
 Rigidbody2D:
   serializedVersion: 4
@@ -29044,6 +29079,7 @@ MonoBehaviour:
   itemParaDropar: {fileID: 3525905135518307588, guid: e31ec134bc4e86b46be8d18e068c1faa, type: 3}
   chanceDeDropar: 25
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  ani: {fileID: 0}
 --- !u!50 &1941468426
 Rigidbody2D:
   serializedVersion: 4
@@ -29806,6 +29842,7 @@ MonoBehaviour:
   itemParaDropar: {fileID: 3525905135518307588, guid: e31ec134bc4e86b46be8d18e068c1faa, type: 3}
   chanceDeDropar: 25
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  ani: {fileID: 0}
 --- !u!50 &1978537717
 Rigidbody2D:
   serializedVersion: 4
@@ -30104,6 +30141,7 @@ MonoBehaviour:
   detectionRadius: 10
   destroyRadius: 3.5
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  ani: {fileID: 0}
 --- !u!61 &2002112140
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -30697,6 +30735,7 @@ MonoBehaviour:
   detectionRadius: 10
   destroyRadius: 2.5
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  ani: {fileID: 0}
 --- !u!61 &2014260589
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -31207,6 +31246,7 @@ MonoBehaviour:
   itemParaDropar: {fileID: 3525905135518307588, guid: e31ec134bc4e86b46be8d18e068c1faa, type: 3}
   chanceDeDropar: 25
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  ani: {fileID: 0}
 --- !u!50 &2049266557
 Rigidbody2D:
   serializedVersion: 4
@@ -31928,6 +31968,7 @@ MonoBehaviour:
   itemParaDropar: {fileID: 3525905135518307588, guid: e31ec134bc4e86b46be8d18e068c1faa, type: 3}
   chanceDeDropar: 25
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  ani: {fileID: 0}
 --- !u!50 &2106805138
 Rigidbody2D:
   serializedVersion: 4
@@ -32096,6 +32137,7 @@ MonoBehaviour:
   detectionRadius: 10
   destroyRadius: 3.5
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  ani: {fileID: 0}
 --- !u!61 &2110585016
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -32588,6 +32630,7 @@ GameObject:
   - component: {fileID: 1826388780741789983}
   - component: {fileID: 8640358965408426791}
   - component: {fileID: 8640358965408426793}
+  - component: {fileID: 8640358965408426794}
   m_Layer: 0
   m_Name: Vex.09
   m_TagString: Vex.09
@@ -32673,63 +32716,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!1001 &3598138656039789764
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 7525211588418851314, guid: cbb5aeb389034e64bb05447d6cf5a016, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -3.4960146
-      objectReference: {fileID: 0}
-    - target: {fileID: 7525211588418851314, guid: cbb5aeb389034e64bb05447d6cf5a016, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -4.4328294
-      objectReference: {fileID: 0}
-    - target: {fileID: 7525211588418851314, guid: cbb5aeb389034e64bb05447d6cf5a016, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7525211588418851314, guid: cbb5aeb389034e64bb05447d6cf5a016, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7525211588418851314, guid: cbb5aeb389034e64bb05447d6cf5a016, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7525211588418851314, guid: cbb5aeb389034e64bb05447d6cf5a016, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7525211588418851314, guid: cbb5aeb389034e64bb05447d6cf5a016, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7525211588418851314, guid: cbb5aeb389034e64bb05447d6cf5a016, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7525211588418851314, guid: cbb5aeb389034e64bb05447d6cf5a016, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7525211588418851314, guid: cbb5aeb389034e64bb05447d6cf5a016, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7928385790296243842, guid: cbb5aeb389034e64bb05447d6cf5a016, type: 3}
-      propertyPath: m_Name
-      value: 'Laser Da Frota Vex '
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: cbb5aeb389034e64bb05447d6cf5a016, type: 3}
 --- !u!4 &3828946914575093268
 Transform:
   m_ObjectHideFlags: 0
@@ -33064,6 +33050,7 @@ MonoBehaviour:
   distanciaMinimaParaPerseguir: 1.5
   danoParaDar: 1
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  anim: {fileID: 0}
 --- !u!60 &8640358965408426793
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -33186,6 +33173,27 @@ PolygonCollider2D:
       - {x: 0.16800001, y: -0.238}
       - {x: 0.20400001, y: -0.238}
   m_UseDelaunayMesh: 0
+--- !u!95 &8640358965408426794
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1678535297736126947}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 76560580c242b5d40aff2a5be3651db4, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -33441,4 +33449,3 @@ SceneRoots:
   - {fileID: 416777056}
   - {fileID: 84759673}
   - {fileID: 2134570449}
-  - {fileID: 3598138656039789764}

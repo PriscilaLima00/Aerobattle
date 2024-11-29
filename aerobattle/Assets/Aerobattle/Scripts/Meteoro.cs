@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Meteoro : MonoBehaviour
@@ -11,6 +12,8 @@ public class Meteoro : MonoBehaviour
     public int velocidadeDoMeteoro;
 
     public GameObject efeitoDeExplosão;
+
+    public Animator ani;
     void Start()
     {
         vidaAtualDoMeteoro = vidaMaximaDoMeteoro;
@@ -19,6 +22,7 @@ public class Meteoro : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        ani = GetComponent<Animator>();
         MovimentarDoMeteoro();
        
     }
@@ -32,6 +36,12 @@ public class Meteoro : MonoBehaviour
     {
         vidaAtualDoMeteoro -= danoParaReceber;
 
+        if (ani != null)
+        {
+            ani.SetBool("Hit02",true);
+        }
+        
+        StartCoroutine(DesativarAnimção());
         
         if (vidaAtualDoMeteoro <= 0)
         {
@@ -40,6 +50,15 @@ public class Meteoro : MonoBehaviour
             Destroy(this.gameObject);
         }
     }
+    private IEnumerator DesativarAnimção()
+    {
+        yield return new WaitForSeconds(0.2f);
+        if (ani != null)
+        {
+            ani.SetBool("Hit02",false);
+        }
+    }
+
     
     
     public void AplicaDano(int dano)

@@ -36,6 +36,7 @@ public class Vex_09 : MonoBehaviour
     public int danoParaDar = 1;
 
     public GameObject efeitoDeExplosão;
+    public Animator anim;
 
     void Start()
     {
@@ -55,6 +56,8 @@ public class Vex_09 : MonoBehaviour
 
     void Update()
     {
+        anim = GetComponent<Animator>();
+        
         VerificarJogador();
 
         if (movimentoVerticalAtivado)
@@ -193,6 +196,14 @@ public class Vex_09 : MonoBehaviour
     public void ReceberDanoVex(int dano)
     {
         vidaAtualDoVex -= dano;
+        
+        if (anim != null)
+        {
+            anim.SetBool("Hit05",true);
+        }
+        
+        StartCoroutine(DesativarAnimção());
+        
         if (vidaAtualDoVex <= 0)
         {
             Instantiate(efeitoDeExplosão, transform.position, transform.rotation);
@@ -204,6 +215,15 @@ public class Vex_09 : MonoBehaviour
             }
 
             Destroy(this.gameObject);
+        }
+    }
+    
+    private IEnumerator DesativarAnimção()
+    {
+        yield return new WaitForSeconds(0.2f);
+        if (anim != null)
+        {
+            anim.SetBool("Hit05",false);
         }
     }
 }

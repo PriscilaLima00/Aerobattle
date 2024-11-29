@@ -17,6 +17,7 @@ public class FrotaVex : MonoBehaviour
     public GameObject itemParaDropar;
     public int chanceDeDropar;
     public GameObject efeitoDeExplosão;
+    public Animator ani;
 
     void Start()
     {
@@ -27,6 +28,7 @@ public class FrotaVex : MonoBehaviour
 
     void Update()
     {
+        ani = GetComponent<Animator>();
         MovimentarInimigo();
         AtirarLaser(); 
     }
@@ -51,6 +53,13 @@ public class FrotaVex : MonoBehaviour
     {
         vidaAtualDoFrotaVex -= danoParaReceber;
 
+        if (ani != null)
+        {
+            ani.SetBool("Hit04",true);
+        }
+        
+        StartCoroutine(DesativarAnimção());
+        
         if (vidaAtualDoFrotaVex <= 0)
         {
             Instantiate(efeitoDeExplosão, transform.position, transform.rotation);
@@ -61,6 +70,14 @@ public class FrotaVex : MonoBehaviour
                 Instantiate(itemParaDropar, transform.position, Quaternion.identity);
             }
             Destroy(gameObject);
+        }
+    }
+    private IEnumerator DesativarAnimção()
+    {
+        yield return new WaitForSeconds(0.2f);
+        if (ani != null)
+        {
+            ani.SetBool("Hit04",false);
         }
     }
 

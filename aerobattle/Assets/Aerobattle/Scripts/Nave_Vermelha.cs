@@ -26,6 +26,7 @@ public class Nave_Vermelha : MonoBehaviour
 
     public float distanciaMinimaParaParar = 0.5f;
     public GameObject efeitoDeExplosão;
+    public Animator ani;
     
     void Start()
     {
@@ -36,6 +37,7 @@ public class Nave_Vermelha : MonoBehaviour
     
     void Update()
     {
+        ani = GetComponent<Animator>();
         MovimentarInimigo();
         if (inimigoAtirador && vidaDoJogador != null && vidaDoJogador.EstahVivo())
         {
@@ -91,6 +93,13 @@ public class Nave_Vermelha : MonoBehaviour
         vidaAtualDoInimigo -= danoParaReceber;
 
         
+        if (ani != null)
+        {
+            ani.SetBool("Hit01",true);
+        }
+        
+        StartCoroutine(DesativarAnimção());
+        
         if (vidaAtualDoInimigo <= 0)
         {
             Instantiate(efeitoDeExplosão, transform.position, transform.rotation);
@@ -104,6 +113,15 @@ public class Nave_Vermelha : MonoBehaviour
             }
 
             Destroy(this.gameObject);
+        }
+    }
+    
+    private IEnumerator DesativarAnimção()
+    {
+        yield return new WaitForSeconds(0.2f);
+        if (ani != null)
+        {
+            ani.SetBool("Hit01",false);
         }
     }
     

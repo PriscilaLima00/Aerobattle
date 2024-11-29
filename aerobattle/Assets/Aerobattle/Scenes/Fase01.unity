@@ -201,6 +201,7 @@ GameObject:
   - component: {fileID: 11943887}
   - component: {fileID: 11943886}
   - component: {fileID: 11943885}
+  - component: {fileID: 11943890}
   m_Layer: 0
   m_Name: Billy Laranja (3)
   m_TagString: Inimigo
@@ -232,6 +233,7 @@ MonoBehaviour:
   itemParaDropar: {fileID: 3525905135518307588, guid: e31ec134bc4e86b46be8d18e068c1faa, type: 3}
   chanceDeDropar: 40
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  anin: {fileID: 0}
 --- !u!58 &11943886
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -362,6 +364,27 @@ Transform:
   - {fileID: 1133443387}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &11943890
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 11943884}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a470db55ed6563845b1386d674b7e364, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &12193282
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -791,37 +814,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!1 &29735093
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 29735094}
-  m_Layer: 0
-  m_Name: Local do Disparo (2)
-  m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &29735094
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 29735093}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.14, y: -0.112, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1050904994}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &34735434
 GameObject:
   m_ObjectHideFlags: 0
@@ -996,6 +988,7 @@ GameObject:
   - component: {fileID: 53258492}
   - component: {fileID: 53258491}
   - component: {fileID: 53258490}
+  - component: {fileID: 53258495}
   m_Layer: 0
   m_Name: Billy Verde (2)
   m_TagString: Inimigo
@@ -1092,6 +1085,7 @@ MonoBehaviour:
   itemParaDropar: {fileID: 1155319595704185419, guid: 8561b74ad057e4d42a3f0575b14fd184, type: 3}
   chanceDeDropar: 35
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  anin: {fileID: 0}
 --- !u!212 &53258493
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1162,6 +1156,27 @@ Transform:
   - {fileID: 1219368508}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &53258495
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 53258489}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 406f43692ddbb6148b9693f07122796a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &68846770
 GameObject:
   m_ObjectHideFlags: 0
@@ -1193,37 +1208,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1584194820}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &74644308
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 74644309}
-  m_Layer: 0
-  m_Name: Local do Disparo (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &74644309
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 74644308}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.276, y: -0.032, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1050904994}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &81784077
 GameObject:
   m_ObjectHideFlags: 0
@@ -1237,6 +1221,7 @@ GameObject:
   - component: {fileID: 81784080}
   - component: {fileID: 81784079}
   - component: {fileID: 81784078}
+  - component: {fileID: 81784083}
   m_Layer: 0
   m_Name: Billy verde
   m_TagString: Inimigo
@@ -1333,6 +1318,7 @@ MonoBehaviour:
   itemParaDropar: {fileID: 1155319595704185419, guid: 8561b74ad057e4d42a3f0575b14fd184, type: 3}
   chanceDeDropar: 35
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  anin: {fileID: 0}
 --- !u!212 &81784081
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1403,6 +1389,27 @@ Transform:
   - {fileID: 470090414}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &81784083
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 81784077}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: bd8e3cff1a5e09b498e03859a1b910aa, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &83356363
 GameObject:
   m_ObjectHideFlags: 0
@@ -1492,6 +1499,7 @@ GameObject:
   - component: {fileID: 84920104}
   - component: {fileID: 84920103}
   - component: {fileID: 84920102}
+  - component: {fileID: 84920108}
   m_Layer: 0
   m_Name: Billy Azul (7)
   m_TagString: Inimigo
@@ -1601,6 +1609,7 @@ MonoBehaviour:
   itemParaDropar: {fileID: 7618214839703894807, guid: b7c2a27e2b9a50a4c9f41f1e41526a54, type: 3}
   chanceDeDropar: 30
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  anin: {fileID: 0}
 --- !u!212 &84920106
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1670,6 +1679,27 @@ Transform:
   - {fileID: 1873258428}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &84920108
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 84920101}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c4a952110f7c0c648ba1d5293d776449, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &87276700
 GameObject:
   m_ObjectHideFlags: 0
@@ -2249,6 +2279,7 @@ GameObject:
   - component: {fileID: 128159499}
   - component: {fileID: 128159498}
   - component: {fileID: 128159497}
+  - component: {fileID: 128159502}
   m_Layer: 0
   m_Name: Billy Verde (4)
   m_TagString: Inimigo
@@ -2345,6 +2376,7 @@ MonoBehaviour:
   itemParaDropar: {fileID: 1155319595704185419, guid: 8561b74ad057e4d42a3f0575b14fd184, type: 3}
   chanceDeDropar: 35
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  anin: {fileID: 0}
 --- !u!212 &128159500
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2415,6 +2447,27 @@ Transform:
   - {fileID: 953936619}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &128159502
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 128159496}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 57a90a97514fad7449f60acf9ac98f6f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &130463135
 GameObject:
   m_ObjectHideFlags: 0
@@ -3252,6 +3305,7 @@ GameObject:
   - component: {fileID: 188494047}
   - component: {fileID: 188494046}
   - component: {fileID: 188494045}
+  - component: {fileID: 188494050}
   m_Layer: 0
   m_Name: Billy Laranja (2)
   m_TagString: Inimigo
@@ -3283,6 +3337,7 @@ MonoBehaviour:
   itemParaDropar: {fileID: 3525905135518307588, guid: e31ec134bc4e86b46be8d18e068c1faa, type: 3}
   chanceDeDropar: 40
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  anin: {fileID: 0}
 --- !u!58 &188494046
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3413,6 +3468,27 @@ Transform:
   - {fileID: 1649689666}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &188494050
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 188494044}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1ba74d3b9ac51b24d8531fcd5a05416f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &194908308
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3703,6 +3779,7 @@ GameObject:
   - component: {fileID: 219041036}
   - component: {fileID: 219041035}
   - component: {fileID: 219041034}
+  - component: {fileID: 219041039}
   m_Layer: 0
   m_Name: Billy Verde (7)
   m_TagString: Inimigo
@@ -3799,6 +3876,7 @@ MonoBehaviour:
   itemParaDropar: {fileID: 1155319595704185419, guid: 8561b74ad057e4d42a3f0575b14fd184, type: 3}
   chanceDeDropar: 35
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  anin: {fileID: 0}
 --- !u!212 &219041037
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3869,6 +3947,27 @@ Transform:
   - {fileID: 1295546022}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &219041039
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 219041033}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ef4c4955ca9a37b4fbee279de2943135, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &238683889
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5629,6 +5728,7 @@ GameObject:
   - component: {fileID: 365214779}
   - component: {fileID: 365214783}
   - component: {fileID: 365214782}
+  - component: {fileID: 365214784}
   m_Layer: 0
   m_Name: Billy verde
   m_TagString: Inimigo
@@ -5663,6 +5763,7 @@ MonoBehaviour:
   itemParaDropar: {fileID: 1155319595704185419, guid: 8561b74ad057e4d42a3f0575b14fd184, type: 3}
   chanceDeDropar: 35
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  anin: {fileID: 0}
 --- !u!212 &365214780
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5795,6 +5896,27 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!95 &365214784
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 365214778}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c3a303fb1180d764faac7609fccf6c73, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &369464328
 GameObject:
   m_ObjectHideFlags: 0
@@ -5986,6 +6108,7 @@ GameObject:
   - component: {fileID: 379422531}
   - component: {fileID: 379422530}
   - component: {fileID: 379422529}
+  - component: {fileID: 379422534}
   m_Layer: 0
   m_Name: Billy Laranja
   m_TagString: Inimigo
@@ -6017,6 +6140,7 @@ MonoBehaviour:
   itemParaDropar: {fileID: 3525905135518307588, guid: e31ec134bc4e86b46be8d18e068c1faa, type: 3}
   chanceDeDropar: 40
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  anin: {fileID: 0}
 --- !u!58 &379422530
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -6147,6 +6271,27 @@ Transform:
   - {fileID: 1674702085}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &379422534
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 379422528}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6ef895c2636231545b94915a4e7987e6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &386557248
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6368,6 +6513,7 @@ GameObject:
   - component: {fileID: 403575537}
   - component: {fileID: 403575536}
   - component: {fileID: 403575535}
+  - component: {fileID: 403575540}
   m_Layer: 0
   m_Name: Billy Laranja (7)
   m_TagString: Inimigo
@@ -6399,6 +6545,7 @@ MonoBehaviour:
   itemParaDropar: {fileID: 3525905135518307588, guid: e31ec134bc4e86b46be8d18e068c1faa, type: 3}
   chanceDeDropar: 40
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  anin: {fileID: 0}
 --- !u!58 &403575536
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -6529,6 +6676,27 @@ Transform:
   - {fileID: 1089184089}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &403575540
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 403575534}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 967e649f74cd1f84fb53173e1ad68028, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &403607436
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6765,6 +6933,7 @@ GameObject:
   - component: {fileID: 411206789}
   - component: {fileID: 411206788}
   - component: {fileID: 411206787}
+  - component: {fileID: 411206793}
   m_Layer: 0
   m_Name: Billy Azul (2)
   m_TagString: Inimigo
@@ -6874,6 +7043,7 @@ MonoBehaviour:
   itemParaDropar: {fileID: 7618214839703894807, guid: b7c2a27e2b9a50a4c9f41f1e41526a54, type: 3}
   chanceDeDropar: 30
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  anin: {fileID: 0}
 --- !u!212 &411206791
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6943,6 +7113,27 @@ Transform:
   - {fileID: 361492544}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &411206793
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 411206786}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b63f021fa77f2944da8d34f90539027f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &414481891
 GameObject:
   m_ObjectHideFlags: 0
@@ -7453,6 +7644,7 @@ GameObject:
   - component: {fileID: 455069094}
   - component: {fileID: 455069093}
   - component: {fileID: 455069092}
+  - component: {fileID: 455069097}
   m_Layer: 0
   m_Name: Billy Laranja (5)
   m_TagString: Inimigo
@@ -7484,6 +7676,7 @@ MonoBehaviour:
   itemParaDropar: {fileID: 3525905135518307588, guid: e31ec134bc4e86b46be8d18e068c1faa, type: 3}
   chanceDeDropar: 40
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  anin: {fileID: 0}
 --- !u!58 &455069093
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -7612,8 +7805,30 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1775584718}
+  - {fileID: 2088563366}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &455069097
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 455069091}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 52ec5365b4ef8e140bbc03bda8cbe32a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &464355256
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7819,6 +8034,7 @@ GameObject:
   - component: {fileID: 492702321}
   - component: {fileID: 492702320}
   - component: {fileID: 492702319}
+  - component: {fileID: 492702324}
   m_Layer: 0
   m_Name: Billy Verde (6)
   m_TagString: Inimigo
@@ -7915,6 +8131,7 @@ MonoBehaviour:
   itemParaDropar: {fileID: 1155319595704185419, guid: 8561b74ad057e4d42a3f0575b14fd184, type: 3}
   chanceDeDropar: 35
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  anin: {fileID: 0}
 --- !u!212 &492702322
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7985,6 +8202,27 @@ Transform:
   - {fileID: 324913727}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &492702324
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 492702318}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 55d8ffe3b9cc6ce4587cdc84b137182f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &493697765
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10122,37 +10360,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0c39a7382abbde7438cad0cb29b42074, type: 3}
---- !u!1 &640110477
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 640110478}
-  m_Layer: 0
-  m_Name: Local do Disparo
-  m_TagString: Untagged
-  m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &640110478
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 640110477}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.025, y: -0.118, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 897404925}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &640535919
 GameObject:
   m_ObjectHideFlags: 0
@@ -11121,6 +11328,203 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 954401629}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &704176427
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 704176433}
+  - component: {fileID: 704176432}
+  - component: {fileID: 704176431}
+  - component: {fileID: 704176430}
+  - component: {fileID: 704176429}
+  - component: {fileID: 704176428}
+  m_Layer: 0
+  m_Name: Billy Laranja (6)
+  m_TagString: Inimigo
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!95 &704176428
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 704176427}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4f182e4f12b78024ab0ed5b4a9cb0769, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &704176429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 704176427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 512bffd834d48d541993169058b97e94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  laserDoInimigo: {fileID: 0}
+  localDoDisparo: []
+  velocidadeDoInimigo: 4
+  tempoMaximoEntreOsLasers: 0
+  tempoAtualDosLasers: 0
+  inimigoAtirador: 0
+  vidaMaximaDoInimigo: 2
+  vidaAtualDoInimigo: 2
+  danoAoJogador: 1
+  itemParaDropar: {fileID: 3525905135518307588, guid: e31ec134bc4e86b46be8d18e068c1faa, type: 3}
+  chanceDeDropar: 40
+  "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  anin: {fileID: 0}
+--- !u!58 &704176430
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 704176427}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.014772716, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.27836627
+--- !u!50 &704176431
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 704176427}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
+--- !u!212 &704176432
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 704176427}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 2da89225434058a489d82507846f6bf3, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &704176433
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 704176427}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 18.68, y: -2.49, z: 0}
+  m_LocalScale: {x: 3.346627, y: 3.346627, z: 3.346627}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2089122856}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &718181473
 PrefabInstance:
@@ -13402,180 +13806,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0c39a7382abbde7438cad0cb29b42074, type: 3}
---- !u!1 &897404922
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 897404925}
-  - component: {fileID: 897404924}
-  - component: {fileID: 897404927}
-  - component: {fileID: 897404926}
-  - component: {fileID: 897404928}
-  m_Layer: 0
-  m_Name: Billy Laranja
-  m_TagString: Inimigo
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!212 &897404924
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 897404922}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 2da89225434058a489d82507846f6bf3, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!4 &897404925
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 897404922}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 18.7, y: -2.59, z: 0}
-  m_LocalScale: {x: 3.346627, y: 3.346627, z: 3.346627}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 640110478}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!58 &897404926
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 897404922}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.014772716, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.27836627
---- !u!50 &897404927
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 897404922}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 4
---- !u!114 &897404928
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 897404922}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 512bffd834d48d541993169058b97e94, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  laserDoInimigo: {fileID: 0}
-  localDoDisparo: []
-  velocidadeDoInimigo: 5
-  tempoMaximoEntreOsLasers: 0
-  tempoAtualDosLasers: 0
-  inimigoAtirador: 0
-  vidaMaximaDoInimigo: 2
-  vidaAtualDoInimigo: 2
-  danoAoJogador: 1
-  itemParaDropar: {fileID: 3525905135518307588, guid: e31ec134bc4e86b46be8d18e068c1faa, type: 3}
-  chanceDeDropar: 40
-  "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
 --- !u!1001 &908378855
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13787,6 +14017,7 @@ GameObject:
   - component: {fileID: 908992106}
   - component: {fileID: 908992105}
   - component: {fileID: 908992104}
+  - component: {fileID: 908992109}
   m_Layer: 0
   m_Name: Billy Laranja
   m_TagString: Inimigo
@@ -13818,6 +14049,7 @@ MonoBehaviour:
   itemParaDropar: {fileID: 3525905135518307588, guid: e31ec134bc4e86b46be8d18e068c1faa, type: 3}
   chanceDeDropar: 40
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  anin: {fileID: 0}
 --- !u!58 &908992105
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -13948,6 +14180,27 @@ Transform:
   - {fileID: 450266201}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &908992109
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 908992103}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ccd09e7c825d88940984dd1a8fe67d8d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &916755904
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14348,6 +14601,7 @@ GameObject:
   - component: {fileID: 932730870}
   - component: {fileID: 932730869}
   - component: {fileID: 932730868}
+  - component: {fileID: 932730873}
   m_Layer: 0
   m_Name: Billy Verde (3)
   m_TagString: Inimigo
@@ -14444,6 +14698,7 @@ MonoBehaviour:
   itemParaDropar: {fileID: 1155319595704185419, guid: 8561b74ad057e4d42a3f0575b14fd184, type: 3}
   chanceDeDropar: 35
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  anin: {fileID: 0}
 --- !u!212 &932730871
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14514,6 +14769,27 @@ Transform:
   - {fileID: 1358133073}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &932730873
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 932730867}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: dfe3a9679e9aa684b8f741534d25c50b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &933483213
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14947,6 +15223,7 @@ GameObject:
   - component: {fileID: 954401627}
   - component: {fileID: 954401626}
   - component: {fileID: 954401625}
+  - component: {fileID: 954401630}
   m_Layer: 0
   m_Name: Billy Laranja (9)
   m_TagString: Inimigo
@@ -14978,6 +15255,7 @@ MonoBehaviour:
   itemParaDropar: {fileID: 3525905135518307588, guid: e31ec134bc4e86b46be8d18e068c1faa, type: 3}
   chanceDeDropar: 40
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  anin: {fileID: 0}
 --- !u!58 &954401626
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -15108,6 +15386,27 @@ Transform:
   - {fileID: 698922262}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &954401630
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 954401624}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 74efbdbe3b84413459dad0186cc32ff1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &956390275
 GameObject:
   m_ObjectHideFlags: 0
@@ -15776,185 +16075,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 04cf93097b09bc74fab4c9367d242fa4, type: 3}
---- !u!1 &1050904989
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1050904994}
-  - component: {fileID: 1050904993}
-  - component: {fileID: 1050904992}
-  - component: {fileID: 1050904991}
-  - component: {fileID: 1050904990}
-  m_Layer: 0
-  m_Name: "Billy R\xE9plicas (35)"
-  m_TagString: Inimigo
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!58 &1050904990
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1050904989}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.010652403, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.2827367
---- !u!50 &1050904991
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1050904989}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 4
---- !u!114 &1050904992
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1050904989}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 512bffd834d48d541993169058b97e94, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  laserDoInimigo: {fileID: 2489940251796190028, guid: b2f710a0b62a1164aaaa9d290e16ae0d, type: 3}
-  localDoDisparo:
-  - {fileID: 1459081374}
-  - {fileID: 74644309}
-  - {fileID: 29735094}
-  velocidadeDoInimigo: 4
-  tempoMaximoEntreOsLasers: 0.9
-  tempoAtualDosLasers: 0
-  inimigoAtirador: 1
-  vidaMaximaDoInimigo: 2
-  vidaAtualDoInimigo: 2
-  danoAoJogador: 1
-  itemParaDropar: {fileID: 1155319595704185419, guid: 8561b74ad057e4d42a3f0575b14fd184, type: 3}
-  chanceDeDropar: 35
-  "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
---- !u!212 &1050904993
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1050904989}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: d000a8577a9c71344aee0eca668bdcb0, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!4 &1050904994
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1050904989}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 105.870026, y: 0.6, z: 0}
-  m_LocalScale: {x: 3.3466272, y: 3.3466272, z: 3.3466272}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1459081374}
-  - {fileID: 74644309}
-  - {fileID: 29735094}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1053795758
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16351,6 +16471,7 @@ GameObject:
   - component: {fileID: 1102129065}
   - component: {fileID: 1102129064}
   - component: {fileID: 1102129063}
+  - component: {fileID: 1102129068}
   m_Layer: 0
   m_Name: Billy Laranja
   m_TagString: Inimigo
@@ -16382,6 +16503,7 @@ MonoBehaviour:
   itemParaDropar: {fileID: 3525905135518307588, guid: e31ec134bc4e86b46be8d18e068c1faa, type: 3}
   chanceDeDropar: 40
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  anin: {fileID: 0}
 --- !u!58 &1102129064
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -16512,6 +16634,27 @@ Transform:
   - {fileID: 829785061}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1102129068
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1102129062}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4f182e4f12b78024ab0ed5b4a9cb0769, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1104763820
 GameObject:
   m_ObjectHideFlags: 0
@@ -16525,6 +16668,7 @@ GameObject:
   - component: {fileID: 1104763823}
   - component: {fileID: 1104763822}
   - component: {fileID: 1104763821}
+  - component: {fileID: 1104763826}
   m_Layer: 0
   m_Name: Billy Laranja (8)
   m_TagString: Inimigo
@@ -16556,6 +16700,7 @@ MonoBehaviour:
   itemParaDropar: {fileID: 3525905135518307588, guid: e31ec134bc4e86b46be8d18e068c1faa, type: 3}
   chanceDeDropar: 40
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  anin: {fileID: 0}
 --- !u!58 &1104763822
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -16686,6 +16831,27 @@ Transform:
   - {fileID: 1554371503}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1104763826
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1104763820}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 645331e38730c9e4d9608334472860e7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1110849571
 GameObject:
   m_ObjectHideFlags: 0
@@ -17291,6 +17457,7 @@ GameObject:
   - component: {fileID: 1165021668}
   - component: {fileID: 1165021667}
   - component: {fileID: 1165021666}
+  - component: {fileID: 1165021671}
   m_Layer: 0
   m_Name: Billy Verde
   m_TagString: Inimigo
@@ -17387,6 +17554,7 @@ MonoBehaviour:
   itemParaDropar: {fileID: 1155319595704185419, guid: 8561b74ad057e4d42a3f0575b14fd184, type: 3}
   chanceDeDropar: 35
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  anin: {fileID: 0}
 --- !u!212 &1165021669
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17457,6 +17625,27 @@ Transform:
   - {fileID: 1718044849}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1165021671
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1165021665}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e550a24c870edac4f8f2df90f9b0cb76, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1166671887
 GameObject:
   m_ObjectHideFlags: 0
@@ -17471,6 +17660,7 @@ GameObject:
   - component: {fileID: 1166671890}
   - component: {fileID: 1166671889}
   - component: {fileID: 1166671888}
+  - component: {fileID: 1166671894}
   m_Layer: 0
   m_Name: Billy Azul (3)
   m_TagString: Inimigo
@@ -17580,6 +17770,7 @@ MonoBehaviour:
   itemParaDropar: {fileID: 7618214839703894807, guid: b7c2a27e2b9a50a4c9f41f1e41526a54, type: 3}
   chanceDeDropar: 30
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  anin: {fileID: 0}
 --- !u!212 &1166671892
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17649,6 +17840,27 @@ Transform:
   - {fileID: 130463136}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1166671894
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1166671887}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a6c9b5c649e7cb44eb18f333bd153343, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &1180136050
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18427,6 +18639,7 @@ MonoBehaviour:
   itemParaDropar: {fileID: 7618214839703894807, guid: b7c2a27e2b9a50a4c9f41f1e41526a54, type: 3}
   chanceDeDropar: 30
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  anin: {fileID: 0}
 --- !u!212 &1231748630
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18582,7 +18795,7 @@ Animator:
   m_GameObject: {fileID: 1231748628}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 8badd405c3f914448b8c97ed7e721469, type: 2}
+  m_Controller: {fileID: 9100000, guid: 8a0617a92c7bffe4aab5be49d8208d9a, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -18801,8 +19014,9 @@ GameObject:
   - component: {fileID: 1262928527}
   - component: {fileID: 1262928526}
   - component: {fileID: 1262928525}
+  - component: {fileID: 1262928530}
   m_Layer: 0
-  m_Name: "Billy R\xE9plicas (33)"
+  m_Name: Billy Verde
   m_TagString: Inimigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18897,6 +19111,7 @@ MonoBehaviour:
   itemParaDropar: {fileID: 1155319595704185419, guid: 8561b74ad057e4d42a3f0575b14fd184, type: 3}
   chanceDeDropar: 35
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  anin: {fileID: 0}
 --- !u!212 &1262928528
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18967,6 +19182,27 @@ Transform:
   - {fileID: 1352562011}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1262928530
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1262928524}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: cc08e658f7f6e984fa83f2b2b35646ad, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1269670528
 GameObject:
   m_ObjectHideFlags: 0
@@ -19654,6 +19890,7 @@ GameObject:
   - component: {fileID: 1294340420}
   - component: {fileID: 1294340419}
   - component: {fileID: 1294340418}
+  - component: {fileID: 1294340423}
   m_Layer: 0
   m_Name: Billy Verde
   m_TagString: Inimigo
@@ -19750,6 +19987,7 @@ MonoBehaviour:
   itemParaDropar: {fileID: 1155319595704185419, guid: 8561b74ad057e4d42a3f0575b14fd184, type: 3}
   chanceDeDropar: 35
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  anin: {fileID: 0}
 --- !u!212 &1294340421
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -19820,6 +20058,27 @@ Transform:
   - {fileID: 878802708}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1294340423
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1294340417}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3cbdeee5fb479c643b8c4d98ae3bfb66, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1295546021
 GameObject:
   m_ObjectHideFlags: 0
@@ -20807,6 +21066,7 @@ GameObject:
   - component: {fileID: 1395478427}
   - component: {fileID: 1395478426}
   - component: {fileID: 1395478425}
+  - component: {fileID: 1395478430}
   m_Layer: 0
   m_Name: Billy Laranja (1)
   m_TagString: Inimigo
@@ -20838,6 +21098,7 @@ MonoBehaviour:
   itemParaDropar: {fileID: 3525905135518307588, guid: e31ec134bc4e86b46be8d18e068c1faa, type: 3}
   chanceDeDropar: 40
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  anin: {fileID: 0}
 --- !u!58 &1395478426
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -20968,6 +21229,27 @@ Transform:
   - {fileID: 1734228975}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1395478430
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1395478424}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a445ae9d1d3567c4d86650f845deeb6a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &1397307622
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21850,6 +22132,7 @@ GameObject:
   - component: {fileID: 1442150221}
   - component: {fileID: 1442150220}
   - component: {fileID: 1442150219}
+  - component: {fileID: 1442150225}
   m_Layer: 0
   m_Name: Billy Azul (2)
   m_TagString: Inimigo
@@ -21959,6 +22242,7 @@ MonoBehaviour:
   itemParaDropar: {fileID: 7618214839703894807, guid: b7c2a27e2b9a50a4c9f41f1e41526a54, type: 3}
   chanceDeDropar: 30
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  anin: {fileID: 0}
 --- !u!212 &1442150223
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -22028,6 +22312,27 @@ Transform:
   - {fileID: 1080729476}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1442150225
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1442150218}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 645c9189f696d72478e2bb30620e7463, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &1445196647
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22106,6 +22411,7 @@ GameObject:
   - component: {fileID: 1453571703}
   - component: {fileID: 1453571702}
   - component: {fileID: 1453571701}
+  - component: {fileID: 1453571706}
   m_Layer: 0
   m_Name: Billy Verde (5)
   m_TagString: Inimigo
@@ -22202,6 +22508,7 @@ MonoBehaviour:
   itemParaDropar: {fileID: 1155319595704185419, guid: 8561b74ad057e4d42a3f0575b14fd184, type: 3}
   chanceDeDropar: 35
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  anin: {fileID: 0}
 --- !u!212 &1453571704
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -22272,6 +22579,27 @@ Transform:
   - {fileID: 726831781}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1453571706
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1453571700}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ce125968d9a241543bae7f1e89c7d0d5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &1458101257
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22337,37 +22665,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 04cf93097b09bc74fab4c9367d242fa4, type: 3}
---- !u!1 &1459081373
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1459081374}
-  m_Layer: 0
-  m_Name: Local do Disparo
-  m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &1459081374
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1459081373}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.012, y: -0.116, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1050904994}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1459095151
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23043,6 +23340,7 @@ GameObject:
   - component: {fileID: 1541489693}
   - component: {fileID: 1541489692}
   - component: {fileID: 1541489691}
+  - component: {fileID: 1541489696}
   m_Layer: 0
   m_Name: Billy Laranja
   m_TagString: Inimigo
@@ -23074,6 +23372,7 @@ MonoBehaviour:
   itemParaDropar: {fileID: 3525905135518307588, guid: e31ec134bc4e86b46be8d18e068c1faa, type: 3}
   chanceDeDropar: 40
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  anin: {fileID: 0}
 --- !u!58 &1541489692
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -23204,6 +23503,27 @@ Transform:
   - {fileID: 1953363412}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1541489696
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1541489690}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1c9359d6fe145784d9cb3493bce5b494, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &1544334282
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23406,6 +23726,7 @@ GameObject:
   - component: {fileID: 1561914493}
   - component: {fileID: 1561914492}
   - component: {fileID: 1561914491}
+  - component: {fileID: 1561914497}
   m_Layer: 0
   m_Name: Billy Azul (6)
   m_TagString: Inimigo
@@ -23515,6 +23836,7 @@ MonoBehaviour:
   itemParaDropar: {fileID: 7618214839703894807, guid: b7c2a27e2b9a50a4c9f41f1e41526a54, type: 3}
   chanceDeDropar: 30
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  anin: {fileID: 0}
 --- !u!212 &1561914495
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -23584,6 +23906,27 @@ Transform:
   - {fileID: 643120660}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1561914497
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1561914490}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1bbf882a7a6bf6a4b93b8b3bfce196b3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1582572424
 GameObject:
   m_ObjectHideFlags: 0
@@ -23597,6 +23940,7 @@ GameObject:
   - component: {fileID: 1582572427}
   - component: {fileID: 1582572426}
   - component: {fileID: 1582572425}
+  - component: {fileID: 1582572430}
   m_Layer: 0
   m_Name: Billy Verde (1)
   m_TagString: Inimigo
@@ -23693,6 +24037,7 @@ MonoBehaviour:
   itemParaDropar: {fileID: 1155319595704185419, guid: 8561b74ad057e4d42a3f0575b14fd184, type: 3}
   chanceDeDropar: 35
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  anin: {fileID: 0}
 --- !u!212 &1582572428
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -23763,6 +24108,27 @@ Transform:
   - {fileID: 1727265208}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1582572430
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1582572424}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 422ebe7e6fd835e48be7057221aaab3c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1584194815
 GameObject:
   m_ObjectHideFlags: 0
@@ -23776,6 +24142,7 @@ GameObject:
   - component: {fileID: 1584194818}
   - component: {fileID: 1584194817}
   - component: {fileID: 1584194816}
+  - component: {fileID: 1584194821}
   m_Layer: 0
   m_Name: Billy verde
   m_TagString: Inimigo
@@ -23872,6 +24239,7 @@ MonoBehaviour:
   itemParaDropar: {fileID: 1155319595704185419, guid: 8561b74ad057e4d42a3f0575b14fd184, type: 3}
   chanceDeDropar: 35
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  anin: {fileID: 0}
 --- !u!212 &1584194819
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -23942,6 +24310,27 @@ Transform:
   - {fileID: 34735435}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1584194821
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1584194815}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 097cbe63549342245a922d7c0201b26c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &1584564336
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24362,6 +24751,7 @@ GameObject:
   - component: {fileID: 1617533448}
   - component: {fileID: 1617533447}
   - component: {fileID: 1617533449}
+  - component: {fileID: 1617533450}
   m_Layer: 0
   m_Name: Billy Vermelho
   m_TagString: Inimigo Vermelho
@@ -24527,6 +24917,28 @@ MonoBehaviour:
   jogador: {fileID: 27085987}
   distanciaMinimaParaParar: 0.5
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  ani: {fileID: 0}
+--- !u!95 &1617533450
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1617533443}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a7f8f5e3f5de37a4683cb1fd6230037a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &1633502466
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27521,6 +27933,7 @@ GameObject:
   - component: {fileID: 1915181999}
   - component: {fileID: 1915181998}
   - component: {fileID: 1915181997}
+  - component: {fileID: 1915182002}
   m_Layer: 0
   m_Name: Billy Laranja (4)
   m_TagString: Inimigo
@@ -27552,6 +27965,7 @@ MonoBehaviour:
   itemParaDropar: {fileID: 3525905135518307588, guid: e31ec134bc4e86b46be8d18e068c1faa, type: 3}
   chanceDeDropar: 40
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  anin: {fileID: 0}
 --- !u!58 &1915181998
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -27682,6 +28096,27 @@ Transform:
   - {fileID: 1705083919}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1915182002
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1915181996}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8a5ee35509a552b41bdea4cc6a445d34, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1924309084
 GameObject:
   m_ObjectHideFlags: 0
@@ -27822,6 +28257,7 @@ GameObject:
   - component: {fileID: 1949979842}
   - component: {fileID: 1949979841}
   - component: {fileID: 1949979840}
+  - component: {fileID: 1949979845}
   m_Layer: 0
   m_Name: Billy Vermelho (1)
   m_TagString: Inimigo Vermelho
@@ -27856,6 +28292,7 @@ MonoBehaviour:
   jogador: {fileID: 27085987}
   distanciaMinimaParaParar: 0.5
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  ani: {fileID: 0}
 --- !u!58 &1949979841
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -27988,6 +28425,27 @@ Transform:
   - {fileID: 1486244510}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1949979845
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1949979839}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 73a04588efb16cf44860b46bb897411f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1953363411
 GameObject:
   m_ObjectHideFlags: 0
@@ -28624,6 +29082,7 @@ GameObject:
   - component: {fileID: 2006360853}
   - component: {fileID: 2006360852}
   - component: {fileID: 2006360851}
+  - component: {fileID: 2006360857}
   m_Layer: 0
   m_Name: Billy Azul (4)
   m_TagString: Inimigo
@@ -28733,6 +29192,7 @@ MonoBehaviour:
   itemParaDropar: {fileID: 7618214839703894807, guid: b7c2a27e2b9a50a4c9f41f1e41526a54, type: 3}
   chanceDeDropar: 30
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  anin: {fileID: 0}
 --- !u!212 &2006360855
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -28802,6 +29262,27 @@ Transform:
   - {fileID: 436256178}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &2006360857
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2006360850}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0e9c6299e9dd741408de60979d26132d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &2009437164
 GameObject:
   m_ObjectHideFlags: 0
@@ -29045,6 +29526,7 @@ GameObject:
   - component: {fileID: 2023930685}
   - component: {fileID: 2023930684}
   - component: {fileID: 2023930683}
+  - component: {fileID: 2023930689}
   m_Layer: 0
   m_Name: Billy Azul (5)
   m_TagString: Inimigo
@@ -29154,6 +29636,7 @@ MonoBehaviour:
   itemParaDropar: {fileID: 7618214839703894807, guid: b7c2a27e2b9a50a4c9f41f1e41526a54, type: 3}
   chanceDeDropar: 30
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  anin: {fileID: 0}
 --- !u!212 &2023930687
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -29223,6 +29706,27 @@ Transform:
   - {fileID: 1648616297}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &2023930689
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2023930682}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 015c8e2f3223fe242a4be371063e6a81, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &2045222612
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29992,6 +30496,7 @@ MonoBehaviour:
   itemParaDropar: {fileID: 3525905135518307588, guid: e31ec134bc4e86b46be8d18e068c1faa, type: 3}
   chanceDeDropar: 40
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  anin: {fileID: 0}
 --- !u!58 &2088563363
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -30114,13 +30619,44 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2088563361}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 505.26, y: -3.03, z: 0}
-  m_LocalScale: {x: 3.346627, y: 3.346627, z: 3.346627}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.036856, y: -1.7121716, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 277934119}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 455069096}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2089122855
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2089122856}
+  m_Layer: 0
+  m_Name: Local do Disparo
+  m_TagString: Untagged
+  m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &2089122856
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2089122855}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.025, y: -0.118, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 704176433}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2090980695
 PrefabInstance:
@@ -30660,6 +31196,7 @@ GameObject:
   - component: {fileID: 9113324427421185173}
   - component: {fileID: 7077931818555880422}
   - component: {fileID: 9113324427421185174}
+  - component: {fileID: 9113324427421185175}
   m_Layer: 0
   m_Name: "Billy Chef\xE3o"
   m_TagString: "Chef\xE3o"
@@ -31244,6 +31781,7 @@ MonoBehaviour:
   jogador: {fileID: 27085987}
   distanciaMinimaParaParar: 0.5
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  ani: {fileID: 0}
 --- !u!33 &7085220824708186426
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -31422,6 +31960,27 @@ PolygonCollider2D:
       - {x: 0.40666667, y: -0.16}
       - {x: 0.45333335, y: -0.10666667}
   m_UseDelaunayMesh: 0
+--- !u!95 &9113324427421185175
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1134435543810400646}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b177ed115645dc14993fda9385bba8ab, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &9177563464192826224
 GameObject:
   m_ObjectHideFlags: 0
@@ -31466,7 +32025,6 @@ SceneRoots:
   - {fileID: 1165021670}
   - {fileID: 81784082}
   - {fileID: 1262928529}
-  - {fileID: 1050904994}
   - {fileID: 1294340422}
   - {fileID: 1582572429}
   - {fileID: 53258494}
@@ -31475,8 +32033,8 @@ SceneRoots:
   - {fileID: 1453571705}
   - {fileID: 492702323}
   - {fileID: 219041038}
-  - {fileID: 897404925}
   - {fileID: 1102129067}
+  - {fileID: 704176433}
   - {fileID: 908992108}
   - {fileID: 1541489695}
   - {fileID: 1395478429}
@@ -31484,7 +32042,6 @@ SceneRoots:
   - {fileID: 11943889}
   - {fileID: 1915182001}
   - {fileID: 455069096}
-  - {fileID: 2088563366}
   - {fileID: 1104763825}
   - {fileID: 954401629}
   - {fileID: 403575539}

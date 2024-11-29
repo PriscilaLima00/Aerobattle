@@ -34,6 +34,7 @@ public class Nebuloso : MonoBehaviour
     public int chanceDeDropar;
 
     public GameObject efeitoDeExplosão;
+    public Animator anima;
 
 
     void Start()
@@ -45,6 +46,8 @@ public class Nebuloso : MonoBehaviour
     
     void Update()
     {
+        anima = GetComponent<Animator>(); 
+        
         MovimentarNebuloso();
         VerificarJogador();
         AtirarSeNecessario();
@@ -137,6 +140,13 @@ public class Nebuloso : MonoBehaviour
     {
         vidaAtualDoNebuloso -= danoparareceber;
         
+        if (anima != null)
+        {
+            anima.SetBool("Hit03",true);
+        }
+        
+        StartCoroutine(DesativarAnimção());
+        
         if (vidaAtualDoNebuloso <= 0)
         {
             Instantiate(efeitoDeExplosão, transform.position, transform.rotation);
@@ -150,6 +160,14 @@ public class Nebuloso : MonoBehaviour
             }
 
             Morrer();
+        }
+    }
+    private IEnumerator DesativarAnimção()
+    {
+        yield return new WaitForSeconds(0.2f);
+        if (anima != null)
+        {
+            anima.SetBool("Hit03",false);
         }
     }
     

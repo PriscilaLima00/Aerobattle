@@ -170,6 +170,7 @@ MonoBehaviour:
   itemParaDropar: {fileID: 1155319595704185419, guid: 8561b74ad057e4d42a3f0575b14fd184, type: 3}
   chanceDeDropar: 35
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  anin: {fileID: 0}
 --- !u!58 &3739448
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1693,6 +1694,7 @@ MonoBehaviour:
   itemParaDropar: {fileID: 423754188516412765}
   chanceDeDropar: 100
   "efeitoDeExplos\xE3o": {fileID: 3025290391906523000, guid: 5ce0e54a989dc844e9107cb2bdd4a290, type: 3}
+  anima: {fileID: 0}
 --- !u!50 &83837875
 Rigidbody2D:
   serializedVersion: 4
@@ -1816,7 +1818,7 @@ Transform:
   m_GameObject: {fileID: 83837872}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 609.4, y: 0.68, z: 0}
+  m_LocalPosition: {x: 604.6, y: -0.06, z: 0}
   m_LocalScale: {x: 8.319772, y: 8.319772, z: 8.319772}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2412,6 +2414,7 @@ MonoBehaviour:
   itemParaDropar: {fileID: 1155319595704185419, guid: 8561b74ad057e4d42a3f0575b14fd184, type: 3}
   chanceDeDropar: 35
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  anin: {fileID: 0}
 --- !u!58 &122729066
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2875,6 +2878,7 @@ MonoBehaviour:
   itemParaDropar: {fileID: 7618214839703894807, guid: b7c2a27e2b9a50a4c9f41f1e41526a54, type: 3}
   chanceDeDropar: 40
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  anin: {fileID: 0}
 --- !u!50 &168470623
 Rigidbody2D:
   serializedVersion: 4
@@ -3440,7 +3444,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -21, y: 195}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 105.2755, y: 99.5942}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &179770269
 MonoBehaviour:
@@ -4367,6 +4371,7 @@ MonoBehaviour:
   itemParaDropar: {fileID: 1155319595704185419, guid: 8561b74ad057e4d42a3f0575b14fd184, type: 3}
   chanceDeDropar: 35
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  anin: {fileID: 0}
 --- !u!58 &224846452
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4656,6 +4661,7 @@ MonoBehaviour:
   itemParaDropar: {fileID: 1155319595704185419, guid: 8561b74ad057e4d42a3f0575b14fd184, type: 3}
   chanceDeDropar: 35
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  anin: {fileID: 0}
 --- !u!58 &232317465
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4858,6 +4864,7 @@ MonoBehaviour:
   vidaMaximaDoMeteoro: 3
   velocidadeDoMeteoro: 3
   "efeitoDeExplos\xE3o": {fileID: 3701190526550224290, guid: 15c0dea2e454f6746bd9a7d5fe20307e, type: 3}
+  ani: {fileID: 0}
 --- !u!50 &250162375
 Rigidbody2D:
   serializedVersion: 4
@@ -5509,6 +5516,7 @@ MonoBehaviour:
   itemParaDropar: {fileID: 7618214839703894807, guid: b7c2a27e2b9a50a4c9f41f1e41526a54, type: 3}
   chanceDeDropar: 40
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  anin: {fileID: 0}
 --- !u!50 &287878283
 Rigidbody2D:
   serializedVersion: 4
@@ -5860,6 +5868,7 @@ MonoBehaviour:
   itemParaDropar: {fileID: 7618214839703894807, guid: b7c2a27e2b9a50a4c9f41f1e41526a54, type: 3}
   chanceDeDropar: 40
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  anin: {fileID: 0}
 --- !u!50 &317142290
 Rigidbody2D:
   serializedVersion: 4
@@ -8033,7 +8042,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 25, y: 7}
-  m_SizeDelta: {x: 1926.4658, y: 1184.0264}
+  m_SizeDelta: {x: 2175.415, y: 1799.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &432462569
 MonoBehaviour:
@@ -9704,6 +9713,7 @@ MonoBehaviour:
   vidaMaximaDoMeteoro: 3
   velocidadeDoMeteoro: 3
   "efeitoDeExplos\xE3o": {fileID: 3701190526550224290, guid: 15c0dea2e454f6746bd9a7d5fe20307e, type: 3}
+  ani: {fileID: 0}
 --- !u!50 &519822975
 Rigidbody2D:
   serializedVersion: 4
@@ -9901,6 +9911,7 @@ MonoBehaviour:
   itemParaDropar: {fileID: 1155319595704185419, guid: 8561b74ad057e4d42a3f0575b14fd184, type: 3}
   chanceDeDropar: 35
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  anin: {fileID: 0}
 --- !u!58 &524162694
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -10380,6 +10391,7 @@ MonoBehaviour:
   vidaMaximaDoMeteoro: 3
   velocidadeDoMeteoro: 3
   "efeitoDeExplos\xE3o": {fileID: 3701190526550224290, guid: 15c0dea2e454f6746bd9a7d5fe20307e, type: 3}
+  ani: {fileID: 0}
 --- !u!50 &568024579
 Rigidbody2D:
   serializedVersion: 4
@@ -10561,6 +10573,7 @@ MonoBehaviour:
   itemParaDropar: {fileID: 7618214839703894807, guid: b7c2a27e2b9a50a4c9f41f1e41526a54, type: 3}
   chanceDeDropar: 40
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  anin: {fileID: 0}
 --- !u!50 &575867585
 Rigidbody2D:
   serializedVersion: 4
@@ -11000,6 +11013,7 @@ MonoBehaviour:
   itemParaDropar: {fileID: 7618214839703894807, guid: b7c2a27e2b9a50a4c9f41f1e41526a54, type: 3}
   chanceDeDropar: 40
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  anin: {fileID: 0}
 --- !u!50 &584241806
 Rigidbody2D:
   serializedVersion: 4
@@ -12475,6 +12489,7 @@ MonoBehaviour:
   itemParaDropar: {fileID: 1155319595704185419, guid: 8561b74ad057e4d42a3f0575b14fd184, type: 3}
   chanceDeDropar: 35
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  anin: {fileID: 0}
 --- !u!58 &718096365
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -13584,6 +13599,7 @@ MonoBehaviour:
   itemParaDropar: {fileID: 1155319595704185419, guid: 8561b74ad057e4d42a3f0575b14fd184, type: 3}
   chanceDeDropar: 35
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  anin: {fileID: 0}
 --- !u!58 &791874960
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -14608,6 +14624,90 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &837465916
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 837465918}
+  - component: {fileID: 837465917}
+  m_Layer: 0
+  m_Name: nebuloso exercito1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!212 &837465917
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 837465916}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: a0c7ce84cbe4fbb4f8e15da4e9c29980, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.35897437, y: 0.35897437}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &837465918
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 837465916}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5.98, y: -8.55, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &851401532
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15375,6 +15475,7 @@ MonoBehaviour:
   vidaMaximaDoMeteoro: 3
   velocidadeDoMeteoro: 3
   "efeitoDeExplos\xE3o": {fileID: 3701190526550224290, guid: 15c0dea2e454f6746bd9a7d5fe20307e, type: 3}
+  ani: {fileID: 0}
 --- !u!50 &898540198
 Rigidbody2D:
   serializedVersion: 4
@@ -15572,6 +15673,7 @@ MonoBehaviour:
   itemParaDropar: {fileID: 1155319595704185419, guid: 8561b74ad057e4d42a3f0575b14fd184, type: 3}
   chanceDeDropar: 35
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  anin: {fileID: 0}
 --- !u!58 &906988187
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -19094,6 +19196,7 @@ MonoBehaviour:
   vidaMaximaDoMeteoro: 3
   velocidadeDoMeteoro: 3
   "efeitoDeExplos\xE3o": {fileID: 3701190526550224290, guid: 15c0dea2e454f6746bd9a7d5fe20307e, type: 3}
+  ani: {fileID: 0}
 --- !u!50 &1043634726
 Rigidbody2D:
   serializedVersion: 4
@@ -19532,6 +19635,7 @@ MonoBehaviour:
   itemParaDropar: {fileID: 7618214839703894807, guid: b7c2a27e2b9a50a4c9f41f1e41526a54, type: 3}
   chanceDeDropar: 40
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  anin: {fileID: 0}
 --- !u!50 &1084989973
 Rigidbody2D:
   serializedVersion: 4
@@ -21284,6 +21388,7 @@ MonoBehaviour:
   itemParaDropar: {fileID: 1155319595704185419, guid: 8561b74ad057e4d42a3f0575b14fd184, type: 3}
   chanceDeDropar: 35
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  anin: {fileID: 0}
 --- !u!58 &1178451501
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -21719,6 +21824,7 @@ MonoBehaviour:
   itemParaDropar: {fileID: 1155319595704185419, guid: 8561b74ad057e4d42a3f0575b14fd184, type: 3}
   chanceDeDropar: 35
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  anin: {fileID: 0}
 --- !u!58 &1199824337
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -22399,6 +22505,7 @@ MonoBehaviour:
   itemParaDropar: {fileID: 1155319595704185419, guid: 8561b74ad057e4d42a3f0575b14fd184, type: 3}
   chanceDeDropar: 35
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  anin: {fileID: 0}
 --- !u!58 &1218099602
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -22604,7 +22711,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -1, y: 0}
-  m_SizeDelta: {x: 42.1675, y: 307.9523}
+  m_SizeDelta: {x: 970.1099, y: 1229.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1229242513
 MonoBehaviour:
@@ -23542,6 +23649,7 @@ MonoBehaviour:
   vidaMaximaDoMeteoro: 3
   velocidadeDoMeteoro: 3
   "efeitoDeExplos\xE3o": {fileID: 3701190526550224290, guid: 15c0dea2e454f6746bd9a7d5fe20307e, type: 3}
+  ani: {fileID: 0}
 --- !u!50 &1285383020
 Rigidbody2D:
   serializedVersion: 4
@@ -24462,83 +24570,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1339830242
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1541875160423499993, guid: a3590e3068eeecc4b87e67b568c431f3, type: 3}
-      propertyPath: m_Name
-      value: Mina (35)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1541875160423499993, guid: a3590e3068eeecc4b87e67b568c431f3, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3095448856276083095, guid: a3590e3068eeecc4b87e67b568c431f3, type: 3}
-      propertyPath: m_BodyType
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4114671959645363341, guid: a3590e3068eeecc4b87e67b568c431f3, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 2.2002068
-      objectReference: {fileID: 0}
-    - target: {fileID: 4114671959645363341, guid: a3590e3068eeecc4b87e67b568c431f3, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 2.2002068
-      objectReference: {fileID: 0}
-    - target: {fileID: 4114671959645363341, guid: a3590e3068eeecc4b87e67b568c431f3, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 2.2002068
-      objectReference: {fileID: 0}
-    - target: {fileID: 4114671959645363341, guid: a3590e3068eeecc4b87e67b568c431f3, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 382.56833
-      objectReference: {fileID: 0}
-    - target: {fileID: 4114671959645363341, guid: a3590e3068eeecc4b87e67b568c431f3, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 2.84
-      objectReference: {fileID: 0}
-    - target: {fileID: 4114671959645363341, guid: a3590e3068eeecc4b87e67b568c431f3, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4114671959645363341, guid: a3590e3068eeecc4b87e67b568c431f3, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4114671959645363341, guid: a3590e3068eeecc4b87e67b568c431f3, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4114671959645363341, guid: a3590e3068eeecc4b87e67b568c431f3, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4114671959645363341, guid: a3590e3068eeecc4b87e67b568c431f3, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4114671959645363341, guid: a3590e3068eeecc4b87e67b568c431f3, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4114671959645363341, guid: a3590e3068eeecc4b87e67b568c431f3, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4114671959645363341, guid: a3590e3068eeecc4b87e67b568c431f3, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: a3590e3068eeecc4b87e67b568c431f3, type: 3}
 --- !u!1 &1339874297
 GameObject:
   m_ObjectHideFlags: 0
@@ -24585,6 +24616,7 @@ MonoBehaviour:
   itemParaDropar: {fileID: 7618214839703894807, guid: b7c2a27e2b9a50a4c9f41f1e41526a54, type: 3}
   chanceDeDropar: 40
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  anin: {fileID: 0}
 --- !u!50 &1339874299
 Rigidbody2D:
   serializedVersion: 4
@@ -24981,6 +25013,7 @@ MonoBehaviour:
   itemParaDropar: {fileID: 7618214839703894807, guid: b7c2a27e2b9a50a4c9f41f1e41526a54, type: 3}
   chanceDeDropar: 40
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  anin: {fileID: 0}
 --- !u!50 &1353601375
 Rigidbody2D:
   serializedVersion: 4
@@ -25573,6 +25606,7 @@ MonoBehaviour:
   vidaMaximaDoMeteoro: 3
   velocidadeDoMeteoro: 3
   "efeitoDeExplos\xE3o": {fileID: 3701190526550224290, guid: 15c0dea2e454f6746bd9a7d5fe20307e, type: 3}
+  ani: {fileID: 0}
 --- !u!50 &1375428291
 Rigidbody2D:
   serializedVersion: 4
@@ -26095,6 +26129,7 @@ MonoBehaviour:
   itemParaDropar: {fileID: 7618214839703894807, guid: b7c2a27e2b9a50a4c9f41f1e41526a54, type: 3}
   chanceDeDropar: 40
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  anin: {fileID: 0}
 --- !u!50 &1399335649
 Rigidbody2D:
   serializedVersion: 4
@@ -26239,7 +26274,7 @@ Transform:
   m_GameObject: {fileID: 1399335647}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 209.64835, y: -3.8999999, z: 0}
+  m_LocalPosition: {x: 163.1, y: 0.3, z: 0}
   m_LocalScale: {x: 6.042535, y: 5.371142, z: 5.371142}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -26606,6 +26641,7 @@ MonoBehaviour:
   itemParaDropar: {fileID: 7618214839703894807, guid: b7c2a27e2b9a50a4c9f41f1e41526a54, type: 3}
   chanceDeDropar: 40
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  anin: {fileID: 0}
 --- !u!50 &1408522298
 Rigidbody2D:
   serializedVersion: 4
@@ -27341,6 +27377,7 @@ MonoBehaviour:
   itemParaDropar: {fileID: 7618214839703894807, guid: b7c2a27e2b9a50a4c9f41f1e41526a54, type: 3}
   chanceDeDropar: 40
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  anin: {fileID: 0}
 --- !u!50 &1454139871
 Rigidbody2D:
   serializedVersion: 4
@@ -28466,6 +28503,7 @@ MonoBehaviour:
   itemParaDropar: {fileID: 7618214839703894807, guid: b7c2a27e2b9a50a4c9f41f1e41526a54, type: 3}
   chanceDeDropar: 40
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  anin: {fileID: 0}
 --- !u!50 &1516892681
 Rigidbody2D:
   serializedVersion: 4
@@ -28663,6 +28701,7 @@ MonoBehaviour:
   itemParaDropar: {fileID: 7618214839703894807, guid: b7c2a27e2b9a50a4c9f41f1e41526a54, type: 3}
   chanceDeDropar: 40
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  anin: {fileID: 0}
 --- !u!50 &1517497642
 Rigidbody2D:
   serializedVersion: 4
@@ -28861,6 +28900,7 @@ MonoBehaviour:
   itemParaDropar: {fileID: 1155319595704185419, guid: 8561b74ad057e4d42a3f0575b14fd184, type: 3}
   chanceDeDropar: 35
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  anin: {fileID: 0}
 --- !u!58 &1527235343
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -29518,6 +29558,7 @@ MonoBehaviour:
   itemParaDropar: {fileID: 1155319595704185419, guid: 8561b74ad057e4d42a3f0575b14fd184, type: 3}
   chanceDeDropar: 35
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  anin: {fileID: 0}
 --- !u!58 &1564633974
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -29729,6 +29770,7 @@ MonoBehaviour:
   itemParaDropar: {fileID: 7618214839703894807, guid: b7c2a27e2b9a50a4c9f41f1e41526a54, type: 3}
   chanceDeDropar: 40
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  anin: {fileID: 0}
 --- !u!50 &1569230851
 Rigidbody2D:
   serializedVersion: 4
@@ -31609,6 +31651,7 @@ MonoBehaviour:
   itemParaDropar: {fileID: 1155319595704185419, guid: 8561b74ad057e4d42a3f0575b14fd184, type: 3}
   chanceDeDropar: 35
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  anin: {fileID: 0}
 --- !u!58 &1689660688
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -33378,6 +33421,7 @@ MonoBehaviour:
   vidaMaximaDoMeteoro: 3
   velocidadeDoMeteoro: 3
   "efeitoDeExplos\xE3o": {fileID: 3701190526550224290, guid: 15c0dea2e454f6746bd9a7d5fe20307e, type: 3}
+  ani: {fileID: 0}
 --- !u!50 &1802848040
 Rigidbody2D:
   serializedVersion: 4
@@ -34528,6 +34572,7 @@ MonoBehaviour:
   itemParaDropar: {fileID: 1155319595704185419, guid: 8561b74ad057e4d42a3f0575b14fd184, type: 3}
   chanceDeDropar: 35
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  anin: {fileID: 0}
 --- !u!58 &1877834552
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -34740,6 +34785,7 @@ MonoBehaviour:
   itemParaDropar: {fileID: 1155319595704185419, guid: 8561b74ad057e4d42a3f0575b14fd184, type: 3}
   chanceDeDropar: 35
   "efeitoDeExplos\xE3o": {fileID: 2555466688364670255, guid: dc2ab575a7a2a95459563c52cceec4c9, type: 3}
+  anin: {fileID: 0}
 --- !u!58 &1890411833
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -34957,6 +35003,7 @@ MonoBehaviour:
   vidaMaximaDoMeteoro: 3
   velocidadeDoMeteoro: 3
   "efeitoDeExplos\xE3o": {fileID: 3701190526550224290, guid: 15c0dea2e454f6746bd9a7d5fe20307e, type: 3}
+  ani: {fileID: 0}
 --- !u!50 &1896159158
 Rigidbody2D:
   serializedVersion: 4
@@ -37715,6 +37762,7 @@ MonoBehaviour:
   vidaMaximaDoMeteoro: 3
   velocidadeDoMeteoro: 3
   "efeitoDeExplos\xE3o": {fileID: 3701190526550224290, guid: 15c0dea2e454f6746bd9a7d5fe20307e, type: 3}
+  ani: {fileID: 0}
 --- !u!50 &2012998695
 Rigidbody2D:
   serializedVersion: 4
@@ -48101,7 +48149,6 @@ SceneRoots:
   - {fileID: 971261949}
   - {fileID: 1314091856}
   - {fileID: 227948771}
-  - {fileID: 1339830242}
   - {fileID: 415651545}
   - {fileID: 304921994}
   - {fileID: 1109406941}
@@ -48345,3 +48392,4 @@ SceneRoots:
   - {fileID: 6290388079885930167}
   - {fileID: 6290388079707477237}
   - {fileID: 6290388079495082098}
+  - {fileID: 837465918}

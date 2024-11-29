@@ -11,6 +11,8 @@ public class OlhoDivino : MonoBehaviour
         {
             
             vitoriaFinalScript.MostrarVitoria();
+            AudoiManager.instance.PararMusica();
+            Time.timeScale = 0;
             Destroy(gameObject);  
         }
     }

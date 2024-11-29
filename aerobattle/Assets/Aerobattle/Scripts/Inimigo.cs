@@ -25,6 +25,8 @@ public class Inimigo : MonoBehaviour
     
     public GameObject efeitoDeExplosão;
 
+    public Animator anin;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -34,6 +36,7 @@ public class Inimigo : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        anin = GetComponent<Animator>();
         MovimentarInimigo();
         if (inimigoAtirador == true)
         {
@@ -63,6 +66,13 @@ public class Inimigo : MonoBehaviour
     {
         vidaAtualDoInimigo -= danoParaReceber;
 
+        if (anin != null)
+        {
+            anin.SetBool("Hit01",true);
+        }
+
+        StartCoroutine(DesativarAnimção());
+        
         
         if (vidaAtualDoInimigo <= 0)
         { 
@@ -76,6 +86,15 @@ public class Inimigo : MonoBehaviour
             }
 
             Destroy(this.gameObject);
+        }
+    }
+
+    private IEnumerator DesativarAnimção()
+    {
+        yield return new WaitForSeconds(0.2f);
+        if (anin != null)
+        {
+            anin.SetBool("Hit01",false);
         }
     }
     

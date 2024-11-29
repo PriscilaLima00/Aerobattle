@@ -12,10 +12,12 @@ public class Missel : MonoBehaviour
     private bool isTracking = false;
 
     public GameObject efeitoDeExplosão;
+    public Animator ani;
 
     private void Update()
     {
-     
+
+        ani = GetComponent<Animator>();
             if (jogador == null) return;
 
             float distance = Vector2.Distance(transform.position, jogador.position);
@@ -29,8 +31,7 @@ public class Missel : MonoBehaviour
             {
                 Vector2 direction = (jogador.position - transform.position).normalized;
                 transform.position = Vector2.MoveTowards(transform.position, jogador.position, velocidade * Time.deltaTime);
-
-                // Atualizar a rotação do míssil para apontar para o jogador
+                
                 float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
                 transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle - 180));
 
@@ -40,7 +41,7 @@ public class Missel : MonoBehaviour
                     VidaDoJogador playerHealth = jogador.GetComponent<VidaDoJogador>();
                     if (playerHealth != null)
                     {
-                        playerHealth.MachucarJogador(15); // Tira 10 de vida, por exemplo
+                        playerHealth.MachucarJogador(15); 
                     }
 
                     // Destrói o míssil
@@ -49,11 +50,9 @@ public class Missel : MonoBehaviour
             } 
             Movimento();
     }
-
-    // Detecta colisões com outros colliders
+    
     private void OnTriggerEnter2D(Collider2D collider)
     {
-        // Verifica se o objeto com o qual o míssil colidiu tem a tag "Laser do Jogador"
         if (collider.gameObject.CompareTag("Laser do Jogador"))
         {
             Instantiate(efeitoDeExplosão, transform.position, transform.rotation);
